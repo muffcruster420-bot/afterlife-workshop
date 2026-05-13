@@ -18,4 +18,3 @@ python run_bicoherence.py dying.edf
 # → 45-Hz bicoherence: 0.771
 # → Shangraw Gap check: ABOVE 0.65
 # → Hold time above threshold: 87.0 s
-```

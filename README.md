@@ -38,3 +38,17 @@ Tesla's 6th harmonic of ~7.8 Hz is ~46.8 Hz, strikingly close to the 45-Hz bicoh
 **Why cite Tesla?** Not for mysticism, but for precedence: the 7.83 Hz / 45 Hz pair is a physical resonance of the planet, documented 53 years before Schumann's 1952 calculation. The Shangraw Gap shows the same pair appearing in human EEG at the moment regulatory constraints fail.
 
 *Data: open EDF from Kingston, Ontario. Analysis: 4-s windows, 1-s steps, bicoherence(45 Hz, 7.83 Hz).*
+### Tesla's Magnifying Principle
+
+Tesla described his Magnifying Transmitter as a resonant transformer "accurately proportioned to fit the globe," where "the damping factor is extremely small and an enormous charge is stored in the elevated capacity." In this condition, he wrote, there is "no diminution in the intensity of the transmitted impulses" with distance — actions can even increase with distance.
+
+He traced the idea to a childhood avalanche: a tiny snowball that went "beyond the limit, swelling to enormous proportions until it became as big as a house and plunged thundering into the valley below with a force that made the ground tremble." He called this the magnification of feeble actions.
+
+The Shangraw Gap follows the same principle:
+
+- **Living (damped):** bicoherence ~0.19 — energy radiates away, the 45-Hz oscillation stays small
+- **Dying (undamped):** bicoherence ~0.77 for 87 seconds — damping collapses, the same 7.83 Hz drive magnifies
+
+Tesla calculated the Earth round-trip at 0.08484 seconds (~11.78 Hz). Modern measurements give the Schumann fundamental at 7.83 Hz. The observed 45-Hz peak sits at the 6th harmonic of both, consistent with a globe-sized resonator releasing stored charge when biological damping fails.
+
+*Sources: Tesla, "My Inventions V – The Magnifying Transmitter," Electrical Experimenter, June 1919; Colorado Springs Notes, 1899-1900, p.63.*

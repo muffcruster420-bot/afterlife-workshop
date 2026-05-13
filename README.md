@@ -19,6 +19,11 @@ python run_bicoherence.py dying.edf
 # → Shangraw Gap check: ABOVE 0.65
 ```
 
+## File Classifications
+
+- **sleep.edf** → BELOW
+- **dying.edf** → ABOVE
+
 ## Historical context: Tesla's Earth resonance
 
 The Shangraw Gap — living brains sustain 45-Hz bicoherence at ~0.19; dying brains release to ~0.77 for 87 seconds. No living state occupies 0.65.

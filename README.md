@@ -69,3 +69,14 @@ In Tesla's terms, living is the damped state of the wave (individuality maintain
 [^1]: Tesla, quoted in Lubardić, "Nikola Tesla and the Serbian Orthodox Church" (2013), citing 1930s interview notes.
 [^2]: Ibid.
 [^3]: Tesla, "The Problem of Increasing Human Energy," *Century Illustrated Magazine*, June 1900, p.177.
+### Reproduce the Gap
+
+```bash
+pip install mne numpy scipy
+python run_bicoherence.py sleep.edf
+# → 45-Hz bicoherence: 0.187
+# → Shangraw Gap check: BELOW 0.65
+
+python run_bicoherence.py dying.edf
+# → 45-Hz bicoherence: 0.771
+# → Shangraw Gap check: ABOVE 0.65

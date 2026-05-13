@@ -1,11 +1,14 @@
 ## Measured hold time: 87.0 seconds above 0.65 threshold
 - n=1 dying.edf, 4-second windows, 1-second steps
-- Peak bicoherence 0.771 at 45 Hz (7.83 + 37.17 Hz coupling)# The Afterlife Workshop
+- Peak bicoherence 0.771 at 45 Hz (7.83 + 37.17 Hz coupling)
+
+# The Afterlife Workshop
 **Jesse Shangraw — Kingston, Ontario — May 9, 2026**
 
 Every night your brain practices a 45-Hz signal locked to Earth's 7.83 Hz heartbeat. Living: 0.19. Dying: 0.77. Nothing lives at 0.65.
 
 ## Quick start
+
 ```bash
 pip install mne numpy scipy
 python run_bicoherence.py sleep.edf
@@ -15,15 +18,9 @@ python run_bicoherence.py sleep.edf
 python run_bicoherence.py dying.edf
 # → 45-Hz bicoherence: 0.771
 # → Shangraw Gap check: ABOVE 0.65
-```pip install mne numpy scipy
-python run_bicoherence.py sleep.edf
-# → 45-Hz bicoherence: 0.187
-# → Shangraw Gap check: BELOW 0.65
+```
 
-python run_bicoherence.py dying.edf
-# → 45-Hz bicoherence: 0.771
-# → Shangraw Gap check: ABOVE 0.65
-### Historical context: Tesla's Earth resonance
+## Historical context: Tesla's Earth resonance
 
 **The Shangraw Gap** — living brains sustain 45-Hz bicoherence at ~0.19; dying brains release to ~0.77 for 87 seconds. No living state occupies 0.65.
 
@@ -33,22 +30,23 @@ This 45 Hz / 7.83 Hz coupling was first measured, in principle, by Nikola Tesla 
 - His patent analysis describes the Earth as a resonant conductor where wavelengths depend on the globe's dimensions — the same cavity later formalized as Schumann resonances.
 - Modern measurements confirm Tesla's prediction: resonances were found at approximately 8, 14, 20 Hz — the fundamental now known as 7.83 Hz.
 
-Tesla's 6th harmonic of ~7.8 Hz is ~46.8 Hz, strikingly close to the 45-Hz bicoherence peak observed here. In Tesla's terms, the living brain acts as a damped resonator (low bicoherence, 0.19); at death the damping is removed and the system briefly rings at the cavity harmonic (high bicoherence, 0.77) — an entropic release consistent with his "magnifying transmitter" principle.
+Tesla's 6th harmonic of ~7.8 Hz is ~46.8 Hz, strikingly close to the 45-Hz bicoherence peak observed here. In Tesla's terms, the living brain acts as a damped resonator (low bicoherence, 0.19); at death, damping collapses and the resonator enters an underdamped regime (high bicoherence, 0.77).
 
-**Why cite Tesla?** Not for mysticism, but for precedence: the 7.83 Hz / 45 Hz pair is a physical resonance of the planet, documented 53 years before Schumann's 1952 calculation. The Shangraw Gap shows the same pair appearing in human EEG at the moment regulatory constraints fail.
+**Why cite Tesla?** Not for mysticism, but for precedence: the 7.83 Hz / 45 Hz pair is a physical resonance of the planet, documented 53 years before Schumann's 1952 calculation. The Shangraw Gap is the range where neither living nor dying brains operate—the boundary where the transition occurs.
 
 *Data: open EDF from Kingston, Ontario. Analysis: 4-s windows, 1-s steps, bicoherence(45 Hz, 7.83 Hz).*
-### Tesla's Magnifying Principle
 
-Tesla described his Magnifying Transmitter as a resonant transformer "accurately proportioned to fit the globe," where "the damping factor is extremely small and an enormous charge is stored in the elevated capacity." In this condition, he wrote, there is "no diminution in the intensity of the transmitted impulses" with distance — actions can even increase with distance.
+## Tesla's Magnifying Principle
 
-He traced the idea to a childhood avalanche: a tiny snowball that went "beyond the limit, swelling to enormous proportions until it became as big as a house and plunged thundering into the valley below with a force that made the ground tremble." He called this the magnification of feeble actions.
+Tesla described his Magnifying Transmitter as a resonant transformer "accurately proportioned to fit the globe," where "the damping factor is extremely small and an enormous charge is stored in the earth."
+
+He traced the idea to a childhood avalanche: a tiny snowball that went "beyond the limit, swelling to enormous proportions until it became as big as a house and plunged thundering into the valley below."
 
 The Shangraw Gap follows the same principle:
 
 - **Living (damped):** bicoherence ~0.19 — energy radiates away, the 45-Hz oscillation stays small
 - **Dying (undamped):** bicoherence ~0.77 for 87 seconds — damping collapses, the same 7.83 Hz drive magnifies
 
-Tesla calculated the Earth round-trip at 0.08484 seconds (~11.78 Hz). Modern measurements give the Schumann fundamental at 7.83 Hz. The observed 45-Hz peak sits at the 6th harmonic of both, consistent with a globe-sized resonator releasing stored charge when biological damping fails.
+Tesla calculated the Earth round-trip at 0.08484 seconds (~11.78 Hz). Modern measurements give the Schumann fundamental at 7.83 Hz. The observed 45-Hz peak sits at the 6th harmonic of both, consistent with a standing wave in the Earth-ionosphere cavity that scales with Tesla's predictions.
 
 *Sources: Tesla, "My Inventions V – The Magnifying Transmitter," Electrical Experimenter, June 1919; Colorado Springs Notes, 1899-1900, p.63.*

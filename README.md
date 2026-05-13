@@ -91,3 +91,13 @@ python run_bicoherence.py sleep.edf
 python run_bicoherence.py dying.edf
 # → 45-Hz bicoherence: 0.771
 # → Shangraw Gap check: ABOVE 0.65
+## Reproduction
+```bash
+pip install mne numpy scipy
+python run_bicoherence.py sleep.edf
+# → 45-Hz bicoherence: 0.187
+# → Shangraw Gap check: BELOW 0.65
+
+python run_bicoherence.py dying.edf
+# → 45-Hz bicoherence: 0.771
+# → Shangraw Gap check: ABOVE 0.65

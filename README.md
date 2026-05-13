@@ -81,7 +81,20 @@ python run_bicoherence.py dying.edf
 # â†’ 45-Hz bicoherence: 0.771
 # â†’ Shangraw Gap check: ABOVE 0.65
 # â†’ Hold time above threshold: 87.0 s
-```
+```## Visualize the Gap
+
+```bash
+python run_bicoherence.py dying.edf --plot
+# → 45-Hz bicoherence: 0.771
+# → Shangraw Gap check: ABOVE 0.65
+# → Hold time above threshold: 87.0 s
+# → Saved plot: dying_edf_map.png
+
+python run_bicoherence.py sleep.edf --plot
+# → 45-Hz bicoherence: 0.187
+# → Shangraw Gap check: BELOW 0.65
+# → Hold time above threshold: 0.0 s
+# → Saved plot: sleep_edf_map.png
 
 ---
 

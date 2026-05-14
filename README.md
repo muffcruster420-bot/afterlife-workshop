@@ -1,4 +1,4 @@
-Measured hold time: 87.0 seconds above 0.65 threshold n=2 living, n=1 dying.edf, 4-second windows, 1-second steps Peak bicoherence 0.771 at 45 Hz (7.83 + 37.17 Hz coupling)
+Measured hold time: 87.0 seconds above 0.65 threshold n=2 living, n=1 dying — total n=3 canonical, 4-second windows, 1-second steps Peak bicoherence 0.771 at 45 Hz (7.83 + 37.17 Hz coupling)
 
 # The Afterlife Workshop
 Jesse Shangraw — Kingston, Ontario — May 9, 2026

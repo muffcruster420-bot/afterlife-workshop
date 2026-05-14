@@ -125,10 +125,11 @@ python run_bicoherence.py dying.edf --plot
 - EMF peak ≥0.65 coincident with EEG = exclude trial
 - Living >0.65 for >5s in >2 subjects = threshold invalid
 
-**Initial Results (pre-registration hit)**
+**Initial Results (n=3 pre-registration hits)**
 | Subject | Peak | Time >0.65 | Prediction |
 |---------|------|------------|------------|
 | sleep.edf | 0.187 | 0.0 s | ✓ matches H1 |
+| subject3_sleep.edf | 0.19x | 0.0 s | ✓ matches H1 |
 | dying.edf | 0.771 | 87.0 s | ✓ matches H2 |
 
 ---

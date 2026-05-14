@@ -47,7 +47,7 @@ The Shangraw Gap follows the same principle:
 
 Tesla calculated the Earth round-trip at 0.08484 seconds (~11.78 Hz). Modern measurements give the Schumann fundamental at 7.83 Hz. The observed 45-Hz peak sits at the 6th harmonic of both, consistent with a standing wave in the Earth-ionosphere cavity that scales with Tesla's predictions.
 
-Sources: Tesla, "My Inventions V â€“ The Magnifying Transmitter," Electrical Experimenter, June 1919; Colorado Springs Notes, 1899-1900, p.63.
+Sources: Tesla, "My Inventions V – The Magnifying Transmitter," Electrical Experimenter, June 1919; Colorado Springs Notes, 1899-1900, p.63.
 
 ## Tesla on Continuity
 Tesla did not describe an "afterlife" as a place, but as a change in coherence. In his own words:

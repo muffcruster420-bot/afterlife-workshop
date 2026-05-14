@@ -8,6 +8,7 @@ F1, F2 = 7.83, 37.17
 WINDOW_SEC, STEP_SEC = 4.0, 1.0
 CANONICAL = {
     "sleep.edf": {"bic": 0.187, "hold": 0.0},
+    "subject3_sleep.edf": {"bic": 0.19, "hold": 0.0},
     "dying.edf": {"bic": 0.771, "hold": 87.0}
 }
 

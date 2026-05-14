@@ -130,3 +130,7 @@ python run_bicoherence.py dying.edf --plot
 |---------|------|------------|------------|
 | sleep.edf | 0.187 | 0.0 s | ✓ matches H1 |
 | dying.edf | 0.771 | 87.0 s | ✓ matches H2 |
+
+---
+
+Follow: [@muffcruster420 on Threads](https://www.threads.net/@muffcruster420)

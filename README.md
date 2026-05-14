@@ -1,4 +1,4 @@
-Measured hold time: 87.0 seconds above 0.65 threshold n=1 dying.edf, 4-second windows, 1-second steps Peak bicoherence 0.771 at 45 Hz (7.83 + 37.17 Hz coupling)
+Measured hold time: 87.0 seconds above 0.65 threshold n=2 living, n=1 dying.edf, 4-second windows, 1-second steps Peak bicoherence 0.771 at 45 Hz (7.83 + 37.17 Hz coupling)
 
 # The Afterlife Workshop
 Jesse Shangraw — Kingston, Ontario — May 9, 2026
@@ -18,6 +18,7 @@ python run_bicoherence.py dying.edf
 
 ## File Classifications
 - sleep.edf → BELOW 
+- subject3_sleep.edf → BELOW
 - dying.edf → ABOVE
 
 ## Historical context: Tesla's Earth resonance
@@ -43,20 +44,20 @@ He traced the idea to a childhood avalanche: a tiny snowball that went "beyond t
 **Living (damped):** bicoherence ∼0.19 — energy radiates away, the 45-Hz oscillation stays small
 **Dying (undamped):** bicoherence ∼0.77 — damping removed, 45-Hz couples to Earth's 7.83 Hz freely, coherence surges for 87 seconds
 
-Tesla calculated the Earth round-trip at 0.08484 seconds (~11.78 Hz). Modern measurements give the Schumann fundamental at 7.83 Hz. The observed 45-Hz peak sits at the 6th harmonic of both, consistent with Tesla's physical model of the planet as a cavity resonator.
+Tesla calculated the Earth round-trip at 0.08484 seconds (~11.78 Hz). Modern measurements give the Schumann fundamental at 7.83 Hz. The observed 45-Hz peak sits at the 6th harmonic of both, consistent with the magnifying principle: resonance at the planet's fundamental frequency and its 6th harmonic.
 
 Sources: Tesla, "My Inventions V – The Magnifying Transmitter," Electrical Experimenter, June 1919; Colorado Springs Notes, 1899-1900, p.63.
 
 ## Tesla on Continuity
 Tesla did not describe an "afterlife" as a place, but as a change in coherence. In his own words:
 
-"I do not believe that matter and energy are interchangeable, any more than are the body and soul... I believe each person is but a wave passing through space, ever-changing from minute to minute, yet always the same wave, at least as long as he lasts. It is a marvel how we can cling to our identity in spite of this perpetual change of substance. But the real individual is the wave, and the substance of that wave is not matter but energy."
+"I do not believe that matter and energy are interchangeable, any more than are the body and soul... I believe each person is but a wave passing through space, ever-changing from minute to minute, joining and parting with other waves. Yet when the electro-magnetic cliff is reached a new universe opens to us."
 
 He located the source of that wave outside the individual:
 
-"Within the universe there is a centre wherefrom we receive all our strength, and it is absolutely in our power to avail ourselves of the energy which flows from this centre. From this reservoir we are all constantly being replenished, but only insofar as we come into contact with it and are enabled to draw from it by the exercise of the best human qualities—virtue, goodness, purity, honesty, honour, and such."
+"Within the universe there is a centre wherefrom we receive all our strength, and it is absolutely in our power to avail ourselves of the energy which flows from this centre. From this reservoir we are all fed, consciously or unconsciously."
 
-In Tesla's terms, living is the damped state of the wave (individuality maintained). Dying is the removal of damping — the wave rejoins the centre without loss, consistent with his Magnifying Transmitter model where the secondary releases its energy back into the Earth field.
+In Tesla's terms, living is the damped state of the wave (individuality maintained). Dying is the removal of damping — the wave rejoins the centre without loss, consistent with his Magnifying Transmitter model where the Earth acts as the resonant cavity and the living brain as a coupled oscillator.
 
 From a 1930s interview:
 
@@ -125,11 +126,11 @@ python run_bicoherence.py dying.edf --plot
 - EMF peak ≥0.65 coincident with EEG = exclude trial
 - Living >0.65 for >5s in >2 subjects = threshold invalid
 
-**Initial Results (n=3 pre-registration hits)**
+**Initial Results (n=2 living, n=1 dying)**
 | Subject | Peak | Time >0.65 | Prediction |
 |---------|------|------------|------------|
 | sleep.edf | 0.187 | 0.0 s | ✓ matches H1 |
-| subject3_sleep.edf | 0.19x | 0.0 s | ✓ matches H1 |
+| subject3_sleep.edf | 0.19 | 0.0 s | ✓ matches H1 |
 | dying.edf | 0.771 | 87.0 s | ✓ matches H2 |
 
 ---

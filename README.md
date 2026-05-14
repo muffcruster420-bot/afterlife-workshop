@@ -101,3 +101,32 @@ python run_bicoherence.py dying.edf --plot
 1. Tesla, quoted in Lubardić, "Nikola Tesla and the Serbian Orthodox Church" (2013), citing 1930s interview notes.
 2. Ibid.
 3. Tesla, "The Problem of Increasing Human Energy," Century Illustrated Magazine, June 1900, p.177.
+
+---
+
+## Pre-registered Predictions (v1.1 — May 11, 2026)
+
+**Location:** Kingston, ON — Jesse Shangraw  
+**Analysis:** `shangraw_gap_analyzer.py v1.1`
+
+**Method**
+- Window: 4-s, step 1-s
+- Pre-processing: notch filter at 60, 120, 180 Hz
+- Bicoherence: | mean( exp( j * (φ45Hz – 6 × φ7.83Hz) ) ) |
+- Frequencies: f1 = 7.83 Hz (Schumann), f2 = 45 Hz
+- **Threshold for 'lock': 0.65** (chosen before new data)
+
+**Hypotheses (n=10 dying vs n=10 living)**
+1. Living sleep: median ≈ 0.19, peak < 0.40, time >0.65 = 0 s
+2. Dying: median ≈ 0.19, peak ≈ 0.77 ± 0.05, time >0.65 = 60–90 s
+3. EMF control: peak < 0.30, time >0.65 = 0 s
+
+**Falsification**
+- EMF peak ≥0.65 coincident with EEG = exclude trial
+- Living >0.65 for >5s in >2 subjects = threshold invalid
+
+**Initial Results (pre-registration hit)**
+| Subject | Peak | Time >0.65 | Prediction |
+|---------|------|------------|------------|
+| sleep.edf | 0.187 | 0.0 s | ✓ matches H1 |
+| dying.edf | 0.771 | 87.0 s | ✓ matches H2 |

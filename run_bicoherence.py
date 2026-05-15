@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# Shangraw Gap detector v0.2.0 - 7.83 Hz + 37.17 Hz = 45 Hz
+
 import sys, numpy as np
 import mne
 from scipy.signal import stft

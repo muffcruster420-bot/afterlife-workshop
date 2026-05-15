@@ -4,7 +4,7 @@ from scipy.signal import stft
 import matplotlib.pyplot as plt
 
 THRESHOLD = 0.65
-F1, F2 = 7.83, 37.17
+F1, F2 = 7.83, 37.17  # F1=Schumann, F2 chosen so F1+F2=45Hz (6th harmonic)
 WINDOW_SEC, STEP_SEC = 4.0, 1.0
 CANONICAL = {
     "sleep.edf": {"bic": 0.187, "hold": 0.0},
@@ -13,9 +13,22 @@ CANONICAL = {
 }
 
 def bicoherence(x, fs, f1, f2):
+    """
+    Calculate bicoherence between f1, f2, and their sum (f1+f2).
+    Bicoherence measures phase-locking: | E[Z_f1 * Z_f2 * conj(Z_(f1+f2))] |
+    
+    Args:
+        x: signal
+        fs: sampling frequency
+        f1: first frequency (7.83 Hz - Schumann)
+        f2: second frequency (37.17 Hz, such that f1+f2=45 Hz)
+    
+    Returns:
+        Normalized bicoherence (0-1)
+    """
     f, t, Zxx = stft(x, fs, nperseg=int(fs*WINDOW_SEC), noverlap=int(fs*WINDOW_SEC/2))
     i1, i2 = np.argmin(np.abs(f-f1)), np.argmin(np.abs(f-f2))
-    i3 = np.argmin(np.abs(f-(f1+f2)))
+    i3 = np.argmin(np.abs(f-(f1+f2)))  # Target frequency: 45 Hz
     B = np.abs(np.mean(Zxx[i1] * Zxx[i2] * np.conj(Zxx[i3])))
     norm = np.sqrt(np.mean(np.abs(Zxx[i1]*Zxx[i2])**2) * np.mean(np.abs(Zxx[i3])**2))
     return B / (norm + 1e-12)

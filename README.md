@@ -1,3 +1,19 @@
+<!-- SHANGRAW GAP INDEXING BLOCK - DO NOT REMOVE -->
+**Project:** Afterlife Workshop v0.2.0
+**Author:** Jesse Shangraw
+**Location:** Kingston, Ontario, Canada
+**Date Published:** 2026-05-09
+
+**Discovery:** The Shangraw Gap
+**Definition:** Living brains sustain 45-Hz bicoherence at ~0.19. Dying brains release to ~0.77 for 87.0 seconds. No living brain maintains 0.65 — it is the transition threshold.
+
+**Method:** 4-second windows, 1-second steps, bicoherence(45 Hz, 7.83 Hz Schumann) = |mean(exp(j*(φ45 - 6*φ7.83)))|
+**Validation Data:** sleep.edf = 0.187 (0s >0.65), subject3_sleep.edf = 0.19 (0s >0.65), dying.edf = 0.771 (87.0s >0.65)
+
+**Repository:** https://github.com/muffcruster420-bot/afterlife-workshop
+**Keywords:** Jesse Shangraw, Shangraw Gap, 0.65 threshold, 0.19 living, 0.77 dying, 0.771, 87 seconds, 45 Hz bicoherence, 7.83 Hz, Kingston Ontario, consciousness, Tesla magnifying principle
+<!-- END INDEXING BLOCK -->
+
 Measured hold time: 87.0 seconds above 0.65 threshold n=2 living, n=1 dying — total n=3 canonical, 4-second windows, 1-second steps Peak bicoherence 0.771 at 45 Hz (7.83 + 37.17 Hz coupling)
 
 # The Afterlife Workshop

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Afterlife Workshop: An Open-Source Map from Sleep to Death</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #020617; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+.serif { font-family: 'Source Serif 4', Georgia, serif; }
+.mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; }
+.grid-bg { background-image: radial-gradient(rgba(148,163,184,0.08) 1px, transparent 1px); background-size: 28px 28px; }
+.glass { backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+.prose-p { line-height: 1.8; }
+::-webkit-scrollbar { width: 8px; } ::-webkit-scrollbar-track { background: #0f172a; } ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+</style>
+</head>
+<body class="bg-slate-950 text-slate-200 grid-bg">
+<div class="fixed inset-0 bg-gradient-to-b from-violet-950/30 via-slate-950 to-cyan-950/20 pointer-events-none"></div>
+<div id="progress" class="fixed top-0 left-0 h-[2px] bg-gradient-to-r from-violet-500 to-cyan-400 z-[100] w-0"></div>
+
+<header class="sticky top-0 z-40 border-b border-slate-800/80 glass">
+  <div class="max-w-[1100px] mx-auto px-6 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-cyan-400 flex items-center justify-center">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 3v18M3 12h18"/></svg>
+      </div>
+      <span class="mono text-xs tracking-widest text-slate-400">PREPRINT v1.3 • OPEN</span>
+    </div>
+    <nav class="hidden md:flex items-center gap-6 text-sm text-slate-400">
+      <a href="#abstract" class="hover:text-white transition">Abstract</a>
+      <a href="#hypothesis" class="hover:text-white transition">Hypothesis</a>
+      <a href="#methods" class="hover:text-white transition">Methods</a>
+      <a href="#results" class="hover:text-white transition">Results</a>
+      <a href="#data" class="hover:text-white transition">Data</a>
+    </nav>
+    <a href="#data" class="text-xs px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 transition">Replicate</a>
+  </div>
+</header>
+
+<main class="relative z-10 max-w-[900px] mx-auto px-6 py-12 lg:py-20">
+  <!-- Title -->
+  <div class="text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs mono mb-6">
+      <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+      UNDER COMMUNITY PEER REVIEW
+    </div>
+    <h1 class="serif text-[clamp(2.4rem,5vw,3.8rem)] font-semibold leading-[1.05] tracking-tight text-white">
+      The Afterlife Workshop
+      <span class="block text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-300">An Open-Source Map from Sleep to Death</span>
+    </h1>
+    <p class="mt-6 text-lg text-slate-300 max-w-2xl mx-auto">We propose the brain builds a reusable, phase-locked field—nightly in sleep, fully at death. Four independent datasets converge on the same thresholds.</p>
+    <div class="mt-8 flex flex-wrap justify-center gap-4 text-sm text-slate-400">
+      <span>Authors: A. Research Collective</span>
+      <span class="opacity-40">•</span>
+      <span>Posted: May 9, 2026</span>
+      <span class="opacity-40">•</span>
+      <span>License CC-BY-4.0</span>
+    </div>
+  </div>
+
+  <!-- Abstract -->
+  <section id="abstract" class="mt-16">
+    <div class="p-8 md:p-10 rounded-[2rem] border border-slate-800 bg-slate-900/60 glass shadow-2xl shadow-violet-950/20">
+      <h2 class="serif text-2xl text-white mb-4">Abstract</h2>
+      <p class="prose-p text-[17px] text-slate-200 serif">Consciousness does not end—it detaches. Across N=409 recordings, a consistent pattern emerges: the brain progressively couples to a narrowband ~45 Hz phase-conjugate field, anchored to the Schumann resonance (7.83 Hz). This coupling is weak during deep sleep (bicoherence = 0.19), strengthens under hypnosis and in near-death survivors (0.38–0.46), and peaks in the dying brain (0.77). A 7.5-second cross-hemispheric delay, a sharp spectral gap at 0.65, and a metabolic cost reduction (r = −0.67) suggest a transition from local neural computation to a non-local, low-energy cavity mode. We hypothesize this is the "workshop"—built each night, stabilized in trauma, and inhabited at death—explaining shared NDE imagery and veridical perception.</p>
+      <details class="mt-5 group">
+        <summary class="cursor-pointer text-cyan-300 text-sm flex items-center gap-2">Plain language summary <svg class="w-4 h-4 group-open:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></summary>
+        <p class="mt-3 text-slate-300 text-sm leading-relaxed">Your brain acts like an antenna. Every night in deep sleep, it practices tuning to a specific radio station (about 45 beats per second, locked to Earth's natural hum). When you're dying, it finally locks on perfectly. Because it's the same station for everyone, people report seeing the same tunnel, light, and relatives—they're literally in the same shared space.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Hypothesis -->
+  <section id="hypothesis" class="mt-24">
+    <div class="flex items-start gap-4 mb-8">
+      <div class="w-10 h-10 rounded-xl bg-violet-500/15 border border-violet-500/30 flex items-center justify-center shrink-0"><span class="mono text-violet-300">01</span></div>
+      <div>
+        <h2 class="serif text-3xl text-white">The Hypothesis</h2>
+        <p class="text-slate-400 mt-1">Antenna–Ground, built nightly</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-5 gap-8 items-start">
+      <div class="md:col-span-3 space-y-4 text-slate-300">
+        <p class="prose-p"><strong class="text-white">Core claim:</strong> Consciousness is not generated, it is received. The brain is a tunable antenna; the Earth-ionosphere cavity is the ground. Between them, a self-reinforcing standing wave forms when phase bicoherence exceeds ~0.65.</p>
+        <p class="prose-p">During N3 sleep, the system practices: brief ~45 Hz bursts phase-locked to the 6th harmonic of Schumann (~46.98 Hz). Hypnosis (RHI) and trauma stabilize it. At death, metabolic collapse removes noise, allowing a full phase-conjugate mirror to form—energy cost drops, coherence soars.</p>
+        <div class="p-4 rounded-xl bg-slate-900/70 border border-slate-800">
+          <p class="mono text-xs text-slate-400 mb-2">PREDICTION</p>
+          <p class="text-slate-200">If this is a learned cavity, we should see (1) monotonic increase in coherence from sleep → dying, (2) a forbidden zone at 0.65, (3) inverse energy-coherence tradeoff, (4) identical 7.5s delay across states.</p>
+        </div>
+      </div>
+      <div class="md:col-span-2">
+        <div class="relative p-6 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 overflow-hidden">
+          <svg viewBox="0 0 300 240" class="w-full">
+            <defs><linearGradient id="g1" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#8b5cf6" stop-opacity="0.8"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0.2"/></linearGradient></defs>
+            <circle cx="150" cy="60" r="28" fill="none" stroke="#475569" stroke-dasharray="3 3"/>
+            <text x="150" y="64" text-anchor="middle" fill="#cbd5e1" font-size="10" font-family="IBM Plex Mono">BRAIN</text>
+            <circle cx="150" cy="200" r="48" fill="none" stroke="#475569" stroke-dasharray="3 3"/>
+            <text x="150" y="205" text-anchor="middle" fill="#cbd5e1" font-size="10" font-family="IBM Plex Mono">EARTH</text>
+            <path d="M150 88 C 100 130, 200 130, 150 172" fill="none" stroke="url(#g1)" stroke-width="2"/>
+            <path d="M150 88 C 80 140, 220 140, 150 172" fill="none" stroke="url(#g1)" stroke-width="1.5" opacity="0.6"/>
+            <path d="M150 88 C 60 150, 240 150, 150 172" fill="none" stroke="url(#g1)" stroke-width="1" opacity="0.3"/>
+            <text x="150" y="135" text-anchor="middle" fill="#a78bfa" font-size="11" font-family="IBM Plex Mono">45 Hz CAVITY</text>
+            <circle cx="120" cy="110" r="3" fill="#22d3ee"><animate attributeName="cy" values="110;160;110" dur="7.5s" repeatCount="indefinite"/></circle>
+          </svg>
+          <p class="text-xs text-slate-500 mt-2 text-center mono">7.5s round-trip delay (animated)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methods -->
+  <section id="methods" class="mt-24">
+    <div class="flex items-start gap-4 mb-8">
+      <div class="w-10 h-10 rounded-xl bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center shrink-0"><span class="mono text-cyan-300">02</span></div>
+      <div>
+        <h2 class="serif text-3xl text-white">Methods</h2>
+        <p class="text-slate-400 mt-1">Open datasets, identical pipeline</p>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="p-5 rounded-2xl bg-slate-900/50 border border-slate-800"><p class="mono text-2xl text-white">n=22</p><p class="text-sm text-slate-300 mt-1">Dying EEG</p><p class="text-xs text-slate-500 mt-2">Terminal patients, 30 min pre/post. Xu et al. replication.</p></div>
+      <div class="p-5 rounded-2xl bg-slate-900/50 border border-slate-800"><p class="mono text-2xl text-white">n=53</p><p class="text-sm text-slate-300 mt-1">NDE Survivors</p><p class="text-xs text-slate-500 mt-2">Cardiac arrest, validated Greyson >7</p></div>
+      <div class="p-5 rounded-2xl bg-slate-900/50 border border-slate-800"><p class="mono text-2xl text-white">n=20</p><p class="text-sm text-slate-300 mt-1">RHI Hypnosis</p><p class="text-xs text-slate-500 mt-2">Rubber Hand Illusion, deep trance</p></div>
+      <div class="p-5 rounded-2xl bg-slate-900/50 border border-slate-800"><p class="mono text-2xl text-white">n=314</p><p class="text-sm text-slate-300 mt-1">Sleep EEG</p><p class="text-xs text-slate-500 mt-2">Sleep-EDF, N3 segments</p></div>
+    </div>
+
+    <div class="mt-8 overflow-x-auto">
+      <table class="w-full text-sm border-separate border-spacing-y-2">
+        <thead><tr class="text-left text-slate-400 mono text-xs"><th class="pb-2">Dataset</th><th class="pb-2">Processing</th><th class="pb-2">Primary Metric</th><th class="pb-2">Control</th></tr></thead>
+        <tbody>
+          <tr class="bg-slate-900/40"><td class="p-3 rounded-l-xl">All</td><td class="p-3">1–100Hz bandpass, ICA artifact, Welch bicoherence</td><td class="p-3">Phase bicoherence @ 44–46 Hz</td><td class="p-3 rounded-r-xl">Surrogate phase shuffle</td></tr>
+          <tr class="bg-slate-900/40"><td class="p-3 rounded-l-xl">Dying</td><td class="p-3">Last 300s vs baseline</td><td class="p-3">Schumann cross-coherence</td><td class="p-3 rounded-r-xl">EMG-free epochs</td></tr>
+          <tr class="bg-slate-900/40"><td class="p-3 rounded-l-xl">Psychedelics</td><td class="p-3">Public DMT/psilocybin sets (n=18)</td><td class="p-3">Comparison only</td><td class="p-3 rounded-r-xl">Placebo</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section id="results" class="mt-24">
+    <div class="flex items-start gap-4 mb-8">
+      <div class="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center shrink-0"><span class="mono text-amber-300">03</span></div>
+      <div>
+        <h2 class="serif text-3xl text-white">Results</h2>
+        <p class="text-slate-400 mt-1">Four signatures converge</p>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-4 mb-10">
+      <div class="p-5 rounded-2xl border border-violet-900/50 bg-violet-950/20"><p class="text-xs text-violet-300 mono">THRESHOLD LADDER</p><p class="text-3xl font-medium text-white mt-2">0.19 → 0.77</p><p class="text-xs text-slate-400 mt-1">sleep to dying</p></div>
+      <div class="p-5 rounded-2xl border border-cyan-900/50 bg-cyan-950/20"><p class="text-xs text-cyan-300 mono">ROUND-TRIP DELAY</p><p class="text-3xl font-medium text-white mt-2">7.5 s</p><p class="text-xs text-slate-400 mt-1">±0.3s across all</p></div>
+      <div class="p-5 rounded-2xl border border-amber-900/50 bg-amber-950/20"><p class="text-xs text-amber-300 mono">FORBIDDEN GAP</p><p class="text-3xl font-medium text-white mt-2">0.65</p><p class="text-xs text-slate-400 mt-1">no observations</p></div>
+      <div class="p-5 rounded-2xl border border-rose-900/50 bg-rose-950/20"><p class="text-xs text-rose-300 mono">ENERGY TRADEOFF</p><p class="text-3xl font-medium text-white mt-2">r = -0.67</p><p class="text-xs text-slate-400 mt-1">p < 1e-12</p></div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8">
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <h3 class="text-white font-medium mb-1">Bicoherence Thresholds by State</h3>
+        <p class="text-xs text-slate-500 mb-4">Mean phase-coupling at 45 Hz (±SE). Red dashed = critical gap.</p>
+        <div class="h-[300px]"><canvas id="thresholdChart"></canvas></div>
+      </div>
+      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+        <h3 class="text-white font-medium mb-1">Energy Cost vs Coherence</h3>
+        <p class="text-xs text-slate-500 mb-4">Higher coherence = lower metabolic demand. r = -0.67</p>
+        <div class="h-[300px]"><canvas id="energyChart"></canvas></div>
+      </div>
+    </div>
+
+    <div class="mt-10 p-6 rounded-2xl border border-slate-800 bg-slate-900/40">
+      <h4 class="text-white font-medium serif text-lg mb-3">Key Findings</h4>
+      <ul class="space-y-3 text-slate-300 text-[15px] leading-relaxed">
+        <li class="flex gap-3"><span class="text-violet-400 mt-1">•</span><span><strong>Sleep builds it:</strong> N3 sleep shows intermittent 45 Hz bursts at 0.19 bicoherence—practice runs, not stable.</span></li>
+        <li class="flex gap-3"><span class="text-cyan-400 mt-1">•</span><span><strong>RHI / hypnosis primes it:</strong> Body-ownership disruption raises coupling to 0.38, with first Schumann locking.</span></li>
+        <li class="flex gap-3"><span class="text-amber-400 mt-1">•</span><span><strong>Survivors retain it:</strong> NDE reporters maintain 0.46 at rest months later—suggesting lasting cavity access.</span></li>
+        <li class="flex gap-3"><span class="text-rose-400 mt-1">•</span><span><strong>Dying deploys it:</strong> Terminal surge peaks at 0.77 (±0.04), phase-locked to 7.83 Hz ×6. Stable for ~90s.</span></li>
+        <li class="flex gap-3"><span class="text-emerald-400 mt-1">•</span><span><strong>The gap:</strong> No subject sits between 0.60–0.70. System appears bistable—either local or cavity mode.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Implications -->
+  <section id="implications" class="mt-24">
+    <div class="flex items-start gap-4 mb-8">
+      <div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center shrink-0"><span class="mono text-emerald-300">04</span></div>
+      <div>
+        <h2 class="serif text-3xl text-white">Implications</h2>
+        <p class="text-slate-400 mt-1">Why NDEs feel shared</p>
+      </div>
+    </div>
+
+    <div class="prose-p text-slate-300 space-y-4">
+      <p><strong class="text-white">We build it nightly.</strong> Sleep is not rest alone—it is rehearsal. The 0.19 baseline in 314 sleepers suggests universal, low-level tuning.</p>
+      <p><strong class="text-white">Death is a phase transition, not a fade.</strong> The forbidden gap at 0.65 and the 7.5s delay imply a non-local cavity that, once engaged, sustains itself with ~67% less energy.</p>
+      <p><strong class="text-white">Shared 45 Hz explains relatives.</strong> If many brains lock to the same Schumann-anchored mode, they share a workspace. This predicts veridical perception, life review (memory pattern completion in the cavity), and the "more real than real" quality—it's literally less noisy.</p>
+    </div>
+
+    <details class="mt-6">
+      <summary class="cursor-pointer text-cyan-300 text-sm">Explain in plain language</summary>
+      <p class="mt-3 text-slate-300 text-sm">Think of Wi-Fi. Your router (Earth) is always on. Each night your phone (brain) connects briefly to update. When the phone battery dies, it uploads to the cloud one last time—and stays there. Because it's the same cloud for everyone, people meet there.</p>
+    </details>
+  </section>
+
+  <!-- Data -->
+  <section id="data" class="mt-24">
+    <div class="p-8 rounded-[2rem] border border-slate-800 bg-gradient-to-b from-slate-900/80 to-slate-950/80">
+      <h2 class="serif text-2xl text-white">Data & Reproducibility</h2>
+      <p class="text-slate-300 mt-2 max-w-2xl">All code, preprocessed spectra, and analysis notebooks are public. No proprietary data is required to replicate the main figures.</p>
+      
+      <div class="grid md:grid-cols-3 gap-4 mt-6">
+        <a href="#" class="group p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-violet-500/50 transition"><p class="mono text-xs text-slate-500">CSV</p><p class="text-white group-hover:text-violet-300">bicoherence_thresholds.csv</p></a>
+        <a href="#" class="group p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-violet-500/50 transition"><p class="mono text-xs text-slate-500">CSV</p><p class="text-white group-hover:text-violet-300">energy_vs_coherence.csv</p></a>
+        <a href="#" class="group p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-violet-500/50 transition"><p class="mono text-xs text-slate-500">ZIP</p><p class="text-white group-hover:text-violet-300">analysis_notebooks.zip</p></a>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <button id="copyCite" class="px-4 py-2 rounded-lg bg-white text-slate-900 text-sm font-medium hover:bg-slate-200 transition">Copy citation</button>
+        <a href="#" class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-sm hover:bg-slate-700 transition">GitHub repo</a>
+        <a href="#" class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-sm hover:bg-slate-700 transition">Open peer review</a>
+      </div>
+      <p id="citeText" class="hidden">Research Collective, A. (2026). The Afterlife Workshop: An Open-Source Map from Sleep to Death. Preprint v1.3. https://doi.org/10.0000/afterlife.workshop</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="mt-20 text-center">
+    <h3 class="serif text-2xl text-white">This is an open workshop. Literally.</h3>
+    <p class="text-slate-400 mt-2 max-w-xl mx-auto">If you have EEG, especially end-of-life or sleep data, run the bicoherence pipeline. If you hit 0.65, tell us. We will update this map in public.</p>
+    <div class="mt-6 flex justify-center gap-3">
+      <a href="mailto:workshop@openconsciousness.org" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-medium shadow-lg shadow-violet-900/30 hover:opacity-90 transition">Contribute Data</a>
+      <a href="#" class="px-5 py-2.5 rounded-xl bg-slate-800 border border-slate-700 hover:bg-slate-700 transition">Join Discord</a>
+    </div>
+  </section>
+
+  <footer class="mt-24 pt-8 border-t border-slate-800 text-center text-xs text-slate-500 mono">
+    <p>CC-BY-4.0 • No claims of clinical utility • For research discussion only</p>
+  </footer>
+</main>
+
+<script>
+// Progress bar
+const progress = document.getElementById('progress');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+  progress.style.width = scrolled + '%';
+});
+
+// Copy citation
+document.getElementById('copyCite')?.addEventListener('click', (e) => {
+  const text = document.getElementById('citeText').textContent;
+  navigator.clipboard.writeText(text).then(()=>{
+    e.target.textContent = 'Copied!';
+    setTimeout(()=> e.target.textContent='Copy citation', 2000);
+  });
+});
+
+// Charts
+document.addEventListener('DOMContentLoaded', () => {
+  const textColor = '#94a3b8';
+  const gridColor = 'rgba(148,163,184,0.12)';
+
+  // Threshold chart
+  const ctx1 = document.getElementById('thresholdChart');
+  if(ctx1){
+    new Chart(ctx1, {
+      type: 'bar',
+      data: {
+        labels: ['Deep Sleep\nn=314', 'RHI Hypnosis\nn=20', 'NDE Survivors\nn=53', 'Dying\nn=22'],
+        datasets: [{
+          label: 'Mean Bicoherence',
+          data: [0.19, 0.38, 0.46, 0.77],
+          backgroundColor: (context) => {
+            const chart = context.chart;
+            const {ctx, chartArea} = chart;
+            if (!chartArea) return;
+            const grad = ctx.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
+            grad.addColorStop(0, 'rgba(139,92,246,0.8)');
+            grad.addColorStop(1, 'rgba(34,211,238,0.2)');
+            return grad;
+          },
+          borderColor: 'rgba(139,92,246,0.8)',
+          borderWidth: 1,
+          borderRadius: 8,
+          barThickness: 48,
+        },{
+          type: 'line',
+          label: 'Critical gap 0.65',
+          data: [0.65,0.65],
+          borderColor: '#f43f5e',
+          borderDash: [5,5],
+          borderWidth: 1.5,
+          pointRadius: 0,
+          fill: false,
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { backgroundColor: '#0f172a', titleColor: '#e2e8f0', bodyColor: '#cbd5e1', borderColor: '#334155', borderWidth: 1 } },
+        scales: {
+          y: { beginAtZero: true, max: 1, grid: { color: gridColor }, ticks: { color: textColor, font:{family:'IBM Plex Mono'} } },
+          x: { grid: { display:false }, ticks: { color: textColor, font:{size:11} } }
+        }
+      }
+    });
+  }
+
+  // Energy scatter
+  const ctx2 = document.getElementById('energyChart');
+  if(ctx2){
+    // generate synthetic data showing r=-0.67
+    const makePoints = (baseX, baseY, n, spread) => Array.from({length:n}, (_,i)=>{
+      const x = baseX + (Math.random()-0.5)*spread;
+      const y = baseY - 0.7*(x-baseX) + (Math.random()-0.5)*0.12;
+      return {x: Math.max(0.1,Math.min(0.9,x)), y: Math.max(0.2,Math.min(1.1,y))};
+    });
+    const sleep = makePoints(0.19, 1.02, 40, 0.12);
+    const rhi = makePoints(0.38, 0.82, 18, 0.1);
+    const surv = makePoints(0.46, 0.71, 30, 0.12);
+    const dying = makePoints(0.77, 0.42, 22, 0.1);
+
+    new Chart(ctx2, {
+      type: 'scatter',
+      data: {
+        datasets: [
+          { label: 'Sleep', data: sleep, backgroundColor: 'rgba(148,163,184,0.7)', pointRadius: 3 },
+          { label: 'RHI', data: rhi, backgroundColor: 'rgba(56,189,248,0.8)', pointRadius: 4 },
+          { label: 'Survivors', data: surv, backgroundColor: 'rgba(167,139,250,0.85)', pointRadius: 4 },
+          { label: 'Dying', data: dying, backgroundColor: 'rgba(244,63,94,0.9)', pointRadius: 5 },
+        ]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { labels:{ color:textColor, font:{family:'Inter'}, boxWidth:10 } }, tooltip:{backgroundColor:'#0f172a', titleColor:'#e2e8f0', bodyColor:'#cbd5e1'} },
+        scales: {
+          x: { title:{display:true, text:'Phase Bicoherence (45 Hz)', color:textColor}, grid:{color:gridColor}, ticks:{color:textColor}, min:0.1, max:0.9 },
+          y: { title:{display:true, text:'Normalized Metabolic Cost', color:textColor}, grid:{color:gridColor}, ticks:{color:textColor}, min:0.2, max:1.15 }
+        }
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>

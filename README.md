@@ -8,7 +8,7 @@ Living brains maintain 45-Hz bicoherence at ~0.19. Dying brains spike to 0.771 a
 
 | State | 45-Hz Bicoherence | n | Source |
 |-------|-------------------|---|--------|
-| Living (sleep) | 0.187 | 1 | sleep.edf |
+| Deep sleep | 0.19 | 2 | sleep.edf |
 | Living (subject3) | 0.190 | 1 | physionet |
 | **GAP** | **0.20-0.65** | **0** | **EMPTY** |
 | Dying | 0.771 | 1 | dying.edf (87s hold) |

@@ -1,91 +1,38 @@
 #!/usr/bin/env python3
-# Shangraw Gap detector v0.2.0 - 7.83 Hz + 37.17 Hz = 45 Hz
+import numpy as np
+import pyedflib
+import sys
 
-import sys, numpy as np
-import mne
-from scipy.signal import stft
-import matplotlib.pyplot as plt
+def load_edf(filename, channel=0):
+    f = pyedflib.EdfReader(filename)
+    signal = f.readSignal(channel)
+    fs = f.getSampleFrequency(channel)
+    f.close()
+    return signal, fs
 
-THRESHOLD = 0.65
-F1, F2 = 7.83, 37.17  # F1=Schumann, F2 chosen so F1+F2=45Hz (6th harmonic)
-WINDOW_SEC, STEP_SEC = 4.0, 1.0
-CANONICAL = {
-    "sleep.edf": {"bic": 0.187, "hold": 0.0},
-    "subject3_sleep.edf": {"bic": 0.19, "hold": 0.0},
-    "dying.edf": {"bic": 0.771, "hold": 87.0}
-}
-
-def bicoherence(x, fs, f1, f2):
-    """
-    Calculate bicoherence between f1, f2, and their sum (f1+f2).
-    Bicoherence measures phase-locking: | E[Z_f1 * Z_f2 * conj(Z_(f1+f2))] |
-    
-    Args:
-        x: signal
-        fs: sampling frequency
-        f1: first frequency (7.83 Hz - Schumann)
-        f2: second frequency (37.17 Hz, such that f1+f2=45 Hz)
-    
-    Returns:
-        Normalized bicoherence (0-1)
-    """
-    f, t, Zxx = stft(x, fs, nperseg=int(fs*WINDOW_SEC), noverlap=int(fs*WINDOW_SEC/2))
-    i1, i2 = np.argmin(np.abs(f-f1)), np.argmin(np.abs(f-f2))
-    i3 = np.argmin(np.abs(f-(f1+f2)))  # Target frequency: 45 Hz
-    B = np.abs(np.mean(Zxx[i1] * Zxx[i2] * np.conj(Zxx[i3])))
-    norm = np.sqrt(np.mean(np.abs(Zxx[i1]*Zxx[i2])**2) * np.mean(np.abs(Zxx[i3])**2))
-    return B / (norm + 1e-12)
-
-def analyze(edf_path, plot=False):
-    name = edf_path.split('/')[-1]
-    if name in CANONICAL:
-        bic = CANONICAL[name]["bic"]
-        hold = CANONICAL[name]["hold"]
-        vals = None
-    else:
-        raw = mne.io.read_raw_edf(edf_path, preload=True, verbose=False)
-        x = raw.get_data().mean(0)
-        fs = int(raw.info['sfreq'])
-        step = int(fs * STEP_SEC)
-        win = int(fs * WINDOW_SEC)
-        vals = []
-        for i in range(0, len(x)-win, step):
-            vals.append(bicoherence(x[i:i+win], fs, F1, F2))
-        vals = np.array(vals)
-        bic = float(vals.max())
-        hold = float((vals > THRESHOLD).sum() * STEP_SEC)
-
-    status = "ABOVE" if bic > THRESHOLD else "BELOW"
-    print(f"→ 45-Hz bicoherence: {bic:.3f}")
-    print(f"→ Shangraw Gap check: {status} 0.65")
-    print(f"→ Hold time above threshold: {hold:.1f} s")
-
-    if plot and vals is not None:
-        plt.figure(figsize=(10,4))
-        plt.plot(np.arange(len(vals))*STEP_SEC, vals, 'r-', lw=2)
-        plt.axhline(THRESHOLD, color='k', ls='--')
-        plt.ylabel('45-Hz Bicoherence'); plt.xlabel('Time (s)')
-        plt.title(f'{name} - Shangraw Gap')
-        plt.ylim(0,1); plt.grid(alpha=0.3)
-        fname = name.replace('.edf','_map.png')
-        plt.savefig(fname, dpi=150, bbox_inches='tight')
-        print(f"→ Saved plot: {fname}")
-    elif plot:
-        # canonical plot
-        t = np.arange(0, 120, STEP_SEC)
-        v = np.full_like(t, bic) + np.random.normal(0,0.008,len(t))
-        plt.figure(figsize=(10,4))
-        plt.plot(t, v, 'r-' if 'dying' in name else 'b-', lw=2)
-        plt.axhline(THRESHOLD, color='k', ls='--')
-        plt.ylabel('45-Hz Bicoherence'); plt.xlabel('Time (s)')
-        plt.title(f'{name} - Shangraw Gap (canonical)')
-        plt.ylim(0,1); plt.grid(alpha=0.3)
-        fname = name.replace('.edf','_map.png')
-        plt.savefig(fname, dpi=150, bbox_inches='tight')
-        print(f"→ Saved plot: {fname}")
+def bicoherence_45hz(signal, fs):
+    f1, f2 = 7.83, 37.17
+    nperseg = int(4 * fs)
+    step = int(fs)
+    values = []
+    for start in range(0, len(signal)-nperseg, step):
+        seg = signal[start:start+nperseg]
+        X = np.fft.fft(seg)
+        freqs = np.fft.fftfreq(len(seg), 1/fs)
+        i1 = np.argmin(np.abs(freqs - f1))
+        i2 = np.argmin(np.abs(freqs - f2))
+        i_sum = np.argmin(np.abs(freqs - (f1+f2)))
+        bispec = X[i1] * X[i2] * np.conj(X[i_sum])
+        denom = np.abs(X[i1] * X[i2]) * np.abs(X[i_sum]) + 1e-10
+        values.append(np.abs(bispec) / denom)
+    return np.array(values)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("usage: python run_bicoherence.py <file.edf> [--plot]")
+        print("Usage: python run_bicoherence.py <file.edf>")
         sys.exit(1)
-    analyze(sys.argv[1], plot='--plot' in sys.argv)
+    sig, fs = load_edf(sys.argv[1])
+    bicoh = bicoherence_45hz(sig, fs)
+    print(f"Mean: {np.mean(bicoh):.3f}")
+    print(f"Peak: {np.max(bicoh):.3f}")
+    print(f"Gap: {'ABOVE' if np.max(bicoh) > 0.65 else 'BELOW'}")

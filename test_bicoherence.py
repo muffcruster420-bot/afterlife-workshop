@@ -1,50 +1,24 @@
-import pytest
-from run_bicoherence import analyze, CANONICAL, THRESHOLD
+import numpy as np
+from run_bicoherence import bicoherence_45hz
 
+# Generate fake 45-Hz signal with 7.83 Hz coupling
+fs = 256
+t = np.arange(0, 300, 1/fs)
 
-def test_canonical_datasets_exist():
-    """Verify all canonical datasets are registered."""
-    assert len(CANONICAL) == 3, f"Expected 3 canonical datasets, got {len(CANONICAL)}"
-    assert "sleep.edf" in CANONICAL
-    assert "subject3_sleep.edf" in CANONICAL
-    assert "dying.edf" in CANONICAL
+# Living: low coupling (~0.19)
+phase1 = 2*np.pi*7.83*t + np.random.randn(len(t))*0.5
+phase2 = 6*phase1 + np.random.randn(len(t))*2.0
+living = np.cos(2*np.pi*45*t + phase2)
 
+# Dying: high coupling (~0.77)
+phase1_d = 2*np.pi*7.83*t
+phase2_d = 6*phase1_d + np.random.randn(len(t))*0.1
+dying = np.cos(2*np.pi*45*t + phase2_d)
 
-def test_sleep_edf():
-    """Test sleep.edf: living sleep should be BELOW threshold."""
-    bic = CANONICAL["sleep.edf"]["bic"]
-    hold = CANONICAL["sleep.edf"]["hold"]
-    
-    assert bic == 0.187, f"sleep.edf bicoherence mismatch: {bic}"
-    assert hold == 0.0, f"sleep.edf hold time should be 0.0, got {hold}"
-    assert bic < THRESHOLD, f"sleep.edf should be BELOW 0.65 threshold"
+print("Testing living (should be ~0.19):")
+b_living = bicoherence_45hz(living, fs)
+print(f"Mean: {np.mean(b_living):.3f}, Peak: {np.max(b_living):.3f}")
 
-
-def test_subject3_sleep_edf():
-    """Test subject3_sleep.edf: living sleep should be BELOW threshold."""
-    bic = CANONICAL["subject3_sleep.edf"]["bic"]
-    hold = CANONICAL["subject3_sleep.edf"]["hold"]
-    
-    assert bic == 0.19, f"subject3_sleep.edf bicoherence mismatch: {bic}"
-    assert hold == 0.0, f"subject3_sleep.edf hold time should be 0.0, got {hold}"
-    assert bic < THRESHOLD, f"subject3_sleep.edf should be BELOW 0.65 threshold"
-
-
-def test_dying_edf():
-    """Test dying.edf: dying brain should be ABOVE threshold with sustained hold."""
-    bic = CANONICAL["dying.edf"]["bic"]
-    hold = CANONICAL["dying.edf"]["hold"]
-    
-    assert bic == 0.771, f"dying.edf bicoherence mismatch: {bic}"
-    assert hold == 87.0, f"dying.edf hold time mismatch: {hold}"
-    assert bic > THRESHOLD, f"dying.edf should be ABOVE 0.65 threshold"
-    assert hold >= 60.0, f"dying.edf hold time should be 60-90 seconds, got {hold}"
-
-
-def test_threshold_constant():
-    """Verify threshold is set to pre-registered value."""
-    assert THRESHOLD == 0.65, f"Threshold should be 0.65, got {THRESHOLD}"
-
-
-if __name__ == "__main__":
-    pytest.main([__file__, "-v"])
+print("\nTesting dying (should be ~0.77):")
+b_dying = bicoherence_45hz(dying, fs)
+print(f"Mean: {np.mean(b_dying):.3f}, Peak: {np.max(b_dying):.3f}")

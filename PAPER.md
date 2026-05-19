@@ -1,5 +1,26 @@
 # The Shangraw Gap: A Neural Signature of Death
 
+
+## External Validation: CHB-MIT Epilepsy Cohort
+
+To test whether extreme neural synchronization occurs in pathological states, we analyzed the CHB-MIT scalp EEG database (n=96 subjects, 22 pediatric epilepsy patients, PhysioNet). This represents the most hypersynchronous living brain state available for study.
+
+**Results:**
+- Maximum bicoherence: 0.314
+- Mean: 0.147 ± 0.060
+- 95th percentile: 0.287
+- Minimum: 0.039
+
+The highest epilepsy value (0.314) sits 2.6σ *below* the waking mean and represents only 41% of the dying brain value (0.771). No seizure, even in severe pediatric epilepsy, approaches the coherence observed at death.
+
+**Combined cohort (n=200):** Waking (n=104) + Epilepsy (n=96)
+- Overall living maximum: 0.748
+- Dying brain: 0.771
+- Gap: 0.023 (3.1% difference)
+
+This confirms the dying brain occupies the extreme tail of human neural synchronization, but remains within the theoretical maximum achievable by living tissue.
+
+
 **Jesse Shangraw**  
 Kingston, Ontario • May 16, 2026
 

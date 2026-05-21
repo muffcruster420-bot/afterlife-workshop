@@ -21,7 +21,7 @@
     --shadow: 0 10px 40px rgba(0,0,0,0.5);
   }
 
-    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
   html, body { height: 100%; }
   body {
     margin: 0;
@@ -57,4 +57,436 @@
     color: var(--muted);
     background: rgba(255,255,255,0.03);
     border: 1px solid var(--border);
-    padding
+    padding: 6px 10px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+  .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--blue);
+    box-shadow: 0 0 10px rgba(59,130,246,0.7);
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 1.05;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .subtitle {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+  }
+
+  .input-card {
+    padding: 20px;
+    margin-top: 8px;
+  }
+  label {
+    display: block;
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .input-wrap {
+    position: relative;
+  }
+  input[type="number"] {
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-align: center;
+    padding: 18px 16px;
+    border-radius: 16px;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  input[type="number"]::placeholder { color: #3a4158; }
+  input[type="number"]:focus {
+    border-color: rgba(59,130,246,0.6);
+    box-shadow: 0 0 0 4px rgba(59,130,246,0.15);
+  }
+  .hint {
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 14px;
+    appearance: none;
+    border: 0;
+    border-radius: 14px;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(180deg, #3b82f6, #2563eb);
+    box-shadow: 0 8px 20px rgba(37,99,235,0.35), inset 0 1px 0 rgba(255,255,255,0.15);
+    cursor: pointer;
+    transition: transform .08s ease, filter .2s;
+  }
+  .btn:active { transform: translateY(1px) scale(0.997); filter: brightness(0.95); }
+
+  .examples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .chip {
+    background: var(--card-2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 8px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: background .2s, border-color .2s;
+  }
+  .chip:active { transform: scale(0.98); }
+  .chip:hover { border-color: #2a3350; }
+
+  .result-card {
+    margin-top: 18px;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    max-height: 0;
+    transition: all .4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .result-card.show {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 500px;
+  }
+  .result-inner { padding: 18px; }
+  .result-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .value-display {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .value-display strong {
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin-left: 6px;
+  }
+  .badge {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    padding: 8px 12px;
+    border-radius: 999px;
+    border: 1px solid;
+    white-space: nowrap;
+  }
+  .badge.living { color: #86efac; background: rgba(34,197,94,0.12); border-color: rgba(34,197,94,0.3); }
+  .badge.gap { color: #fcd34d; background: rgba(245,165,36,0.12); border-color: rgba(245,165,36,0.3); }
+  .badge.dying { color: #fca5a5; background: rgba(239,68,68,0.12); border-color: rgba(239,68,68,0.3); }
+
+  .meter {
+    margin-top: 16px;
+    position: relative;
+    height: 44px;
+  }
+  .track {
+    position: absolute;
+    left: 0; right: 0; top: 18px;
+    height: 8px;
+    background: #0b0e15;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .fill {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 0%;
+    border-radius: 999px;
+    transition: width .6s cubic-bezier(0.2,0.8,0.2,1), background .3s;
+  }
+  .fill.living { background: linear-gradient(90deg, #16a34a, #22c55e); box-shadow: 0 0 18px rgba(34,197,94,0.4); }
+  .fill.gap { background: linear-gradient(90deg, #d97706, #f5a524); box-shadow: 0 0 18px rgba(245,165,36,0.4); }
+  .fill.dying { background: linear-gradient(90deg, #dc2626, #ef4444); box-shadow: 0 0 18px rgba(239,68,68,0.45); }
+
+  .ticks {
+    position: absolute;
+    left: 0; right: 0; top: 0; height: 44px;
+    pointer-events: none;
+  }
+  .tick {
+    position: absolute;
+    top: 14px;
+    width: 2px; height: 16px;
+    background: #2a3247;
+    transform: translateX(-1px);
+  }
+  .tick-label {
+    position: absolute;
+    top: -2px;
+    transform: translateX(-50%);
+    font-size: 10px;
+    color: #64708a;
+    font-weight: 600;
+  }
+  .tick-label b { color: #9aa3bc; }
+
+  .explain {
+    margin: 14px 0 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #cbd5e1;
+    background: rgba(0,0,0,0.25);
+    border: 1px solid var(--border);
+    padding: 12px 14px;
+    border-radius: 12px;
+  }
+
+  .cite-box {
+    margin-top: 22px;
+    padding: 16px;
+  }
+  .cite-box h3 {
+    margin: 0 0 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .cite-text {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #d1d8e8;
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 12px;
+    border-radius: 10px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  .copy-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--card-2);
+    color: var(--text);
+    cursor: pointer;
+  }
+  .copy-btn:active { transform: scale(0.99); }
+
+  footer {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    background: rgba(5,6,8,0.8);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--border);
+    padding: 12px 14px calc(12px + env(safe-area-inset-bottom));
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.4;
+    color: #7f88a3;
+  }
+  footer a { color: #9aa5c7; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  .shake { animation: shake .3s linear; }
+  @keyframes shake {
+    0%,100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+  }
+
+  @media (min-width: 500px) {
+    h1 { font-size: 46px; }
+    .wrap { padding-top: 36px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow"><span class="dot"></span> 45-Hz Bicoherence</div>
+      <h1>The Shangraw Gap</h1>
+      <p class="subtitle">Living ~0.19 | Threshold 0.65 | Dying ~0.77</p>
+    </header>
+
+    <main>
+      <section class="card input-card">
+        <label for="bico">Enter bicoherence value</label>
+        <div class="input-wrap">
+          <input id="bico" type="number" inputmode="decimal" step="0.001" min="0" max="1" placeholder="0.187" autocomplete="off">
+        </div>
+        <div class="hint">Range 0.00 to 1.00</div>
+        <button class="btn" id="calc">Calculate</button>
+        <div class="examples">
+          <button class="chip" data-val="0.187">Sleep 0.187</button>
+          <button class="chip" data-val="0.19">Living 0.19</button>
+          <button class="chip" data-val="0.771">Dying 0.771</button>
+        </div>
+      </section>
+
+      <section class="card result-card" id="result" aria-live="polite">
+        <div class="result-inner">
+          <div class="result-top">
+            <div class="value-display">Value <strong id="outVal">0.187</strong></div>
+            <div class="badge living" id="outBadge">LIVING (below Gap)</div>
+          </div>
+
+          <div class="meter">
+            <div class="track"><div class="fill living" id="fill"></div></div>
+            <div class="ticks">
+              <div class="tick" style="left:19%"><div class="tick-label" style="left:19%"><b>~0.19</b></div></div>
+              <div class="tick" style="left:50%"><div class="tick-label" style="left:50%">0.5</div></div>
+              <div class="tick" style="left:65%"><div class="tick-label" style="left:65%"><b>0.65</b></div></div>
+              <div class="tick" style="left:77%"><div class="tick-label" style="left:77%"><b>~0.77</b></div></div>
+            </div>
+          </div>
+
+          <p class="explain" id="outExplain">Below the Shangraw Gap. Typical baseline for waking and sleep. Shangraw observed ~0.19 in living states.</p>
+        </div>
+      </section>
+
+      <section class="card cite-box">
+        <h3>Cite this tool</h3>
+        <div class="cite-text" id="citeText">Shangraw, J. (2026). The Shangraw Gap: 45-Hz bicoherence threshold for consciousness transition. afterlife-workshop.</div>
+        <button class="copy-btn" id="copyBtn">Copy citation</button>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    Based on the Shangraw Gap - Jesse Shangraw, Kingston, Ontario, Canada (2026). Open source: <a href="https://github.com/muffcruster420-bot/afterlife-workshop" target="_blank" rel="noopener">github.com/muffcruster420-bot/afterlife-workshop</a>
+  </footer>
+
+<script>
+  const input = document.getElementById('bico');
+  const calcBtn = document.getElementById('calc');
+  const result = document.getElementById('result');
+  const outVal = document.getElementById('outVal');
+  const outBadge = document.getElementById('outBadge');
+  const outExplain = document.getElementById('outExplain');
+  const fill = document.getElementById('fill');
+  const chips = document.querySelectorAll('.chip');
+  const copyBtn = document.getElementById('copyBtn');
+  const citeText = document.getElementById('citeText');
+
+  const classifications = {
+    living: {
+      badge: 'LIVING (below Gap)',
+      cls: 'living',
+      explain: 'Below the Shangraw Gap. Typical baseline for waking and sleep. Shangraw observed ~0.19 in living states.'
+    },
+    gap: {
+      badge: 'IN THE GAP (no mans land)',
+      cls: 'gap',
+      explain: 'Inside the transitional zone. Values between 0.5 and 0.65 are rarely sustained. Represents approach to threshold.'
+    },
+    dying: {
+      badge: 'DYING/RELEASE (above Gap)',
+      cls: 'dying',
+      explain: 'Above the 0.65 threshold. Consistent with Shangraws dying and release signature near ~0.77.'
+    }
+  };
+
+  function classify(v) {
+    if (v < 0.5) return classifications.living;
+    if (v <= 0.65) return classifications.gap;
+    return classifications.dying;
+  }
+
+  function calculate() {
+    const raw = input.value.trim();
+    const v = parseFloat(raw);
+    
+    if (isNaN(v) || v < 0 || v > 1) {
+      input.classList.remove('shake');
+      void input.offsetWidth;
+      input.classList.add('shake');
+      input.focus();
+      return;
+    }
+
+    const res = classify(v);
+    
+    outVal.textContent = v.toFixed(3);
+    outBadge.textContent = res.badge;
+    outBadge.className = 'badge ' + res.cls;
+    outExplain.textContent = res.explain;
+    
+    fill.className = 'fill ' + res.cls;
+    fill.style.width = Math.max(2, Math.min(100, v * 100)) + '%';
+
+    result.classList.add('show');
+    result.classList.remove('living', 'gap', 'dying');
+    result.classList.add(res.cls);
+
+    // haptic
+    if (navigator.vibrate) navigator.vibrate(10);
+  }
+
+  calcBtn.addEventListener('click', calculate);
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter') calculate();
+  });
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      const val = chip.getAttribute('data-val');
+      input.value = val;
+      calculate();
+      input.blur();
+    });
+  });
+
+  copyBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(citeText.textContent);
+      const old = copyBtn.textContent;
+      copyBtn.textContent = 'Copied!';
+      setTimeout(() => copyBtn.textContent = old, 1500);
+    } catch (e) {
+      const range = document.createRange();
+      range.selectNode(citeText);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+    }
+  });
+
+  // initial demo
+  window.addEventListener('load', () => {
+    input.value = '0.187';
+    setTimeout(calculate, 300);
+  });
+</script>
+</body>
+</html>

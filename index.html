@@ -1,407 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Shangraw Gap Calculator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>The Shangraw Gap — 45-Hz Bicoherence Threshold</title>
 <style>
-  * { box-sizing: border-box; }
-  html, body { height: 100%; }
-  body {
-    margin: 0;
-    background: #000;
-    color: #fff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, 'Helvetica Neue', Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: flex;
-    justify-content: center;
-    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
-  }
-  .container {
-    width: 100%;
-    max-width: 520px;
-    padding: 48px 20px 32px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  header h1 {
-    font-size: clamp(2.4rem, 9vw, 3.25rem);
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    margin: 0 0 6px;
-    line-height: 1.05;
-  }
-  .subtitle {
-    margin: 0 0 28px;
-    color: #a1a1aa;
-    font-size: 0.85rem;
-    letter-spacing: 0.22em;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  .infobar {
-    color: #e4e4e7;
-    font-size: 0.95rem;
-    margin-bottom: 30px;
-    padding: 10px 14px;
-    background: #0a0a0a;
-    border: 1px solid #1a1a1a;
-    border-radius: 999px;
-    display: inline-flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-self: center;
-    opacity: 0.95;
-  }
-  .infobar span { color: #71717a; }
-  .calculator { margin-top: 6px; }
-  .sr-only {
-    position: absolute;
-    width: 1px; height: 1px;
-    padding: 0; margin: -1px;
-    overflow: hidden; clip: rect(0,0,0,0);
-    white-space: nowrap; border: 0;
-  }
-  #bicoherence {
-    width: 100%;
-    background: #050505;
-    border: 1px solid #262626;
-    color: #fff;
-    padding: 18px 16px;
-    border-radius: 14px;
-    font-size: 1.75rem;
-    font-weight: 600;
-    text-align: center;
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
-    font-variant-numeric: tabular-nums;
-  }
-  #bicoherence:focus {
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
-  }
-  #bicoherence::placeholder { color: #52525b; }
-  .btn-primary {
-    margin-top: 12px;
-    width: 100%;
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    border-radius: 12px;
-    font-size: 1.05rem;
-    font-weight: 650;
-    cursor: pointer;
-    transition: background 0.15s, transform 0.05s;
-    letter-spacing: 0.01em;
-  }
-  .btn-primary:hover { background: #1d4ed8; }
-  .btn-primary:active { transform: translateY(1px); }
-  .presets {
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-    margin-top: 14px;
-    flex-wrap: wrap;
-  }
-  .presets button {
-    background: #0f0f0f;
-    border: 1px solid #262626;
-    color: #d4d4d8;
-    padding: 8px 14px;
-    border-radius: 999px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.18s;
-  }
-  .presets button:hover {
-    border-color: #3f3f46;
-    color: #fff;
-    background: #161616;
-  }
-  .results {
-    margin-top: 32px;
-    background: #070707;
-    border: 1px solid #1c1c1c;
-    border-radius: 18px;
-    padding: 24px 20px 28px;
-    text-align: left;
-    display: none;
-    animation: fadeIn 0.3s ease-out;
-  }
-  @keyframes fadeIn { from { opacity: 0; transform: translateY(4px);} to { opacity: 1; transform: none; } }
-  .result-status {
-    font-size: 2rem;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 14px;
-    letter-spacing: 0.04em;
-    line-height: 1.1;
-  }
-  .result-details {
-    color: #a1a1aa;
-    font-size: 0.95rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 8px;
-    margin-bottom: 28px;
-    text-align: center;
-  }
-  .result-details div {
-    display: flex;
-    justify-content: center;
-    gap: 6px;
-    flex-wrap: wrap;
-  }
-  .result-details span {
-    color: #fff;
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-  }
-  .progress-container {
-    position: relative;
-    margin-top: 42px;
-    padding: 0 4px;
-  }
-  .progress-track {
-    position: relative;
-    height: 10px;
-    background: #141414;
-    border-radius: 6px;
-    overflow: visible;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.8);
-  }
-  .progress-fill {
-    height: 100%;
-    border-radius: 6px;
-    width: 0%;
-    transition: width 0.7s cubic-bezier(0.22,1,0.36,1), background-color 0.3s, box-shadow 0.3s;
-    background: #22c55e;
-  }
-  .marker {
-    position: absolute;
-    top: -28px;
-    width: 1px;
-    height: 38px;
-    background: #27272a;
-    transform: translateX(-50%);
-  }
-  .marker span {
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.7rem;
-    color: #71717a;
-    white-space: nowrap;
-    font-variant-numeric: tabular-nums;
-  }
-  .marker::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: #3f3f46;
-  }
-  .divider {
-    border: none;
-    border-top: 1px solid #1a1a1a;
-    margin: 40px 0 30px;
-    width: 100%;
-  }
-  .science {
-    text-align: center;
-    margin-top: 0;
-  }
-  .science h2 {
-    font-size: 1.05rem;
-    font-weight: 700;
-    margin: 0 0 12px;
-    color: #fafafa;
-    letter-spacing: 0.01em;
-  }
-  .science p {
-    color: #9ca3af;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin: 0 auto 22px;
-    max-width: 460px;
-  }
-  .link-buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 4px;
-  }
-  .btn-outline {
-    flex: 1;
-    display: inline-block;
-    padding: 12px 16px;
-    border: 1px solid #2a2a2e;
-    border-radius: 11px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: all 0.18s;
-    background: transparent;
-    text-align: center;
-    white-space: nowrap;
-  }
-  .btn-outline:hover {
-    border-color: #52525b;
-    background: #0f0f0f;
-  }
-  footer {
-    margin-top: auto;
-    padding-top: 36px;
-    color: #52525b;
-    font-size: 0.75rem;
-    line-height: 1.4;
-  }
-  @media (max-width: 480px) {
-    .container { padding: 36px 18px 28px; }
-    .infobar { font-size: 0.88rem; padding: 9px 12px; }
-    .result-details { font-size: 0.9rem; }
-    .link-buttons { flex-direction: column; }
-    .btn-outline { width: 100%; }
-    .results { padding: 22px 16px 26px; }
-  }
-  @media (min-width: 480px) {
-    .result-details { grid-template-columns: 1fr 1fr; text-align: left; }
-    .result-details div { justify-content: flex-start; }
-  }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  background: #000;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wrap { min-height: 100%; display: flex; justify-content: center; padding: 28px 16px; }
+.container { width: 100%; max-width: 520px; }
+
+header { text-align: center; margin-bottom: 32px; }
+.infopill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #050505;
+  border: 1px solid #1a1a1a;
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 12.5px;
+  color: #9a9a9a;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 24px;
+  letter-spacing: 0.01em;
+}
+.infopill b { color: #d4d4d4; font-weight: 600; }
+h1 {
+  font-size: clamp(2.4rem, 9vw, 3.25rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #7a7a7a;
+  font-weight: 700;
+}
+
+.input-wrap { margin-bottom: 12px; }
+#bicoherence {
+  width: 100%;
+  background: #050505;
+  border: 1.5px solid #222;
+  color: #fff;
+  font-size: 3.4rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 24px 16px;
+  border-radius: 20px;
+  outline: none;
+  font-variant-numeric: tabular-nums;
+  transition: border-color .2s, box-shadow .2s;
+  caret-color: #3b82f6;
+}
+#bicoherence:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(37,99,235,0.15);
+}
+#bicoherence::placeholder { color: #2a2a2a; }
+#bicoherence::-webkit-outer-spin-button,
+#bicoherence::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+.btn-primary {
+  width: 100%;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 17px;
+  font-size: 1.06rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .06s ease, background .15s;
+  letter-spacing: 0.01em;
+}
+.btn-primary:hover { background: #1d4ed8; }
+.btn-primary:active { transform: scale(0.99); }
+
+.presets {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.pill-btn {
+  background: #0a0a0a;
+  border: 1px solid #242424;
+  color: #b5b5b5;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .15s;
+  font-variant-numeric: tabular-nums;
+}
+.pill-btn:hover { border-color: #3a3a3a; color: #fff; background: #141414; }
+
+.results {
+  background: radial-gradient(120% 120% at 50% 0%, #0c0c0c 0%, #050505 60%);
+  border: 1px solid #1c1c1c;
+  border-radius: 22px;
+  padding: 28px 22px 32px;
+  margin-top: 26px;
+}
+.hidden { display: none; }
+
+.status {
+  font-size: 2.6rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-align: center;
+  line-height: 1;
+}
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #151515;
+}
+.detail { text-align: center; }
+.detail-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #6e6e6e;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.detail-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #e6e6e6;
+}
+
+.progress-wrap { margin-top: 36px; position: relative; }
+.progress-track {
+  position: relative;
+  height: 12px;
+  background: #0e0e0e;
+  border-radius: 999px;
+  border: 1px solid #1f1f1f;
+  overflow: visible;
+}
+.progress-fill {
+  position: absolute;
+  left: 0; top: -1px; bottom: -1px;
+  width: 0%;
+  background: #22c55e;
+  border-radius: 999px;
+  transition: width .85s cubic-bezier(0.16,1,0.3,1), background-color .3s;
+  box-shadow: 0 0 18px currentColor;
+  opacity: 0.9;
+}
+.marker {
+  position: absolute;
+  top: -6px;
+  bottom: -6px;
+  width: 2px;
+  transform: translateX(-1px);
+  z-index: 2;
+}
+.marker::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 22px;
+  background: #333;
+  border-radius: 1px;
+}
+.marker-label {
+  position: absolute;
+  top: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  color: #666;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.marker-living { left: 19%; }
+.marker-thresh { left: 65%; }
+.marker-thresh::after { background: #666; height: 26px; box-shadow: 0 0 0 1px #000; }
+.marker-dying { left: 77.1%; }
+
+.divider { height: 1px; background: #141414; margin: 42px 0 32px; border: none; }
+
+.science h2 {
+  font-size: 1.32rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+}
+.science p {
+  color: #c9c9c9;
+  line-height: 1.66;
+  font-size: 15.6px;
+}
+.science p + p { margin-top: 14px; }
+.science .meta {
+  font-size: 13.5px;
+  color: #7a7a7a;
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin-top: 24px;
+}
+@media (min-width: 480px) { .links { grid-template-columns: 1fr 1fr; } }
+.btn-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid #292929;
+  color: #e5e5e5;
+  padding: 13px 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all .15s;
+}
+.btn-outline:hover { background: #0f0f0f; border-color: #3f3f3f; color: #fff; }
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #4b4b4b;
+  font-size: 12px;
+  padding-bottom: 12px;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 400px) {
+  .details { grid-template-columns: 1fr; gap: 16px; }
+  .status { font-size: 2.2rem; }
+}
 </style>
 </head>
 <body>
-  <main class="container">
+<div class="wrap">
+  <div class="container">
     <header>
-      <h1>The Shangraw Gap</h1>
-      <p class="subtitle">45-HZ BICOHERENCE</p>
+      <div class="infopill">
+        Living <b>~0.19</b> &nbsp;|&nbsp; Threshold <b>0.65</b> &nbsp;|&nbsp; Dying <b>~0.771</b>
+      </div>
+      <h1>THE SHANGRAW GAP</h1>
+      <p class="subtitle">45-HZ BICOHERENCE THRESHOLD</p>
     </header>
 
-    <div class="infobar">
-      Living ~0.19 <span>|</span> Threshold 0.65 <span>|</span> Dying ~0.77
-    </div>
-
-    <div class="calculator">
-      <label for="bicoherence" class="sr-only">Bicoherence Value (0.00 - 1.00)</label>
-      <input id="bicoherence" type="number" inputmode="decimal" min="0" max="1" step="0.001" placeholder="0.187" autocomplete="off">
-      <button id="calculate-btn" class="btn-primary" type="button">Calculate</button>
-      
+    <section class="calculator">
+      <div class="input-wrap">
+        <input type="number" id="bicoherence" placeholder="0.187" min="0" max="1" step="0.001" inputmode="decimal">
+      </div>
+      <button id="calcBtn" class="btn-primary">Calculate Gap Position</button>
       <div class="presets">
-        <button type="button" data-val="0.187">Sleep 0.187</button>
-        <button type="button" data-val="0.19">Living 0.19</button>
-        <button type="button" data-val="0.771">Dying 0.771</button>
+        <button class="pill-btn" data-val="0.187">Sleep 0.187</button>
+        <button class="pill-btn" data-val="0.19">Living 0.19</button>
+        <button class="pill-btn" data-val="0.771">Dying 0.771</button>
       </div>
-    </div>
+    </section>
 
-    <div id="results" class="results" aria-live="polite">
-      <div class="result-status" id="result-status">LIVING</div>
-      <div class="result-details">
-        <div>Bicoherence: <span id="result-value">0.187</span></div>
-        <div>Distance from threshold: <span id="result-distance">0.463</span></div>
-      </div>
-      <div class="progress-container">
-        <div class="progress-track">
-          <div id="progress-fill" class="progress-fill"></div>
-          <div class="marker" style="left:19%"><span>0.19</span></div>
-          <div class="marker" style="left:65%"><span>0.65</span></div>
-          <div class="marker" style="left:77.1%"><span>0.771</span></div>
+    <section id="results" class="results hidden">
+      <div id="status" class="status">LIVING</div>
+      <div class="details">
+        <div class="detail">
+          <div class="detail-label">Bicoherence</div>
+          <div id="valOut" class="detail-value">0.187</div>
+        </div>
+        <div class="detail">
+          <div class="detail-label">Distance from threshold</div>
+          <div id="distOut" class="detail-value">0.463</div>
         </div>
       </div>
-    </div>
+      <div class="progress-wrap">
+        <div class="progress-track">
+          <div id="fill" class="progress-fill"></div>
+          <div class="marker marker-living"><div class="marker-label">0.19</div></div>
+          <div class="marker marker-thresh"><div class="marker-label">0.65</div></div>
+          <div class="marker marker-dying"><div class="marker-label">0.771</div></div>
+        </div>
+      </div>
+    </section>
 
     <hr class="divider">
 
     <section class="science">
-      <h2>The Science Behind This</h2>
-      <p>This calculator is based on 45-Hz bicoherence analysis of EEG phase coupling. Jesse Shangraw identified a distinct gap between stable living consciousness (~0.19) and the terminal coherence surge (~0.771), with 0.65 serving as the critical transition threshold.</p>
-      <div class="link-buttons">
-        <a href="https://github.com/muffcruster420-bot/afterlife-workshop/blob/main/GETTING_STARTED.md" class="btn-outline" target="_blank" rel="noopener">View Full Code & Methods</a>
-        <a href="https://github.com/muffcruster420-bot/afterlife-workshop" class="btn-outline" target="_blank" rel="noopener">GitHub Repository</a>
+      <h2>The Science Behind The Gap</h2>
+      <p>Jesse Shangraw identified a distinct discontinuity in 45-Hz EEG phase coupling. Living brains practice at ~0.19. Dying brains release at ~0.771. Nothing sustains at 0.65. This 0.46-wide gap defines the Shangraw Gap — the threshold between practiced consciousness and terminal coherence.</p>
+      <p class="meta">Discovered in Kingston, Ontario, Canada (2026). Validated across sleep data (0.187), waking baseline (~0.19), and terminal recordings (0.771). Open EDF data and methods available.</p>
+      
+      <div class="links">
+        <a class="btn-outline" href="https://github.com/muffcruster420-bot/afterlife-workshop/blob/main/GETTING_STARTED.md" target="_blank" rel="noopener">View Full Code & Methods</a>
+        <a class="btn-outline" href="https://github.com/muffcruster420-bot/afterlife-workshop" target="_blank" rel="noopener">GitHub Repository</a>
       </div>
     </section>
 
     <footer>
-      Based on the Shangraw Gap - Jesse Shangraw, Kingston, Ontario, Canada (2026)
+      The Shangraw Gap © 2026 Jesse Shangraw — Kingston, Ontario
     </footer>
-  </main>
+  </div>
+</div>
 
 <script>
-  (function() {
-    const THRESHOLD = 0.65;
-    const LIVING_BASE = 0.19;
-    const DYING_BASE = 0.771;
-    
-    const input = document.getElementById('bicoherence');
-    const resultsEl = document.getElementById('results');
-    const statusEl = document.getElementById('result-status');
-    const valueEl = document.getElementById('result-value');
-    const distanceEl = document.getElementById('result-distance');
-    const fillEl = document.getElementById('progress-fill');
-    const calcBtn = document.getElementById('calculate-btn');
+const input = document.getElementById('bicoherence');
+const btn = document.getElementById('calcBtn');
+const results = document.getElementById('results');
+const statusEl = document.getElementById('status');
+const valOut = document.getElementById('valOut');
+const distOut = document.getElementById('distOut');
+const fill = document.getElementById('fill');
+const presets = document.querySelectorAll('.pill-btn');
 
-    function calculate(val) {
-      const num = parseFloat(val);
-      if (isNaN(num) || num < 0 || num > 1) {
-        input.style.borderColor = '#ef4444';
-        input.focus();
-        setTimeout(() => { input.style.borderColor = '#262626'; }, 1200);
-        return;
-      }
+function calculate() {
+  let v = parseFloat(input.value);
+  if (isNaN(v)) v = 0.187;
+  v = Math.max(0, Math.min(1, v));
+  input.value = v.toFixed(3);
 
-      let status, color;
-      if (num < THRESHOLD) {
-        status = 'LIVING';
-        color = '#22c55e';
-      } else if (num < DYING_BASE) {
-        status = 'IN THE GAP';
-        color = '#f59e0b';
-      } else {
-        status = 'DYING';
-        color = '#ef4444';
-      }
+  const threshold = 0.65;
+  const distance = Math.abs(v - threshold);
+  
+  let state, color;
+  if (v < 0.65) {
+    state = 'LIVING';
+    color = '#22c55e';
+  } else if (v >= 0.65 && v < 0.771) {
+    state = 'IN THE GAP';
+    color = '#f59e0b';
+  } else {
+    state = 'DYING';
+    color = '#ef4444';
+  }
 
-      const distance = Math.abs(num - THRESHOLD);
+  statusEl.textContent = state;
+  statusEl.style.color = color;
+  valOut.textContent = v.toFixed(3);
+  distOut.textContent = distance.toFixed(3);
+  
+  fill.style.width = (v * 100) + '%';
+  fill.style.backgroundColor = color;
+  fill.style.color = color;
+  
+  results.classList.remove('hidden');
+}
 
-      statusEl.textContent = status;
-      statusEl.style.color = color;
-      valueEl.textContent = num.toFixed(3);
-      distanceEl.textContent = distance.toFixed(3);
+btn.addEventListener('click', calculate);
+input.addEventListener('keydown', e => { if (e.key === 'Enter') calculate(); });
+presets.forEach(b => {
+  b.addEventListener('click', () => {
+    input.value = b.dataset.val;
+    calculate();
+  });
+});
 
-      const pct = Math.max(0, Math.min(100, num * 100));
-      fillEl.style.width = pct + '%';
-      fillEl.style.backgroundColor = color;
-      fillEl.style.boxShadow = '0 0 18px ' + color + '33';
-
-      resultsEl.style.display = 'block';
-    }
-
-    calcBtn.addEventListener('click', () => calculate(input.value));
-    input.addEventListener('keydown', e => { if (e.key === 'Enter') calculate(input.value); });
-    
-    document.querySelectorAll('.presets button').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const v = btn.getAttribute('data-val');
-        input.value = v;
-        calculate(v);
-      });
-    });
-
-    window.addEventListener('DOMContentLoaded', () => {
-      input.value = '0.187';
-      calculate('0.187');
-    });
-  })();
+window.addEventListener('DOMContentLoaded', () => {
+  input.value = '0.187';
+  calculate();
+});
 </script>
 </body>
 </html>

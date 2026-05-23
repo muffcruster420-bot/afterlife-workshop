@@ -28,17 +28,27 @@ def test_real_0284():
     sig = None
     for key in ['val', 'data', 'signal', 'EEG']:
         if key in mat:
-            sig = mat[key].squeeze()
+            sig = mat[key]
             break
     if sig is None:
-        sig = max([v for v in mat.values() if hasattr(v, 'size')], key=lambda x: x.size).squeeze()
+        sig = max([v for v in mat.values() if hasattr(v, 'shape')], key=lambda x: x.size)
+
+    # handle multi-channel: take first channel, flatten
+    sig = np.squeeze(sig)
+    if sig.ndim > 1:
+        sig = sig[0] # first EEG channel
+    sig = sig.astype(float)
+    sig = sig[~np.isnan(sig)] # remove NaNs
 
     fs = 256
     data = sig[:fs*300] if len(sig) > fs*300 else sig
     bico = bicoherence_45hz(data, fs)
-    mean_real = np.mean(bico)
+
+    mean_real = float(np.mean(bico)) if bico.size > 0 else float('nan')
+    peak_real = float(np.max(bico)) if bico.size > 0 else 0.0
 
     print(f"=== REAL 0284 RESULT ===")
+    print(f"Signal shape: {sig.shape}, using {len(data)} samples")
     print(f"Mean bicoherence: {mean_real:.3f}")
-    print(f"Peak: {np.max(bico):.3f}")
+    print(f"Peak: {peak_real:.3f}")
     print(f"Classification: {'DYING (>0.65)' if mean_real > 0.65 else 'LIVING (<0.65)'}")

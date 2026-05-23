@@ -5,16 +5,20 @@ def test_living_gap():
     fs = 256
     t = np.arange(0, 300, 1/fs)
 
-    # Living: low coupling (~0.19)
-    phase2 = np.random.randn(len(t))*2.0
-    living = np.cos(2*np.pi*45*t + phase2)
+    # Living: low coupling (~0.19) - three independent tones
+    p1 = np.random.rand() * 2*np.pi
+    p2 = np.random.rand() * 2*np.pi
+    p3 = np.random.rand() * 2*np.pi
+    living = (np.cos(2*np.pi*7.83*t + p1) +
+              np.cos(2*np.pi*37.17*t + p2) +
+              np.cos(2*np.pi*45*t + p3))
 
     b_living = bicoherence_45hz(living, fs)
     mean_living = np.mean(b_living)
 
     print(f"Living mean: {mean_living:.3f} (should be ~0.19)")
     assert mean_living < 0.35, f"Living Gap FAILED: {mean_living:.3f} too high (expected ~0.19)"
-    
+
 def test_dying_gap():
     fs = 256
     t = np.arange(0, 300, 1/fs)

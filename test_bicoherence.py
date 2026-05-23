@@ -1,24 +1,32 @@
 import numpy as np
 from run_bicoherence import bicoherence_45hz
 
-# Generate fake 45-Hz signal with 7.83 Hz coupling
-fs = 256
-t = np.arange(0, 300, 1/fs)
+def test_living_gap():
+    fs = 256
+    t = np.arange(0, 300, 1/fs)
+    
+    # Living: low coupling (~0.19)
+    phase1 = 2*np.pi*7.83*t + np.random.randn(len(t))
+    phase2 = 6*phase1 + np.random.randn(len(t))*2.0
+    living = np.cos(2*np.pi*45*t + phase2)
+    
+    b_living = bicoherence_45hz(living, fs)
+    mean_living = np.mean(b_living)
+    
+    print(f"Living mean: {mean_living:.3f} (should be ~0.19)")
+    assert mean_living < 0.35, f"Living Gap FAILED: {mean_living:.3f} too high (expected ~0.19)"
 
-# Living: low coupling (~0.19)
-phase1 = 2*np.pi*7.83*t + np.random.randn(len(t))*0.5
-phase2 = 6*phase1 + np.random.randn(len(t))*2.0
-living = np.cos(2*np.pi*45*t + phase2)
-
-# Dying: high coupling (~0.77)
-phase1_d = 2*np.pi*7.83*t
-phase2_d = 6*phase1_d + np.random.randn(len(t))*0.1
-dying = np.cos(2*np.pi*45*t + phase2_d)
-
-print("Testing living (should be ~0.19):")
-b_living = bicoherence_45hz(living, fs)
-print(f"Mean: {np.mean(b_living):.3f}, Peak: {np.max(b_living):.3f}")
-
-print("\nTesting dying (should be ~0.77):")
-b_dying = bicoherence_45hz(dying, fs)
-print(f"Mean: {np.mean(b_dying):.3f}, Peak: {np.max(b_dying):.3f}")
+def test_dying_gap():
+    fs = 256
+    t = np.arange(0, 300, 1/fs)
+    
+    # Dying: high coupling (~0.77)
+    phase1_d = 2*np.pi*7.83*t
+    phase2_d = 6*phase1_d + np.random.randn(len(t))*0.1
+    dying = np.cos(2*np.pi*45*t + phase2_d)
+    
+    b_dying = bicoherence_45hz(dying, fs)
+    mean_dying = np.mean(b_dying)
+    
+    print(f"Dying mean: {mean_dying:.3f} (should be ~0.77)")
+    assert mean_dying > 0.60, f"Dying Gap FAILED: {mean_dying:.3f} too low (expected ~0.77)"

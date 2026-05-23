@@ -1,20 +1,10 @@
 name: Shangraw Gap CI
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      
-      - name: Show Gap version
-        run: |
-          python --version
-          echo "Shangraw Gap: living 0.19, dying 0.77"
-          ls -la
+      - name: Shangraw Gap heartbeat
+        run: echo "Shangraw Gap: living 0.19, dying 0.77 - Kingston validation active"

@@ -6,5 +6,12 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Shangraw Gap heartbeat
-        run: echo "Shangraw Gap: living 0.19, dying 0.77 - Kingston validation active"
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Shangraw Gap quick test
+        run: python quick_test.py

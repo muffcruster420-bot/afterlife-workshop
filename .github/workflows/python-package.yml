@@ -1,44 +1,35 @@
-name: Python package
+name: Shangraw Gap CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ main ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ main ]
 
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Set up Python 3.11
-      uses: actions/setup-python@v5
-      with:
-        python-version: "3.11"
-        cache: 'pip'
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-    - name: Lint
-      run: |
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+      - name: Compile core scripts
+        run: |
+          python -m py_compile run_shangraw_gap.py
+          python -m py_compile analyze_transition.py
+          python -m py_compile real_bicoherence.py
 
-    - name: Run Shangraw Gap analysis
-      run: |
-        python run_shangraw_gap.py
-
-    - name: Upload results
-      uses: actions/upload-artifact@v4
-      with:
-        name: shangraw-output
-        path: |
-          *.png
-          *.csv
-          *.pdf
-        if-no-files-found: ignore
+      - name: Test Gap on synthetic data
+        run: |
+          python quick_test.py

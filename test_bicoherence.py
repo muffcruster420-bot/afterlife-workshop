@@ -12,9 +12,11 @@ def test_living_gap():
 def test_dying_gap():
     fs = 256
     t = np.arange(0, 300, 1/fs)
-    phase1 = 2*np.pi*7.83*t
-    phase2 = 6*phase1 + np.random.randn(len(t))*0.1
-    dying = np.cos(2*np.pi*45*t + phase2)
+    # Real Shangraw coupling: 7.83 + 37.17 = 45
+    s1 = np.cos(2*np.pi*7.83*t)
+    s2 = np.cos(2*np.pi*37.17*t)
+    s3 = np.cos(2*np.pi*45*t + np.random.randn(len(t))*0.1)
+    dying = s1 + s2 + s3
     mean_dying = np.mean(bicoherence_45hz(dying, fs))
     print(f"Dying mean: {mean_dying:.3f} (target ~0.77)")
     assert mean_dying > 0.60, f"FAILED: {mean_dying:.3f}"

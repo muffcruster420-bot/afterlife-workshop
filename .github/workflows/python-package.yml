@@ -12,4 +12,4 @@ jobs:
           python-version: '3.11'
       - run: pip install wfdb numpy scipy pytest pyedflib
       - run: python quick_test.py
-      - run: pytest -v test_bicoherence.py
+      - run: pytest -s -v test_bicoherence.py

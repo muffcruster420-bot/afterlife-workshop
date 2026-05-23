@@ -5,13 +5,8 @@ def test_living_gap():
     fs = 256
     t = np.arange(0, 300, 1/fs)
 
-    # Living: low coupling (~0.19) - three independent tones
-    p1 = np.random.rand() * 2*np.pi
-    p2 = np.random.rand() * 2*np.pi
-    p3 = np.random.rand() * 2*np.pi
-    living = (np.cos(2*np.pi*7.83*t + p1) +
-              np.cos(2*np.pi*37.17*t + p2) +
-              np.cos(2*np.pi*45*t + p3))
+    # Living: low coupling (~0.19) - use noise, not locked tones
+    living = np.random.randn(len(t))
 
     b_living = bicoherence_45hz(living, fs)
     mean_living = np.mean(b_living)

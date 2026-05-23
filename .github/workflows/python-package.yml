@@ -13,5 +13,8 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install dependencies
+        run: pip install wfdb numpy scipy
+
       - name: Run Shangraw Gap quick test
         run: python quick_test.py

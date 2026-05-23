@@ -14,7 +14,10 @@ def bicoherence_45hz(signal, fs):
     f1, f2 = 7.83, 37.17
     nperseg = int(4 * fs)
     step = int(fs)
-    values = []
+    bispecs = []
+    p12 = []
+    p3 = []
+
     for start in range(0, len(signal)-nperseg, step):
         seg = signal[start:start+nperseg]
         X = np.fft.fft(seg)
@@ -22,10 +25,16 @@ def bicoherence_45hz(signal, fs):
         i1 = np.argmin(np.abs(freqs - f1))
         i2 = np.argmin(np.abs(freqs - f2))
         i_sum = np.argmin(np.abs(freqs - (f1+f2)))
+
         bispec = X[i1] * X[i2] * np.conj(X[i_sum])
-        denom = np.abs(X[i1] * X[i2]) * np.abs(X[i_sum]) + 1e-10
-        values.append(np.abs(bispec) / denom)
-    return np.array(values)
+        bispecs.append(bispec)
+        p12.append(np.abs(X[i1] * X[i2])**2)
+        p3.append(np.abs(X[i_sum])**2)
+
+    numerator = np.abs(np.mean(bispecs))
+    denominator = np.sqrt(np.mean(p12) * np.mean(p3) + 1e-12)
+    bic = numerator / denominator
+    return np.full(len(bispecs), bic)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

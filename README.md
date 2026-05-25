@@ -4,6 +4,8 @@
 **May 25, 2026 — Mobile Colab run (Kingston, ON).** Four Sleep-EDF PSG recordings processed entirely on Android. Consistent 45Hz suppression from ~30k–50k sec across all files, reproduced with no laptop.
 **living brains practice 45-Hz bicoherence at 0.19, dying brains release at 0.77. Nothing lives at 0.65.**
 
+[▶️ Run this on your phone — 2 min Colab](https://colab.research.google.com/github/muffcruster420-bot/afterlife-workshop/blob/main/colab-notebook.ipynb)
+
 Built in Kingston, Ontario — ~60 hours in May 2026, entirely on a phone.
 
 Independent computational neuroscience. Open data. Replicate me.

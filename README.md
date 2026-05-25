@@ -1,5 +1,7 @@
 # The Shangraw Gap
+![Mobile validation — May 25, 2026](Jshangraw_gap_8panel.png)
 
+**May 25, 2026 — Mobile Colab run (Kingston, ON).** Four Sleep-EDF PSG recordings processed entirely on Android. Consistent 45Hz suppression from ~30k–50k sec across all files, reproduced with no laptop.
 **living brains practice 45-Hz bicoherence at 0.19, dying brains release at 0.77. Nothing lives at 0.65.**
 
 Built in Kingston, Ontario — ~60 hours in May 2026, entirely on a phone.

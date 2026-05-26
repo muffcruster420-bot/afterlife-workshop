@@ -1,3 +1,6 @@
+> **🛰 Companion:** [CosmoAi](https://github.com/muffcruster420-bot/CosmoAi) — 446 clones of live space data. Same Shangraw Gap Detector, now with "My Sky Tonight" built on a phone in Kingston.
+>
+> ---
 # The Shangraw Gap
 ![Mobile validation — May 25, 2026](Jshangraw_gap_8panel.png)
 

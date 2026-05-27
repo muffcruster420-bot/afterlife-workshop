@@ -1,5 +1,5 @@
 # The Shangraw Gap - 45-Hz Bicoherence in Living vs Dying EEG
-
+> **→ Got data? Post your numbers in [Issue #1 - Break the Gap](https://github.com/muffcruster420-bot/afterlife-workshop/issues/1)**
 Open EDF analysis from Kingston, Ontario. Built 100% on a phone. No lab, no funding.
 
 > Living brains sit near 0.19. Dying brains jump near 0.77. Almost nothing lands between 0.6 and 0.7.

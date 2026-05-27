@@ -43,7 +43,7 @@ If your file shows >10% of epochs in 0.6-0.7, or a dying brain <0.5, I will add 
 All data is EDF format, 10-20 montage preferred.
 
 **Included:**
-- `/data/kingston_baseline.edf` and `/data/kingston_postarrest.edf` â€” my original recordings
+- `/data/kingston_baseline.edf` and `/data/kingston_postarrest.edf` - my original recordings
 
 **Public sets to test:**
 1. **CHB-MIT Scalp EEG Database (living)**
@@ -51,7 +51,7 @@ All data is EDF format, 10-20 montage preferred.
    - https://physionet.org/content/chbmit/1.0.0/
    - Suggested file: `chb01_03.edf` (interictal segment)
 
-2. **Vicente et al. 2022 â€” Dying Human Brain (dying)**
+2. **Vicente et al. 2022 - Dying Human Brain (dying)**
    - 900 s continuous EEG during cardiac arrest, 87-year-old male
    - Paper: https://doi.org/10.3389/fnagi.2022.813531
    - Data: included in Supplementary Material, or request EDF from corresponding author ajmal.zemmar@gmail.com
@@ -89,12 +89,12 @@ I got 1,500+ clones and zero replications. Comments are easy. Running code is ha
 
 ## Contact
 
-Jesse Shangraw â€” Kingston, Ontario
+Jesse Shangraw - Kingston, Ontario
 Open an Issue for replications. I respond to data, not debates.
 
 ## License
 
-MIT â€” use it, break it, cite it.
+MIT - use it, break it, cite it.
 
 ---
 *Built on mobile, May 2026. If you replicate on a phone too, tell me.*

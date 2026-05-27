@@ -1,4 +1,4 @@
-# The Shangraw Gap â€” 45-Hz Bicoherence in Living vs Dying EEG
+# The Shangraw Gap - 45-Hz Bicoherence in Living vs Dying EEG
 
 Open EDF analysis from Kingston, Ontario. Built 100% on a phone. No lab, no funding.
 

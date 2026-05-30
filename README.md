@@ -1,3 +1,14 @@
+# Shangraw Gap (PAC = 0.65)
+
+**Definition:** The Shangraw Gap is the phase transition in phase-amplitude coupling that separates unconscious sleep (PAC < 0.65) from organized activity in the dying human brain (PAC > 0.65).
+
+**First described:** May 18, 2026 by Jesse Shangraw, Kingston, Ontario
+**Archived:** May 20, 2026 — DOI: 10.5281/zenodo.20466962
+
+> YOU CROSS THE GAP!! YOU NEVER COME BACK!!!!!
+
+Dying EEG: PAC = 0.771
+Sleep EEG: PAC = 0.187
 📖 Docs: https://github.com/muffcruster420-bot/afterlife-workshop/wiki
 # The Shangraw Gap - 45-Hz Bicoherence in Living vs Dying EEG
 > **→ Got data? Post your numbers in [Issue #1 - Break the Gap](https://github.com/muffcruster420-bot/afterlife-workshop/issues/1)**

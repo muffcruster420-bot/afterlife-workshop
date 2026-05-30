@@ -1,16 +1,10 @@
 cff-version: 1.2.0
 title: "The 0.65 Threshold: A Phase Transition at Death"
+message: "If you use this software, please cite it as below."
 authors:
     - family-names: Shangraw
     given-names: Jesse
-date-released: 2026-05-18
-version: 1.0.0
-repository-code: "https://github.com/muffcruster420-bot/afterlife-workshop"
-keywords:
-    - bicoherence
-    - consciousness
-    - EEG
-    - Schumann resonance
-    - near-death
-abstract: "Discovery of a discrete phase transition in neural bicoherence at death. No living brain exceeds 0.65."
+date-released: "2026-05-18"
+version: "1.0.0"
+url: "https://github.com/muffcruster420-bot/afterlife-workshop"
 license: MIT

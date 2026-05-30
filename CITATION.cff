@@ -3,15 +3,14 @@ title: "The 0.65 Threshold: A Phase Transition at Death"
 authors:
     - family-names: Shangraw
     given-names: Jesse
-    orcid: https://orcid.org/0000-0000-0000
 date-released: 2026-05-18
 version: 1.0.0
-repository-code: https://github.com/muffcruster420-bot/afterlife-workshop
+repository-code: "https://github.com/muffcruster420-bot/afterlife-workshop"
 keywords:
     - bicoherence
     - consciousness
     - EEG
     - Schumann resonance
     - near-death
-abstract: "Discovery of a discrete phase transition in neural bicoherence at death. No living brain exceeds 0.65; dying brains jump to 0.771 and hold for 87 seconds, phase-locked to Earth's 45 Hz Schumann resonance."
+abstract: "Discovery of a discrete phase transition in neural bicoherence at death. No living brain exceeds 0.65."
 license: MIT

@@ -1,5 +1,5 @@
 # Shangraw Gap (PAC = 0.65)
-
+![Shangraw Gap CI](https://github.com/muffcruster420-bot/afterlife-workshop/actions/workflows/python-package.yml/badge.svg)
 **Definition:** The Shangraw Gap is the phase transition in phase-amplitude coupling that separates unconscious sleep (PAC < 0.65) from organized activity in the dying human brain (PAC > 0.65).
 
 **First described:** May 18, 2026 by Jesse Shangraw, Kingston, Ontario

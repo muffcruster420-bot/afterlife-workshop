@@ -3,7 +3,7 @@
 PhysioNet submission under review (submitted 2026-06-02). Zenodo archive: https://doi.org/10.5281/zenodo.20466962
 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20466962.svg)](https://doi.org/10.5281/zenodo.20466962) [![CI](https://github.com/muffcruster420-bot/afterlife-workshop/actions/workflows/python-app.yml/badge.svg)](https://github.com/muffcruster420-bot/afterlife-workshop/actions)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20466962.svg)](https://doi.org/10.5281/zenodo.20466962) [![CI](https://github.com/muffcruster420-bot/afterlife-workshop/actions/workflows/python-app.yml/badge.svg)](https://github.com/muffcruster420-bot/afterlife-workshop/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **dying brains >0.7, living brains <0.6 — nothing sustains in the Gap.** Open EDF data, 1,048 clones, first described May 18 2026, Kingston ON.
 

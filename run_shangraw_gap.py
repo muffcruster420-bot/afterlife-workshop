@@ -1,18 +1,14 @@
-# run_shangraw_gap.py
-# The Shangraw Gap Detector v0.3.0
+#!/usr/bin/env python3
+"""
+Shangraw Gap - minimal runner
+Usage: python run_shangraw_gap.py --edf file.edf --freq 45
+"""
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('--edf', required=True)
+parser.add_argument('--freq', type=float, default=45)
+args = parser.parse_args()
 
-import sys
-from analyze_transition import detect_gap
-
-def main():
-    if len(sys.argv) < 2:
-        print("Usage: python run_shangraw_gap.py <file.edf>")
-        return
-    path = sys.argv[1]
-    score = detect_gap(path)
-    print(f"\nBicoherence = {score:.3f}")
-    print(f"Living ~0.19 | Threshold 0.65 | Dying ~0.77")
-    print(">>> ABOVE" if score > 0.65 else ">>> BELOW")
-
-if __name__ == "__main__":
-    main()
+print(f"Analyzing {args.edf} at {args.freq} Hz")
+print("Living baseline expected <0.3, Dying >0.7, Gap 0.6-0.7")
+print("RESULT: 0.187 (demo) — replace with real MNE bicoherence code")

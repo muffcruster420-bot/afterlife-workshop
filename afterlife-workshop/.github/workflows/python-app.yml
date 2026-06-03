@@ -1,4 +1,4 @@
-name: CI
+name: Shangraw Gap CI
 on: [push, pull_request]
 jobs:
   test:

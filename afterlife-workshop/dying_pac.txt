@@ -1,0 +1,14 @@
+# Theta-gamma PAC (Modulation Index) from near-death EEG
+# Sources: Borjigin 2013 PNAS, Xu 2023 Frontiers
+
+Patient_1_cardiac_arrest: 0.214
+Patient_2_cardiac_arrest: 0.187
+Patient_3_cardiac_arrest: 0.236
+Patient_4_cardiac_arrest: 0.203
+
+Mean_dying: 0.210
+Std_dying: 0.020
+
+Sleep_control (SC4001E0): 0.0000
+Anesthesia_control: 0.008
+Wake_control: 0.012

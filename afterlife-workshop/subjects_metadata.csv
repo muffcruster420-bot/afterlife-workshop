@@ -1,0 +1,4 @@
+filename,type,location,date_collected,peak_bicoherence,hold_seconds,status,notes
+sleep.edf,living,Kingston ON,2026-05-09,0.187,0.0,BELOW,baseline sleep
+subject3_sleep.edf,living,Kingston ON,2026-05-14,0.19,0.0,BELOW,replication control
+dying.edf,dying,Kingston ON,2026-05-09,0.771,87.0,ABOVE,87s hold

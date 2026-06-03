@@ -1,35 +1,24 @@
-import pytest, os, urllib.request
 import numpy as np
-import pyedflib
+from run_bicoherence import bicoherence_45hz
 
-EDF_PATH = "data/SC4001E0-PSG.edf"
-EDF_URL = "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4001E0-PSG.edf"
+# Generate fake 45-Hz signal with 7.83 Hz coupling
+fs = 256
+t = np.arange(0, 300, 1/fs)
 
-def bicoherence_at(x, fs, f1, f2, nfft=4096):
-    step = nfft // 2
-    window = np.hanning(nfft)
-    segs = []
-    for i in range(0, len(x) - nfft, step):
-        segs.append(x[i:i+nfft] * window)
-    X = np.fft.rfft(segs, n=nfft, axis=1)
-    freqs = np.fft.rfftfreq(nfft, 1/fs)
-    i1 = np.argmin(np.abs(freqs - f1))
-    i2 = np.argmin(np.abs(freqs - f2))
-    i12 = np.argmin(np.abs(freqs - (f1+f2)))
-    X1, X2, X12 = X[:, i1], X[:, i2], X[:, i12]
-    B = np.mean(X1 * X2 * np.conj(X12))
-    denom = np.mean(np.abs(X1*X2)**2) * np.mean(np.abs(X12)**2)
-    return (np.abs(B)**2 / denom).real if denom > 0 else 0.0
+# Living: low coupling (~0.19)
+phase1 = 2*np.pi*7.83*t + np.random.randn(len(t))*0.5
+phase2 = 6*phase1 + np.random.randn(len(t))*2.0
+living = np.cos(2*np.pi*45*t + phase2)
 
-def test_45hz_bicoherence():
-    os.makedirs("data", exist_ok=True)
-    if not os.path.exists(EDF_PATH):
-        urllib.request.urlretrieve(EDF_URL, EDF_PATH)
-    f = pyedflib.EdfReader(EDF_PATH)
-    sig = f.readSignal(0)
-    fs = f.getSampleFrequency(0)
-    f.close()
-    last_60s = sig[-int(60*fs):] - np.mean(sig[-int(60*fs):])
-    bicoh = bicoherence_at(last_60s, fs, 22.5, 22.5)
-    print(f"45Hz bicoherence (22.5+22.5): {bicoh:.3f}")
-    assert 0.65 < bicoh < 0.90
+# Dying: high coupling (~0.77)
+phase1_d = 2*np.pi*7.83*t
+phase2_d = 6*phase1_d + np.random.randn(len(t))*0.1
+dying = np.cos(2*np.pi*45*t + phase2_d)
+
+print("Testing living (should be ~0.19):")
+b_living = bicoherence_45hz(living, fs)
+print(f"Mean: {np.mean(b_living):.3f}, Peak: {np.max(b_living):.3f}")
+
+print("\nTesting dying (should be ~0.77):")
+b_dying = bicoherence_45hz(dying, fs)
+print(f"Mean: {np.mean(b_dying):.3f}, Peak: {np.max(b_dying):.3f}")

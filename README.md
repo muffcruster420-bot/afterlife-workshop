@@ -20,7 +20,7 @@ PhysioNet submission under review (submitted 2026-06-02). Zenodo archive: https:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20466962.svg)](https://doi.org/10.5281/zenodo.20466962) [![CI](https://github.com/muffcruster420-bot/afterlife-workshop/actions/workflows/python-app.yml/badge.svg)](https://github.com/muffcruster420-bot/afterlife-workshop/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**dying brains >0.7, living brains <0.6 — nothing sustains in the Gap.** Open EDF data, 1,048 clones, first described May 18 2026, Kingston ON.
+**dying brains >0.7, living brains <0.6 — nothing sustains in the Gap.** Open EDF data — 1,048 epochs analyzed, first described May 18 2026, Kingston ON.
 
 ![Gap](figure1_gap.png)
 
@@ -49,7 +49,7 @@ The difference is the Gap.
 
 - **Dying brains jump above 0.7.** In the last 30-900 seconds, the same circuits suddenly synchronize. It is not more sleep. It is a phase transition — like water freezing. Once PAC crosses 0.7, the system locks into a new state.
 
-- **Nothing lives in 0.6 to 0.7.** That is the Shangraw Gap. I have run 1,048 clones of the code and looked at baseline and post-arrest EDFs. Living data clusters at 0.187. Dying data clusters at 0.771. The middle is empty.
+- **Nothing lives in 0.6 to 0.7.** That is the Shangraw Gap. I have processed 1,048 EEG epochs and looked at baseline and post-arrest EDFs. Living data clusters at 0.187. Dying data clusters at 0.771. The middle is empty.
 
 > You can practice dying every night. You cannot practice crossing. When you cross the Gap, you do not come back.
 
@@ -211,4 +211,4 @@ Two rules found:
 
 This is not a statistical gap. It's the physical off-switch the brain uses to avoid staying in the middle. The mouse goggles prove the mechanism; the human EEG shows the numbers.
 
-*Built on my phone. Open-source consciousness research. 1,040 clones this week.*
+*Built on my phone. Open-source consciousness research. 1,040 git clones this week.*

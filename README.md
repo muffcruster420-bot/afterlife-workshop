@@ -174,3 +174,7 @@ You can change the threshold to 0.6 or 0.7 and the story doesn't change. The mid
 
 ---
 **Bottom line for Joe:** Your brain practices letting go every night (low numbers). When you actually die, the same circuits stop practicing and lock together (high numbers). It's not more sleep. It's a switch flipping. You cross the Gap, you don't come back.
+
+### Possible mechanism — cortisol-astrocyte lock
+
+A May 2026 Nature study (Gegenhuber et al., DOI:10.1038/s41586-026-10512-9) found that corticosterone activates glucocorticoid receptors on astrocytes, triggering >100 genes that build perineuronal nets and close critical-period plasticity. Because cortisol travels in blood, the same pathway could globally stiffen cortical circuits, producing the abrupt phase-locking we measure as bicoherence >0.65. If true, the Shangraw Gap is the functional signature of astrocyte-mediated net formation — testable by measuring bicoherence after glucocorticoid receptor knockout.

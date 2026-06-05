@@ -69,6 +69,33 @@ For standard 10-20 EEG analyzed in 2-second epochs at 45 Hz:
 - The Gap (0.6 to 0.7) contains <5% of all epochs
 Find one counterexample and the claim breaks.
 
+### Try to Break It
+1. Download any open EDF from PhysioNet
+2. Run `python run_shangraw_gap.py --file your.edf`
+3. Post the bicoherence number. If it lands 0.4–0.6, you killed the Gap.
+
+## Data
+- `subjects_metadata.csv` — all 1,048 epochs
+- `results.csv` — bicoherence values
+- `sleep_pac.txt` — SC4001E0 hypnogram analysis
+- EDF files in `/data` (see links in wiki)
+
+## How It Works — Explained Like You're at the Corner Store
+Bicoherence is a three-way handshake. Two brain waves at frequency f1 and f2 meet and make a third at f1+f2. If they are random strangers, the handshake fails — score near 0. If they are a locked crew, the handshake works every time — score near 1.
+
+Living brain: noisy bar, everyone talking over each other, handshakes fail = 0.19  
+Dying brain: last call, everyone locks arms and sings the same song = 0.77
+
+The Gap at 0.65 is where the bar flips from chaos to choir. No in-between.
+
+Formula (2-second epochs, 45 Hz):
+`b^2(f1,f2) = |E[X(f1)X(f2)X*(f1+f2)]|^2 / (E[|X(f1)X(f2)|^2] E[|X(f1+f2)|^2])`
+
+## What I Found So Far
+- 0 of 1,048 epochs sit stable in 0.60–0.70 for >5 seconds
+- Sleep never crosses 0.6 (max 0.32 in REM)
+- Cardiac arrest shows jump from 0.21 to 0.78 in 47 seconds (subject 0284)
+
 ## Possible mechanism — cortisol-astrocyte lock
 A May 2026 Nature study (Gegenhuber et al., DOI:10.1038/s41586-026-10512-9) found that corticosterone activates glucocorticoid receptors on astrocytes, triggering >100 genes that build perineuronal nets and close critical-period plasticity. Because cortisol travels in blood, the same pathway could globally stiffen cortical circuits, producing the abrupt phase-locking we measure as bicoherence >0.65.
 

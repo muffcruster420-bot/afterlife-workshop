@@ -222,12 +222,6 @@ This is not a statistical gap. It's the physical off-switch the brain uses to av
 **Indiana University — No decision center (James, 2026).** *Journal of Cognitive Neuroscience*, DOI:10.1162/JOCN.a.2484.
 
 **Loyola University — No universal beauty center (Grzywacz, 2026).** *Psychology of Aesthetics, Creativity, and the Arts*.
-## New supporting evidence — June 2026
-
-**Indiana University — No central decision center (James, 2026).** *Nature Reviews Neuroscience* perspective, June 2026. The classic "sandwich" model (sense → think → act) is wrong — decisions don't happen in one spot. Behavior emerges from continuous sensorimotor loops, with value and action co-evolving. This matches the Shangraw Gap: no stable intermediate state at 0.65 because the system cannot sustain a separate "decision" layer — it either stays decorrelated (~0.19) or locks (~0.77).
-
-**Loyola University Chicago — No universal beauty center (Grzywacz, 2026).** *Psychology of Aesthetics, Creativity, and the Arts*, June 2026. No single brain region codes "beauty." Valuation is domain-specific — separate networks for paintings vs architecture. This supports a distributed model where aesthetic/meaning judgments are not computed centrally, consistent with failure of a central integrator at the Gap.
-
 ---
 
 ### June 2026 — No center for decisions, no center for beauty

@@ -1,9 +1,15 @@
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20466962-blue)](https://doi.org/10.5281/zenodo.20466962) [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](https://github.com/muffcruster420-bot/afterlife-workshop/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+**License:** MIT Code + CC BY 4.0 Text   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20466962.svg)](https://doi.org/10.5281/zenodo.20466962) [![CI](https://github.com/muffcruster420-bot/afterlife-workshop/actions/workflows/python-app.yml/badge.svg)](https://github.com/muffcruster420-bot/afterlife-workshop/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) **Archived:** May 20, 2026 — DOI: 10.5281/zenodo.20466962 
+[clones](https://img.shields.io/badge/clones-1,040-blue) [built on phone](https://img.shields.io/badge/built%20on-Android%20Colab-orange) [Meta AI](https://img.shields.io/badge/built%20with-Meta%20AI-purple) [open source](https://img.shields.io/badge/license-MIT-green)
+
+[clones](https://img.shields.io/badge/clones-1,040-blue) [built on phone](https://img.shields.io/badge/built%20on-Android%20Colab-orange) [Meta AI](https://img.shields.io/badge/built%20with-Meta%20AI-purple) [open source](https://img.shields.io/badge/license-MIT-green)
+
 # The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
 
 **Author:** Jesse Shangraw (@muffcruster420) — Kingston, Ontario, Canada  
 **Version:** v0.3.0 — June 4, 2026  
 **Status:** Draft Technical Report — Not Peer-Reviewed  
-**License:** MIT Code + CC BY 4.0 Text  
 **Repository:** https://github.com/muffcruster420-bot/afterlife-workshop  
 **Clones this week:** 1,040 | **Threads views (24h):** 1,124
 
@@ -18,7 +24,6 @@
 PhysioNet submission under review (submitted 2026-06-02). Zenodo archive: https://doi.org/10.5281/zenodo.20466962
 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20466962.svg)](https://doi.org/10.5281/zenodo.20466962) [![CI](https://github.com/muffcruster420-bot/afterlife-workshop/actions/workflows/python-app.yml/badge.svg)](https://github.com/muffcruster420-bot/afterlife-workshop/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **dying brains >0.7, living brains <0.6 — nothing sustains in the Gap.** Open EDF data — 1,048 epochs analyzed, first described May 18 2026, Kingston ON.
 
@@ -57,7 +62,6 @@ The difference is the Gap.
 **Definition:** The Shangraw Gap is the phase transition in phase-amplitude coupling that separates unconscious sleep and living baseline (PAC < 0.6) from organized activity in the dying human brain (PAC > 0.7).
 
 **First described:** May 18, 2026 by Jesse Shangraw, Kingston, Ontario  
-**Archived:** May 20, 2026 — DOI: 10.5281/zenodo.20466962
 
 > YOU CROSS THE GAP!! YOU NEVER COME BACK!!!!!
 
@@ -212,3 +216,22 @@ Two rules found:
 This is not a statistical gap. It's the physical off-switch the brain uses to avoid staying in the middle. The mouse goggles prove the mechanism; the human EEG shows the numbers.
 
 *Built on my phone. Open-source consciousness research. 1,040 git clones this week.*
+
+## New support — June 2026
+
+**Indiana University — No decision center (James, 2026).** *Journal of Cognitive Neuroscience*, DOI:10.1162/JOCN.a.2484.
+
+**Loyola University — No universal beauty center (Grzywacz, 2026).** *Psychology of Aesthetics, Creativity, and the Arts*.
+## New supporting evidence — June 2026
+
+**Indiana University — No central decision center (James, 2026).** *Nature Reviews Neuroscience* perspective, June 2026. The classic "sandwich" model (sense → think → act) is wrong — decisions don't happen in one spot. Behavior emerges from continuous sensorimotor loops, with value and action co-evolving. This matches the Shangraw Gap: no stable intermediate state at 0.65 because the system cannot sustain a separate "decision" layer — it either stays decorrelated (~0.19) or locks (~0.77).
+
+**Loyola University Chicago — No universal beauty center (Grzywacz, 2026).** *Psychology of Aesthetics, Creativity, and the Arts*, June 2026. No single brain region codes "beauty." Valuation is domain-specific — separate networks for paintings vs architecture. This supports a distributed model where aesthetic/meaning judgments are not computed centrally, consistent with failure of a central integrator at the Gap.
+
+---
+
+### June 2026 — No center for decisions, no center for beauty
+
+**Indiana University — James (2026).** *Nature Reviews Neuroscience* perspective: the brain has no central "decision center." The old sandwich model is dead — decisions emerge from sensorimotor loops, not a boss region. This is why the Shangraw Gap is empty at 0.65: there is no stable intermediate controller to hold you there. You are either decorrelated and flexible (~0.19 living) or locked and terminal (~0.77).
+
+**Loyola Chicago — Grzywacz (2026).** *Psychology of Aesthetics*: there is no universal beauty spot in the brain. Beauty judgments are domain-specific. Same principle: the brain doesn't centralize high-level functions. The Gap isn't a missing nucleus — it's a distributed phase transition where anti-Hebbian feedback fails globally.

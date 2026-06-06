@@ -140,3 +140,5 @@ Built on my phone. Open-source consciousness research. 1,040 git clones this wee
 ![Sleep PAC - MI 0.0000](sleep_pac.png)
 
 *Phase-amplitude coupling collapses in sleep (MI = 0.0000). Theta phase no longer drives gamma — the 45Hz band uncouples, matching the suppression window.*
+
+> *Independent NDERF analysis of 2,495 NDEs (2026) found 64% report time as non-sequential and 54% describe the state as "realer than real" — phenomenology that aligns with the 45Hz PAC collapse (MI=0) and bicoherence jump (0.19→0.77) observed here.*

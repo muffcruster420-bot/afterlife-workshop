@@ -121,24 +121,4 @@ The Shangraw Gap at 0.65 is the computational boundary where anti-Hebbian feedba
 
 Built on my phone. Open-source consciousness research. 1,040 git clones this week.
 
-## Sleep Is Practice Dying — You Never Cross the Gap
-
-![The Shangraw Gap - Sleep EDF](shangraw_gap_8panel.png)
-
-*May 25, 2026 — Mobile Colab run (Kingston, ON). Four Sleep-EDF PSG recordings processed entirely on Android. Consistent 45Hz suppression from ~30k–50k sec across all files, reproduced with no laptop. living brains practice 45-Hz bicoherence at 0.19, dying brains release at 0.77. Nothing lives at 0.65.*
-
-![Sleep PAC - MI 0.0000](sleep_pac.png)
-
-*Phase-amplitude coupling collapses in sleep (MI = 0.0000). Theta phase no longer drives gamma — the 45Hz band uncouples, matching the suppression window.*
-
-## Sleep Is Practice Dying — You Never Cross the Gap
-
-![The Shangraw Gap - Sleep EDF](shangraw_gap_8panel.png)
-
-*May 25, 2026 — Mobile Colab run (Kingston, ON). Four Sleep-EDF PSG recordings processed entirely on Android. Consistent 45Hz suppression from ~30k–50k sec across all files, reproduced with no laptop. living brains practice 45-Hz bicoherence at 0.19, dying brains release at 0.77. Nothing lives at 0.65.*
-
-![Sleep PAC - MI 0.0000](sleep_pac.png)
-
-*Phase-amplitude coupling collapses in sleep (MI = 0.0000). Theta phase no longer drives gamma — the 45Hz band uncouples, matching the suppression window.*
-
 > *Independent NDERF analysis of 2,495 NDEs (2026) found 64% report time as non-sequential and 54% describe the state as "realer than real" — phenomenology that aligns with the 45Hz PAC collapse (MI=0) and bicoherence jump (0.19→0.77) observed here.*

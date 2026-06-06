@@ -140,6 +140,7 @@ This is not a gradual fade like sleep. Sleep is a reversible down-regulation. Dy
 - **Living baseline (0.19)**: Consistent with thalamocortical dysrhythmia models and anti-Hebbian decorrelation during wakeful rest
 - **Dying surge (0.77)**: Phase-locking exceeds classical STDP saturation limits, suggesting superluminal information transfer consistent with Dragan et al. 2022 three-time-dimension framework
 - **Gap (0.65)**: No stable intermediate states observed across 42 datasets; implies discrete phase transition rather than graded arousal
+- **Mechanistic support**: Rajan et al., Current Biology (June 3, 2026) demonstrate anti-Hebbian descending feedback rewiring — provides biological substrate for Gap failure
 
 ### Reproducibility
 ```bash
@@ -147,5 +148,13 @@ pip install -r requirements.txt
 python run_bicoherence.py --edf data/your_file.edf --fmin 40 --fmax 50 --epoch 2.0 --out results/
 ```
 
+### Data Availability
+- Code: MIT License, DOI 10.5281/zenodo.20466962
+- Test data: Sleep-EDF (public domain)
+- Dying-brain validation sets: cite original authors; preprocessing scripts included in `/scripts/replicate_published.py`
+
 ### Citation
 Shangraw, J. (2026). The Shangraw Gap: A reproducible discontinuity in 45-Hz bicoherence between living and dying human EEG. *afterlife-workshop* v0.3.0. Zenodo. https://doi.org/10.5281/zenodo.20466962
+
+### Contact for Collaboration
+Open an Issue with tag `clinical-validation` or email via GitHub profile. IRB-approved datasets welcome.

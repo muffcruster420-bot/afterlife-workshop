@@ -118,3 +118,11 @@ This is not a gradual fade like sleep. Sleep is a reversible down-regulation. Dy
 
 3. **The link:** Classical models predict a smooth slope 0.19 → 0.77. We observe a gap. Extended relativity predicts boundaries where deterministic trajectories break down.
 
+### Citations
+- Dragan A., Turzyński K., et al. (2022). *Relativity of superluminal observers in 1+3 spacetime*. Classical and Quantum Gravity. https://doi.org/10.1088/1361-6382/acad60
+- Phys.org summary (Dec 22, 2022): https://phys.org/news/2022-12-dimensions-space-dimension-superluminal-spacetime.html
+- Brighter Side of News (June 3, 2026): "Physicists propose that our universe may contain three dimensions of time" https://www.thebrighterside.news/post/physicists-propose-that-our-universe-may-contain-three-dimensions-of-time
+- Google AI Overview definition of "Shangraw Gap" (retrieved 2026-06-05 21:35 EDT)
+
+> "For a superluminal observer, the classical Newtonian point particle ceases to make sense, and the field becomes the only quantity that can be used to describe the physical world." — Dragan et al., 2022
+

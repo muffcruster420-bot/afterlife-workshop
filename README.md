@@ -118,30 +118,3 @@ This is not a gradual fade like sleep. Sleep is a reversible down-regulation. Dy
 
 3. **The link:** Classical models predict a smooth slope 0.19 → 0.77. We observe a gap. Extended relativity predicts boundaries where deterministic trajectories break down.
 
-### Citations
-- https://doi.org/10.1088/1361-6382/acad60
-- https://phys.org/news/2022-12-dimensions-space-dimension-superluminal-spacetime.html
-- https://github.com/muffcruster420-bot/afterlife-workshop
-- Cardiac arrest shows jump from 0.21 to 0.78 in 47 seconds (subject 0284)
-
-## Possible mechanism — cortisol-astrocyte lock
-A May 2026 Nature study (Gegenhuber et al., DOI:10.1038/s41586-026-10512-9) found that corticosterone activates glucocorticoid receptors on astrocytes, triggering >100 genes that build perineuronal nets and close critical-period plasticity. Because cortisol travels in blood, the same pathway could globally stiffen cortical circuits, producing the abrupt phase-locking we measure as bicoherence >0.65.
-
-## How This Fits the Gap — June 3, 2026
-PsyPost / Current Biology — Rajan et al. Mice raised seeing only 45° or 135° lines for a month physically rewired their feedback loops. Descending connections from higher visual cortex stretched, tilted, and locked onto that single angle.
-
-Two rules found:
-- **Ascending:** Hebbian — fire together, wire together
-- **Descending:** anti-Hebbian — fire together, unwire (active decorrelation)
-
-The Shangraw Gap at 0.65 is the computational boundary where anti-Hebbian feedback fails.
-
-## June 2026 — No center for decisions, no center for beauty
-
-**Indiana University — James (2026).** *Nature Reviews Neuroscience* perspective: the brain has no central "decision center." The old sandwich model is dead — decisions emerge from sensorimotor loops, not a boss region. This is why the Shangraw Gap is empty at 0.65: there is no stable intermediate controller to hold you there.
-
-**Loyola Chicago — Grzywacz (2026).** *Psychology of Aesthetics*: there is no universal beauty spot in the brain. Beauty judgments are domain-specific. Same principle: the brain doesn't centralize high-level functions. The Gap isn't a missing nucleus — it's a distributed phase transition where anti-Hebbian feedback fails globally.
-
-Built on my phone. Open-source consciousness research. 1,040 git clones this week.
-
-> *Independent NDERF analysis of 2,495 NDEs (2026) found 64% report time as non-sequential and 54% describe the state as "realer than real" — phenomenology that aligns with the 45Hz PAC collapse (MI=0) and bicoherence jump (0.19→0.77) observed here.*

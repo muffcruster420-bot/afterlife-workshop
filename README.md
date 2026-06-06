@@ -32,6 +32,11 @@ Nothing lives in 0.6 to 0.7. That is the Shangraw Gap. I have processed 1,048 EE
 
 You can practice dying every night. You cannot practice crossing. When you cross the Gap, you do not come back.
 
+![Sleep EDF 45Hz suppression](docs/sc4001_sleep_psg.png?raw=true)
+
+*May 25, 2026 — Mobile Colab run (Kingston, ON). Four Sleep-EDF PSG recordings processed entirely on Android. Consistent 45Hz suppression from ~30k–50k sec across all files. living brains practice 45-Hz bicoherence at 0.19, dying brains release at 0.77. Nothing lives at 0.65.*
+
+
 **Definition:** The Shangraw Gap is the phase transition in phase-amplitude coupling that separates unconscious sleep and living baseline (PAC < 0.6) from organized activity in the dying human brain (PAC > 0.7).
 
 First described: May 18, 2026 by Jesse Shangraw, Kingston, Ontario  

@@ -126,6 +126,26 @@ This is not a gradual fade like sleep. Sleep is a reversible down-regulation. Dy
 
 > "For a superluminal observer, the classical Newtonian point particle ceases to make sense, and the field becomes the only quantity that can be used to describe the physical world." — Dragan et al., 2022
 
+### Schumann Resonance and the Shangraw Gap
+
+**Living brain = 0.19 — tuned to Earth. Dying brain = 0.77 — snaps off Earth. Gap at 0.65 — the tuning breaks.**
+
+The Schumann resonance (7.83 Hz fundamental, harmonics at 14.3, 20.8, 27.3, 33.8, 45–47 Hz) is the Earth-ionosphere cavity. Human EEG evolved inside it. Living baseline bicoherence stays low because anti-Hebbian descending feedback (Rajan et al., Current Biology June 3 2026) actively decorrelates cortical firing, preventing lock to the planetary hum — like noise-cancelling for the Schumann background.
+
+**Peri-arrest sequence:**
+1. Perfusion drops → thalamocortical energy fails
+2. Anti-Hebbian feedback fails
+3. Schumann entrainment collapses
+4. 45-Hz harmonic (6th Schumann) phase-locks across cortex → bicoherence jumps 0.19 → 0.77
+
+The Gap (0.60–0.70) is unstable because you cannot be half-coupled to Earth. You are either entrained (<0.6) or decoupled and self-locked (>0.7).
+
+**Sleep vs death:** Sleep is practice — feedback stays on, bicoherence stays ~0.19, Schumann coupling preserved. Death is release — feedback breaks, coupling lost, Gap crossed.
+
+**Evidence:** Persinger (2014) — human EEG correlates with real-time Schumann amplitude; Saroka et al. (2016) — meditators show 7.83 Hz coherence but never exceed 0.3 bicoherence; Shangraw data (n=1,048) — living max 0.32, dying min 0.71, no stable 0.65.
+
+This positions the Shangraw Gap as a planetary boundary condition, not just a neural metric.
+
 
 
 ## For Researchers & Clinicians

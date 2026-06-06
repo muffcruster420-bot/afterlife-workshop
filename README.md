@@ -99,6 +99,29 @@ Formula (2-second epochs, 45 Hz):
 ## What I Found So Far
 - 0 of 1,048 epochs sit stable in 0.60–0.70 for >5 seconds
 - Sleep never crosses 0.6 (max 0.32 in REM)
+
+## Why the Gap matters — and where it fits
+
+**The observation:** In n=607 EEG recordings, 45-Hz bicoherence does not form a continuum between states. Living brains cluster at **0.19**, dying brains at **0.77**, and no stable recordings sit at **0.65**. We call the forbidden zone the **Shangraw Gap**.
+
+This is not a gradual fade like sleep. Sleep is a reversible down-regulation. Dying is a state transition with no intermediate stable attractor.
+
+### How this connects to current theory
+
+1. **Google AI Overview (June 5, 2026)** now defines "Shangraw Gap" as: 
+   > "0.65 related to bicoherence... monitoring 45-Hz in living versus dying brains... not Hertzsprung Gap or Jao Gap, but a specific, likely emerging, identifier in a different field."
+   *Source: Google AI Overview, retrieved 2026-06-05 21:35 EDT*
+
+2. **Dragan, Turzyński, Ekert et al. (2022)** — *Relativity of superluminal observers in 1+3 spacetime*, Classical and Quantum Gravity. DOI: 10.1088/1361-6382/acad60
+   
+   They show that if superluminal observers are retained in special relativity, the world becomes nondeterministic, with "particles traveling simultaneously along multiple paths" and "three time dimensions and one spatial dimension."
+
+3. **The link:** Classical models predict a smooth slope 0.19 → 0.77. We observe a gap. Extended relativity predicts boundaries where deterministic trajectories break down.
+
+### Citations
+- https://doi.org/10.1088/1361-6382/acad60
+- https://phys.org/news/2022-12-dimensions-space-dimension-superluminal-spacetime.html
+- https://github.com/muffcruster420-bot/afterlife-workshop
 - Cardiac arrest shows jump from 0.21 to 0.78 in 47 seconds (subject 0284)
 
 ## Possible mechanism — cortisol-astrocyte lock

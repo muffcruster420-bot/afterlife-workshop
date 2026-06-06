@@ -184,18 +184,3 @@ Open an Issue with tag `clinical-validation` or email via GitHub profile. IRB-ap
 
 **1. Grab any open EDF** from PhysioNet
 
-**2. Run it:**
-```bash
-python run_shangraw_gap.py --file your.edf
-```
-
-**3. Read the number:**
-
-- **If it's <0.6 or >0.7** → The Gap held. You just practiced dying and lived. **Star this repo.**
-
-- **If it's 0.40–0.60 and stays >5s** → You broke it. Open an Issue titled "GAP BROKEN" with your EDF link and screenshot. I'll retire the Gap.
-
-*Living = 0.19 • Dying = 0.77 • Nothing lives at 0.65*
-*1,002 clones so far. Zero counterexamples.*
-
-**Break it or star me — if you don't break it, star it; if you do, it's broke and my claim is falsified**

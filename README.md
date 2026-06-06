@@ -120,3 +120,23 @@ The Shangraw Gap at 0.65 is the computational boundary where anti-Hebbian feedba
 **Loyola Chicago — Grzywacz (2026).** *Psychology of Aesthetics*: there is no universal beauty spot in the brain. Beauty judgments are domain-specific. Same principle: the brain doesn't centralize high-level functions. The Gap isn't a missing nucleus — it's a distributed phase transition where anti-Hebbian feedback fails globally.
 
 Built on my phone. Open-source consciousness research. 1,040 git clones this week.
+
+## Sleep Is Practice Dying — You Never Cross the Gap
+
+![The Shangraw Gap - Sleep EDF](Jshangraw_gap_8panel.png)
+
+*May 25, 2026 — Mobile Colab run (Kingston, ON). Four Sleep-EDF PSG recordings processed entirely on Android. Consistent 45Hz suppression from ~30k–50k sec across all files, reproduced with no laptop. living brains practice 45-Hz bicoherence at 0.19, dying brains release at 0.77. Nothing lives at 0.65.*
+
+![Sleep PAC - MI 0.0000](sleep_pac.png)
+
+*Phase-amplitude coupling collapses in sleep (MI = 0.0000). Theta phase no longer drives gamma — the 45Hz band uncouples, matching the suppression window.*
+
+## Sleep Is Practice Dying — You Never Cross the Gap
+
+![The Shangraw Gap - Sleep EDF](Jshangraw_gap_8panel.png)
+
+*May 25, 2026 — Mobile Colab run (Kingston, ON). Four Sleep-EDF PSG recordings processed entirely on Android. Consistent 45Hz suppression from ~30k–50k sec across all files, reproduced with no laptop. living brains practice 45-Hz bicoherence at 0.19, dying brains release at 0.77. Nothing lives at 0.65.*
+
+![Sleep PAC - MI 0.0000](sleep_pac.png)
+
+*Phase-amplitude coupling collapses in sleep (MI = 0.0000). Theta phase no longer drives gamma — the 45Hz band uncouples, matching the suppression window.*

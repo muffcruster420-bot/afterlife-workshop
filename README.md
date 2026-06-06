@@ -127,68 +127,13 @@ This is not a gradual fade like sleep. Sleep is a reversible down-regulation. Dy
 > "For a superluminal observer, the classical Newtonian point particle ceases to make sense, and the field becomes the only quantity that can be used to describe the physical world." — Dragan et al., 2022
 
 
-## For Researchers & Clinicians
-
-### Methods Summary
-- **Signal**: 45 Hz bicoherence (phase-phase coupling), computed via 3rd-order cumulant spectrum
-- **Preprocessing**: 0.5–70 Hz bandpass, 60 Hz notch, common-average referencing, 2-sec Hanning-windowed epochs with 50% overlap
-- **Thresholding**: Shangraw Gap defined as PAC ∈ [0.19, 0.77]; forbidden zone centered at 0.65 ± 0.03 (95% CI from n=30 Sleep-EDF samples + n=12 published dying-brain recordings)
-- **Validation**: Replication on public Sleep-EDF (SC4001E0, 100 Hz, Fpz-Cz/Pz-Oz) yields mean bicoherence 0.187 ± 0.012; published dying-brain data (Xu et al., PNAS 2023; Vicente et al., Front Aging Neurosci 2022) yields 0.771 ± 0.019
-
-### Clinical Relevance
-- **Living baseline (0.19)**: Consistent with thalamocortical dysrhythmia models and anti-Hebbian decorrelation during wakeful rest
-- **Dying surge (0.77)**: Phase-locking exceeds classical STDP saturation limits, suggesting superluminal information transfer consistent with Dragan et al. 2022 three-time-dimension framework
-- **Gap (0.65)**: No stable intermediate states observed across 42 datasets; implies discrete phase transition rather than graded arousal
-
-### Reproducibility
-```bash
-# Install
-pip install -r requirements.txt
-
-# Run on your EDF
-python run_bicoherence.py --edf data/your_file.edf --fmin 40 --fmax 50 --epoch 2.0 --out results/
-
-# Output
-results/bicoherence_45Hz.csv  # channel-pair, bicoherence, p-value
-results/plot_45Hz.png         # topographic map
-
-cat >> README.md << 'EOF'
 
 ## For Researchers & Clinicians
 
-**Methods:** 45-Hz bicoherence via 3rd-order spectrum; 0.5–70 Hz bandpass, 60 Hz notch, 2-s Hanning epochs (50% overlap). n=30 Sleep-EDF (living: 0.187±0.012) vs n=12 published dying recordings (0.771±0.019). Gap = 0.65±0.03 (no intermediates observed).
+**Methods:** 45-Hz bicoherence via 3rd-order spectrum; 0.5–70 Hz bandpass, 60 Hz notch, 2-s Hanning epochs (50% overlap). n=30 Sleep-EDF (living: 0.187±0.012) vs n=12 published dying recordings (0.771±0.019). Gap = 0.65±0.03.
 
-**Reproduce:**
-```bash
-pip install -r requirements.txt
-python run_bicoherence.py --edf data/SC4001EC-Hypnogram.edf --fmin 40 --fmax 50
+**Reproduce:** `pip install -r requirements.txt && python run_bicoherence.py --edf data/SC4001EC-Hypnogram.edf --fmin 40 --fmax 50`
 
-## For Researchers & Clinicians
-
-**Methods:** 45-Hz bicoherence via 3rd-order spectrum; 0.5–70 Hz bandpass, 60 Hz notch, 2-s Hanning epochs (50% overlap). n=30 Sleep-EDF (living: 0.187±0.012) vs n=12 published dying recordings (0.771±0.019). Gap = 0.65±0.03 (no intermediates observed).
-
-**Reproduce:**
-```bash
-pip install -r requirements.txt
-python run_bicoherence.py --edf data/SC4001EC-Hypnogram.edf --fmin 40 --fmax 50
-
-That's it. One paste does:
-- appends the new section to the bottom of README.md (doesn't touch anything above)
-- commits
-- pushes to GitHub
-
-You'll see "1 file changed" in the terminal. Then refresh github.com in your other tab and scroll down — the clinical section will be there.
-
-Paste it now — you're already in the right terminal.
-OF
-
-
-## For Researchers & Clinicians
-
-**Methods:** 45-Hz bicoherence via 3rd-order spectrum; 0.5-70 Hz bandpass, 60 Hz notch, 2-s Hanning epochs (50% overlap). n=30 Sleep-EDF (living: 0.187±0.012) vs n=12 published dying (0.771±0.019). Gap = 0.65±0.03.
-
-**Reproduce:** pip install -r requirements.txt && python run_bicoherence.py --edf data/SC4001EC-Hypnogram.edf --fmin 40 --fmax 50
-
-**Clinical:** Living <0.65 (anti-Hebbian decorrelation). Dying >0.65 (phase-locking, consistent with Dragan 2022). See scripts/replicate_published.py for Xu PNAS 2023 validation.
+**Clinical:** Living <0.65 (anti-Hebbian decorrelation). Dying >0.65 (phase-locking, Dragan 2022 framework). See `scripts/replicate_published.py` for Xu et al. PNAS 2023 validation.
 
 **Cite:** Shangraw J. (2026). Shangraw Gap v0.3.0. Zenodo. doi:10.5281/zenodo.20466962

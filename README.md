@@ -197,3 +197,5 @@ python run_shangraw_gap.py --file your.edf
 
 *Living = 0.19 • Dying = 0.77 • Nothing lives at 0.65*
 *1,002 clones so far. Zero counterexamples.*
+
+**Break it or star me — if you don't break it, star it; if you do, it's broke and my claim is falsified**

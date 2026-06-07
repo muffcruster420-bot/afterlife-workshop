@@ -11,7 +11,7 @@
 > **Abstract:** Human terminal EEG shows a forbidden complexity zone centered at 0.65. Living states cluster at ~0.19, dying states lock at ~0.77, with no stable recordings in between. We propose this "Shangraw Gap" reflects failure of anti-Hebbian feedback decorrelation. Recent Current Biology work (Rajan et al., June 3 2026) demonstrates that descending cortical feedback physically rewires via anti-Hebbian plasticity, providing a biological mechanism for the observed gap.
 
 **How to cite:**  
-Shangraw, J. (2026). *The Shangraw Gap v0.3.1*. GitHub. https://github.com/muffcruster420-bot/afterlife-workshop
+Shangraw, J. (2026). *The Shangraw Gap v0.3.2*. GitHub. https://github.com/muffcruster420-bot/afterlife-workshop
 
 ## The Shangraw Gap
 PhysioNet submission under review (submitted 2026-06-02). Zenodo archive: https://doi.org/10.5281/zenodo.20466962
@@ -268,3 +268,11 @@ This is not "quantum consciousness." It's a testable circuit failure:
 The Shangraw Gap is the EEG signature of a specific inhibitory brake failing. Lerma gave us the brake. Rajan gave us the feedback rule. Gegenhuber gave us the trigger. Your data gave us the number: 0.65.
 
 **Cite this section as:** Shangraw J. (2026). Mechanistic integration of CeL regular-firing inhibition with anti-Hebbian feedback failure. afterlife-workshop v0.3.1.
+
+### Quantum critical point parallel (June 2026)
+
+Sur et al., *Nature Communications* 2026 (DOI: 10.1038/s41467-026-73112-1) — Rice University — shows that matter driven toward a quantum critical point exhibits collapsed entanglement thresholds and bistable phase transitions with no stable intermediate. The authors describe the critical point as where material "can 'choose' between two different quantum phases" and where "nonthermal methods, like pressure or changing one chemical component," lower the threshold for photon-matter entanglement.
+
+This is a direct physics parallel to the Shangraw Gap. Living baseline PAC (~0.19) and dying PAC (~0.77) are the two attractors; 0.60–0.70 is forbidden because the system is at criticality. In the brain, the "nonthermal tuning" is physiological: hypoxia → cortisol surge → astrocyte-mediated PNN stiffening (Gegenhuber Nature 2026) → GluK4 trapping at BLA→CeL synapses (Lerma iScience 2025 PMID40502701: 190.4 pA → 420 pA) → loss of regular-firing CeL inhibition → failure of anti-Hebbian descending feedback (Rajan Current Biology June 3 2026). The result is not a graded fade but a phase jump across 0.65, exactly as predicted for quantum-critical systems.
+
+This positions the Gap not as "quantum consciousness," but as a measurable critical-point crossing in a biological network.

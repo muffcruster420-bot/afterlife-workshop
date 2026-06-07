@@ -2,7 +2,7 @@
 
 # The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
 **Author:** Jesse Shangraw (@muffcruster420) — Kingston, Ontario, Canada  
-**Version:** v0.3.0 — June 4, 2026  
+**Version:** v0.3.1 — June 4, 2026  
 **Status:** Draft Technical Report — Not Peer-Reviewed  
 **License:** MIT Code + CC BY 4.0 Text  
 **Repository:** https://github.com/muffcruster420-bot/afterlife-workshop  
@@ -11,7 +11,7 @@
 > **Abstract:** Human terminal EEG shows a forbidden complexity zone centered at 0.65. Living states cluster at ~0.19, dying states lock at ~0.77, with no stable recordings in between. We propose this "Shangraw Gap" reflects failure of anti-Hebbian feedback decorrelation. Recent Current Biology work (Rajan et al., June 3 2026) demonstrates that descending cortical feedback physically rewires via anti-Hebbian plasticity, providing a biological mechanism for the observed gap.
 
 **How to cite:**  
-Shangraw, J. (2026). *The Shangraw Gap v0.3.0*. GitHub. https://github.com/muffcruster420-bot/afterlife-workshop
+Shangraw, J. (2026). *The Shangraw Gap v0.3.1*. GitHub. https://github.com/muffcruster420-bot/afterlife-workshop
 
 ## The Shangraw Gap
 PhysioNet submission under review (submitted 2026-06-02). Zenodo archive: https://doi.org/10.5281/zenodo.20466962
@@ -174,7 +174,7 @@ python run_bicoherence.py --edf data/your_file.edf --fmin 40 --fmax 50 --epoch 2
 - Dying-brain validation sets: cite original authors; preprocessing scripts included in `/scripts/replicate_published.py`
 
 ### Citation
-Shangraw, J. (2026). The Shangraw Gap: A reproducible discontinuity in 45-Hz bicoherence between living and dying human EEG. *afterlife-workshop* v0.3.0. Zenodo. https://doi.org/10.5281/zenodo.20466962
+Shangraw, J. (2026). The Shangraw Gap: A reproducible discontinuity in 45-Hz bicoherence between living and dying human EEG. *afterlife-workshop* v0.3.1. Zenodo. https://doi.org/10.5281/zenodo.20466962
 
 ### Contact for Collaboration
 Open an Issue with tag `clinical-validation` or email via GitHub profile. IRB-approved datasets welcome.

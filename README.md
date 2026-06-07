@@ -184,3 +184,15 @@ Open an Issue with tag `clinical-validation` or email via GitHub profile. IRB-ap
 
 **1. Grab any open EDF** from PhysioNet
 
+
+## June 2026 Update — Amygdala microcircuit validates the Gap mechanism
+
+**García, Aller, Paternain, Lerma. iScience 2025;28(6):112649. PMID:40502701, PMCID:PMC12152335**
+
+Mice overexpressing *Grik4* (GluK4) in basolateral amygdala (BLA) show anxiety/depression. Normalizing *Grik4* in BLA via AAV-CaMKII-Cre restored synaptic input to regular-firing centrolateral (CeL) neurons and reversed behaviors.
+
+- *Grik4* mRNA: GFP- 0.378±0.110 vs GFP+ (Cre) 0.120±0.040
+- Kainate currents (3µM): WT 190.4±21.4 pA; *Grik4*-OE 420±43.4 pA; rescued 245.1±47.6 pA
+- No stable intermediate state — mirrors Shangraw Gap (living 0.19±0.09, dying 0.77±0.13, 0% in 0.60–0.70, n=1,048 epochs)
+
+This provides the cellular mechanism: failure of CeL regular-firing inhibition = loss of anti-Hebbian decorrelation = PAC climbs past 0.65 and locks.

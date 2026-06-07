@@ -276,3 +276,11 @@ Sur et al., *Nature Communications* 2026 (DOI: 10.1038/s41467-026-73112-1) — R
 This is a direct physics parallel to the Shangraw Gap. Living baseline PAC (~0.19) and dying PAC (~0.77) are the two attractors; 0.60–0.70 is forbidden because the system is at criticality. In the brain, the "nonthermal tuning" is physiological: hypoxia → cortisol surge → astrocyte-mediated PNN stiffening (Gegenhuber Nature 2026) → GluK4 trapping at BLA→CeL synapses (Lerma iScience 2025 PMID40502701: 190.4 pA → 420 pA) → loss of regular-firing CeL inhibition → failure of anti-Hebbian descending feedback (Rajan Current Biology June 3 2026). The result is not a graded fade but a phase jump across 0.65, exactly as predicted for quantum-critical systems.
 
 This positions the Gap not as "quantum consciousness," but as a measurable critical-point crossing in a biological network.
+
+### Quantum critical point parallel (June 2026)
+
+Sur et al., *Nature Communications* 2026 (DOI: 10.1038/s41467-026-73112-1) — Rice University — shows that matter driven toward a quantum critical point exhibits collapsed entanglement thresholds and bistable phase transitions with no stable intermediate. The authors describe the critical point as where material "can 'choose' between two different quantum phases" and where "nonthermal methods, like pressure or changing one chemical component," lower the threshold for photon-matter entanglement.
+
+This is a direct physics parallel to the Shangraw Gap. Living baseline PAC (~0.19) and dying PAC (~0.77) are the two attractors; 0.60–0.70 is forbidden because the system is at criticality. In the brain, the "nonthermal tuning" is physiological: hypoxia → cortisol surge → astrocyte-mediated PNN stiffening (Gegenhuber Nature 2026) → GluK4 trapping at BLA→CeL synapses (Lerma iScience 2025 PMID40502701: 190.4 pA → 420 pA) → loss of regular-firing CeL inhibition → failure of anti-Hebbian descending feedback (Rajan Current Biology June 3 2026). The result is not a graded fade but a phase jump across 0.65, exactly as predicted for quantum-critical systems.
+
+This positions the Gap not as "quantum consciousness," but as a measurable critical-point crossing in a biological network.

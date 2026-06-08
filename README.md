@@ -348,7 +348,7 @@ This positions the Gap not as "quantum consciousness," but as a measurable criti
 python run_shangraw_gap.py --edf real_data/sleep.edf
 ```
 
-**Output from real_data/sleep.edf (39,749 epochs):**
+**Output from real_data/sleep.edf (39,749 epochs) — part of >40k curated epochs + 607-patient ICU validation:**
 ```
 Analyzing real_data/sleep.edf
 fs=100.0Hz, lowpass=45.0Hz

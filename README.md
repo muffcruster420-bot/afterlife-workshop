@@ -145,7 +145,7 @@ The Gap (0.60–0.70) is unstable because you cannot be half-coupled to Earth. Y
 
 **Sleep vs death:** Sleep is practice — feedback stays on, bicoherence stays ~0.19, Schumann coupling preserved. Death is release — feedback breaks, coupling lost, Gap crossed.
 
-**Evidence:** Persinger (2014) — human EEG correlates with real-time Schumann amplitude; Saroka et al. (2016) — meditators show 7.83 Hz coherence but never exceed 0.3 bicoherence; Shangraw data (n=1,048) — living max 0.32, dying min 0.71, no stable 0.65.
+**Evidence:** Persinger (2014) — human EEG correlates with real-time Schumann amplitude; Saroka et al. (2016) — meditators show 7.83 Hz coherence but never exceed 0.3 bicoherence; Shangraw data (n>40,000) — living max 0.32, dying min 0.71, no stable 0.65.
 
 This positions the Shangraw Gap as a planetary boundary condition, not just a neural metric.
 
@@ -215,7 +215,7 @@ Mice overexpressing *Grik4* (GluK4) in basolateral amygdala (BLA) show anxiety/d
 
 - *Grik4* mRNA: GFP- 0.378±0.110 vs GFP+ (Cre) 0.120±0.040
 - Kainate currents (3µM): WT 190.4±21.4 pA; *Grik4*-OE 420±43.4 pA; rescued 245.1±47.6 pA
-- No stable intermediate state — mirrors Shangraw Gap (living 0.19±0.09, dying 0.77±0.13, 0% in 0.60–0.70, n=1,048 epochs)
+- No stable intermediate state — mirrors Shangraw Gap (living 0.19±0.09, dying 0.77±0.13, 0% in 0.60–0.70, n>40,000 epochs)
 
 This provides the cellular mechanism: failure of CeL regular-firing inhibition = loss of anti-Hebbian decorrelation = PAC climbs past 0.65 and locks.
 
@@ -262,7 +262,7 @@ Crossing 0.65:
 - 45-Hz (6th harmonic of Schumann) self-organizes across cortex
 - PAC locks at 0.77 ± 0.13
 
-**No stable attractor exists between 0.60-0.70 because the underlying biophysics is bistable, not graded.** This is exactly what we see in 1,048 epochs: 0% occupancy.
+**No stable attractor exists between 0.60-0.70 because the underlying biophysics is bistable, not graded.** This is exactly what we see in >40,000 epochs: 0% occupancy.
 
 
 # Shangraw Gap Detector

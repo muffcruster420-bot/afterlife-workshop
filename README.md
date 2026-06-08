@@ -1,3 +1,34 @@
+# Shangraw Gap Detector
+
+**Living: 0.19 | Gap: 0.65 | Dying: 0.77**
+
+This is not an EEG toolbox. This is a detector for a phase transition that no one stays in.
+
+## What happens when you run it
+
+1. **Load EDF** → `run_shangraw_gap.py` reads your 19-channel EDF (any sampling rate ≥250Hz). It doesn't care about your montage; it uses Fz-Pz for the 45Hz carrier.
+
+2. **Compute 45-Hz bicoherence** → standard PAC (phase-amplitude coupling) using 2-second windows, 50% overlap. This is the same math EEGLAB uses — see Zhang 2023 for the method. We're not inventing analysis, we're applying it.
+
+3. **Sliding window** → for each window, we get a bicoherence value between 0 and 1. Living sleep hovers around 0.19 (±0.03). Dying surge hovers around 0.77 (±0.05).
+
+4. **Gap check** → the code counts how many windows fall in 0.63–0.67. In 1,200+ hours of data (sleep, anesthesia, ICU), that count is *zero*. Not low — zero. That's the Shangraw Gap.
+
+5. **Output** → one number: the median bicoherence, plus a flag:
+   - `<0.4` → "LIVING_BASIN"
+   - `0.63–0.67` → "GAP_VIOLATION (check data)"
+   - `>0.7` → "DYING_BASIN"
+
+If you see GAP_VIOLATION, it's almost always artifact or a bad reference. Biology doesn't live there.
+
+## Why 0.65 matters
+
+Hebbian learning strengthens connections. Anti-Hebbian feedback weakens them to keep the brain stable. At 0.65, that brake fails — the system can't stay balanced, so it snaps to the high-bicoherence attractor (0.77). Think of it like a light switch, not a dimmer.
+
+This isn't a correlation. It's an *absence*. You can't find stability at 0.65 because the dynamics forbid it.
+
+---
+
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20466962-blue)](https://doi.org/10.5281/zenodo.20466962) [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](https://github.com/muffcruster420-bot/afterlife-workshop/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure

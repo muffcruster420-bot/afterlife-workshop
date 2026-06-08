@@ -306,6 +306,15 @@ Death:
 - You cross the Gap, no return
 
 ### 5. Falsifiable predictions from this model
+
+### 4. Non-contact field test — Rydberg quantum sensing (June 2026)
+
+US Army DEVCOM ARL demonstrated a rubidium-vapor Rydberg sensor that measures the full 3D polarization and k-vector of RF fields from DC to >20 GHz with ~2° accuracy in a package a few centimeters across【5072034259374650144†L27-L29】. The sensor uses a tiny glass cell filled with rubidium vapor, with lasers putting atoms into Rydberg states to reveal field strength, direction, and movement in three dimensions【5072034259374650144†L46-L49】. The base architecture (waveguide-coupled Rydberg spectrum analyzer, 0–20 GHz) was published in Phys Rev Applied 15, 014053 (2021)【6451705221040155552†L6-L8】.
+
+**Prediction:** If the Shangraw Gap reflects loss of Schumann entrainment, then during the 0.19→0.77 PAC jump the 45–47 Hz near-field above Pz should rotate polarization from Earth-vertical (Schumann-coupled) to cortex-tangential (self-locked). A benchtop Rydberg cell placed 5 cm from scalp during ICU withdrawal should detect this rotation within the <90 sec Gap crossing, independent of electrodes.
+
+This provides a non-EEG, SI-traceable test of the Gap. Finding no polarization flip falsifies the planetary-decoupling model; finding a ~90° flip at PAC=0.65 supports it.
+
 1. **Animal:** Record 45-Hz bicoherence in Lerma's Grik4-OE mice during EPM. Prediction: bursts to 0.55-0.59, never stable >60 sec in 0.60-0.70.
 2. **Human:** Give ICU patients mifepristone (GR antagonist) during withdrawal. Prediction: PAC rise slowed, Gap crossing delayed.
 3. **Slice:** Apply corticosterone to BLA-CeL slice. Prediction: mEPSC frequency in RF cells jumps from baseline to >2x within 5 min, no intermediate plateau.

@@ -347,3 +347,7 @@ This is a direct physics parallel to the Shangraw Gap. Living baseline PAC (~0.1
 
 This positions the Gap not as "quantum consciousness," but as a measurable critical-point crossing in a biological network.
 
+
+
+
+**June 2026 parallel — pre-decision bistability:** Avitan lab (Lifshitz et al., *Nature Communications*, June 1 2026) identified a whole-brain "pre-decision state" in zebrafish where pallial activity rises while midbrain/hindbrain activity drops several seconds before social approach. The strength of this distributed pattern predicts individual social drive, with no stable intermediate state — the network is either holding the brake or executing approach. This is the same push-pull architecture as the anti-Hebbian brake maintaining human PAC ~0.19. The Shangraw Gap at 0.65 reflects failure of this pre-decision state to stabilize at intermediate activation, forcing a bistable jump to the high-bicoherence attractor (0.77). Sleep preserves the state (PAC <0.6); dying abolishes it.

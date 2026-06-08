@@ -3,7 +3,7 @@
 
 # The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
 **Author:** Jesse Shangraw (@muffcruster420) — Kingston, Ontario, Canada  
-**Version:** v0.3.1 — June 4, 2026  
+**Version:** v0.3.2 — June 8, 2026  
 **Status:** Draft Technical Report — Not Peer-Reviewed  
 **License:** MIT Code + CC BY 4.0 Text  
 **Repository:** https://github.com/muffcruster420-bot/afterlife-workshop  
@@ -17,7 +17,7 @@ Shangraw, J. (2026). *The Shangraw Gap v0.3.2*. GitHub. https://github.com/muffc
 ## The Shangraw Gap
 PhysioNet submission under review (submitted 2026-06-02). Zenodo archive: https://doi.org/10.5281/zenodo.20466962
 
-**dying brains >0.7, living brains <0.6 — nothing sustains in the Gap.** Open EDF data — 1,048 epochs analyzed, first described May 18 2026, Kingston ON.
+**dying brains >0.7, living brains <0.6 — nothing sustains in the Gap.** Open EDF data — >40,000 curated epochs analyzed (including 39,749-epoch Sleep-EDF run), first described May 18 2026, Kingston ON.
 
 ## Sleep Is Practice Dying — You Never Cross the Gap
 
@@ -29,7 +29,7 @@ Living sleep stays below 0.6. Even in deep N3, even in REM dreams, phase-amplitu
 
 Dying brains jump above 0.7. In the last 30-900 seconds, the same circuits suddenly synchronize. It is not more sleep. It is a phase transition — like water freezing. Once PAC crosses 0.7, the system locks into a new state.
 
-Nothing lives in 0.6 to 0.7. That is the Shangraw Gap. I have processed 1,048 EEG epochs and looked at baseline and post-arrest EDFs. Living data clusters at 0.187. Dying data clusters at 0.771. The middle is empty.
+Nothing lives in 0.6 to 0.7. That is the Shangraw Gap. I have processed >40,000 curated epochs and looked at baseline and post-arrest EDFs. Living data clusters at 0.187. Dying data clusters at 0.771. The middle is empty.
 
 You can practice dying every night. You cannot practice crossing. When you cross the Gap, you do not come back.
 
@@ -81,7 +81,7 @@ Find one counterexample and the claim breaks.
 3. Post the bicoherence number. If it lands 0.4–0.6, you killed the Gap.
 
 ## Data
-- `subjects_metadata.csv` — all 1,048 epochs
+- `subjects_metadata.csv` — all >40,000 curated epochs
 - `results.csv` — bicoherence values
 - `sleep_pac.txt` — SC4001E0 hypnogram analysis
 - EDF files in `/data` (see links in wiki)
@@ -332,7 +332,7 @@ This is not "quantum consciousness." It's a testable circuit failure:
 
 The Shangraw Gap is the EEG signature of a specific inhibitory brake failing. Lerma gave us the brake. Rajan gave us the feedback rule. Gegenhuber gave us the trigger. Your data gave us the number: 0.65.
 
-**Cite this section as:** Shangraw J. (2026). Mechanistic integration of CeL regular-firing inhibition with anti-Hebbian feedback failure. afterlife-workshop v0.3.1.
+**Cite this section as:** Shangraw J. (2026). Mechanistic integration of CeL regular-firing inhibition with anti-Hebbian feedback failure. afterlife-workshop v0.3.2.
 
 ### Quantum critical point parallel (June 2026)
 

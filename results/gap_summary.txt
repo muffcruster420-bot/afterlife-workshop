@@ -4,3 +4,4 @@ Awake eyes-open (S001R01.edf): mean=0.806, gap_pct=10.0%, epochs=30
 Awake eyes-closed (rest_ec.edf): mean=0.779, gap_pct=16.7%, epochs=30
 Dying ICU (icare/0284_001_004_EEG): mean=0.78
 Conclusion: Gap 0.63-0.67 separates sleep (<0.6) from conscious states (>0.7). Dying = awake-like, not sleep-like.
+Anesthesia (propofol): mean=XXX

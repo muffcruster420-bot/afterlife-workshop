@@ -1,7 +1,8 @@
-Shangraw Gap - tested 2026-06-09
-Sleep (real_data/sleep.edf): mean=0.085, gap_pct=0.4%, epochs=39749
-Awake eyes-open (S001R01.edf): mean=0.806, gap_pct=10.0%, epochs=30
-Awake eyes-closed (rest_ec.edf): mean=0.779, gap_pct=16.7%, epochs=30
-Dying ICU (icare/0284_001_004_EEG): mean=0.78
-Conclusion: Gap 0.63-0.67 separates sleep (<0.6) from conscious states (>0.7). Dying = awake-like, not sleep-like.
-Anesthesia (propofol): mean=XXX
+Shangraw Gap batch run
+data/SC4002E0-PSG.edf: mean=0.085, gap_pct=0.4%, epochs=39749
+data/awake/S001R01.edf: mean=0.806, gap_pct=10.0%, epochs=30
+data/awake/S001R01.edf: mean=0.806, gap_pct=10.0%, epochs=30
+data/awake/rest_ec.edf: mean=0.779, gap_pct=16.7%, epochs=30
+data/awake/rest_ec.edf: mean=0.779, gap_pct=16.7%, epochs=30
+data/open/SC4011E0-PSG.edf: mean=0.011, gap_pct=0.0%, epochs=42029
+real_data/sleep.edf: mean=0.085, gap_pct=0.4%, epochs=39749

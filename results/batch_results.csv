@@ -1,0 +1,11 @@
+file,mean,gap_pct,epochs
+data/SC4002E0-PSG.edf,0.085,0.4,39749
+data/anesthesia/propofol_unconscious.edf,,,
+data/anesthesia/propofol_unconscious.edf,,,
+data/awake/S001R01.edf,0.806,10.0,30
+data/awake/S001R01.edf,0.806,10.0,30
+data/awake/rest_ec.edf,0.779,16.7,30
+data/awake/rest_ec.edf,0.779,16.7,30
+data/open/SC4002E0-PSG.edf,,,
+data/open/SC4011E0-PSG.edf,0.011,0.0,42029
+real_data/sleep.edf,0.085,0.4,39749

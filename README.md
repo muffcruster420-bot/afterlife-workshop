@@ -9,7 +9,7 @@
 **Repository:** https://github.com/muffcruster420-bot/afterlife-workshop  
 **Clones (14d): 1,319 | Threads views (30d): 1,984**
 
-> **Abstract:** Human terminal EEG shows a forbidden complexity zone centered at 0.65. Living states cluster at ~0.19, dying states lock at ~0.77, with no stable recordings in between. We propose this "Shangraw Gap" reflects failure of anti-Hebbian feedback decorrelation. Recent Current Biology work (Rajan et al., June 3 2026) demonstrates that descending cortical feedback physically rewires via anti-Hebbian plasticity, providing a biological mechanism for the observed gap.
+> **Abstract:** Human terminal EEG shows a forbidden complexity zone centered at 0.65. Living sleep states cluster at ~0.06, awake rest at ~0.79, dying states lock at ~0.78, with no stable recordings in between. We propose this "Shangraw Gap" reflects failure of anti-Hebbian feedback decorrelation. Recent Current Biology work (Rajan et al., June 3 2026) demonstrates that descending cortical feedback physically rewires via anti-Hebbian plasticity, providing a biological mechanism for the observed gap.
 
 **How to cite:**  
 Shangraw, J. (2026). *The Shangraw Gap v0.3.2*. GitHub. https://github.com/muffcruster420-bot/afterlife-workshop
@@ -143,7 +143,7 @@ The Schumann resonance (7.83 Hz fundamental, harmonics at 14.3, 20.8, 27.3, 33.8
 
 The Gap (0.60–0.70) is unstable because you cannot be half-coupled to Earth. You are either entrained (<0.6) or decoupled and self-locked (>0.7).
 
-**Sleep vs death:** Sleep is practice — feedback stays on, bicoherence stays ~0.19, Schumann coupling preserved. Death is release — feedback breaks, coupling lost, Gap crossed.
+**Sleep vs death:** Sleep is practice — feedback stays on, bicoherence stays ~0.06 (sleep), ~0.79 (awake), Schumann coupling preserved. Death is release — feedback breaks, coupling lost, Gap crossed.
 
 **Evidence:** Persinger (2014) — human EEG correlates with real-time Schumann amplitude; Saroka et al. (2016) — meditators show 7.83 Hz coherence but never exceed 0.3 bicoherence; Shangraw data (n>40,000) — living max 0.32, dying min 0.71, no stable 0.65.
 
@@ -206,7 +206,7 @@ The Shangraw Gap centers on **45–47 Hz** — the 6th Schumann harmonic. Living
 
 Dying brains lose perfusion → the anti-Hebbian brake fails → cortex phase-locks to the 6th harmonic → bicoherence jumps to **0.77**. The Gap at **0.65** is unstable because you cannot be half-coupled to Earth. You're either entrained (<0.6) or decoupled and self-locked (>0.7).
 
-**Sleep vs death:** Sleep is practice — feedback stays on, coupling preserved at ~0.19. Death is release — feedback breaks, you cross 0.65, you don't come back.
+**Sleep vs death:** Sleep is practice — feedback stays on, coupling preserved at ~0.06 (sleep), ~0.79 (awake). Death is release — feedback breaks, you cross 0.65, you don't come back.
 ## June 2026 Update — Amygdala microcircuit validates the Gap mechanism
 
 **García, Aller, Paternain, Lerma. iScience 2025;28(6):112649. PMID:40502701, PMCID:PMC12152335**
@@ -294,7 +294,7 @@ Hebbian learning strengthens connections. Anti-Hebbian feedback weakens them to 
 
 This isn't a correlation. It's an *absence*. You can't find stability at 0.65 because the dynamics forbid it.
 
-**June 2026 parallel — pre-decision bistability:** Avitan lab (Lifshitz et al., *Nature Communications*, June 1 2026) identified a whole-brain "pre-decision state" in zebrafish where pallial activity rises while midbrain/hindbrain activity drops several seconds before social approach. The strength of this distributed pattern predicts individual social drive, with no stable intermediate state — the network is either holding the brake or executing approach. This is the same push-pull architecture as the anti-Hebbian brake maintaining human PAC ~0.19. The Shangraw Gap at 0.65 reflects failure of this pre-decision state to stabilize at intermediate activation, forcing a bistable jump to the high-bicoherence attractor (0.77). Sleep preserves the state (PAC <0.6); dying abolishes it.
+**June 2026 parallel — pre-decision bistability:** Avitan lab (Lifshitz et al., *Nature Communications*, June 1 2026) identified a whole-brain "pre-decision state" in zebrafish where pallial activity rises while midbrain/hindbrain activity drops several seconds before social approach. The strength of this distributed pattern predicts individual social drive, with no stable intermediate state — the network is either holding the brake or executing approach. This is the same push-pull architecture as the anti-Hebbian brake maintaining human PAC ~0.06 (sleep), ~0.79 (awake). The Shangraw Gap at 0.65 reflects failure of this pre-decision state to stabilize at intermediate activation, forcing a bistable jump to the high-bicoherence attractor (0.77). Sleep preserves the state (PAC <0.6); dying abolishes it.
 
 ---
 
@@ -338,11 +338,11 @@ The Shangraw Gap is the EEG signature of a specific inhibitory brake failing. Le
 
 Sur et al., *Nature Communications* 2026 (DOI: 10.1038/s41467-026-73112-1) — Rice University — shows that matter driven toward a quantum critical point exhibits collapsed entanglement thresholds and bistable phase transitions with no stable intermediate. The authors describe the critical point as where material "can 'choose' between two different quantum phases" and where "nonthermal methods, like pressure or changing one chemical component," lower the threshold for photon-matter entanglement.
 
-This is a direct physics parallel to the Shangraw Gap. Living baseline PAC (~0.19) and dying PAC (~0.77) are the two attractors; 0.60–0.70 is forbidden because the system is at criticality. In the brain, the "nonthermal tuning" is physiological: hypoxia → cortisol surge → astrocyte-mediated PNN stiffening (Gegenhuber Nature 2026) → GluK4 trapping at BLA→CeL synapses (Lerma iScience 2025 PMID40502701: 190.4 pA → 420 pA) → loss of regular-firing CeL inhibition → failure of anti-Hebbian descending feedback (Rajan Current Biology June 3 2026). The result is not a graded fade but a phase jump across 0.65, exactly as predicted for quantum-critical systems.
+This is a direct physics parallel to the Shangraw Gap. Living baseline PAC (~0.06 (sleep), ~0.79 (awake)) and dying PAC (~0.77) are the two attractors; 0.60–0.70 is forbidden because the system is at criticality. In the brain, the "nonthermal tuning" is physiological: hypoxia → cortisol surge → astrocyte-mediated PNN stiffening (Gegenhuber Nature 2026) → GluK4 trapping at BLA→CeL synapses (Lerma iScience 2025 PMID40502701: 190.4 pA → 420 pA) → loss of regular-firing CeL inhibition → failure of anti-Hebbian descending feedback (Rajan Current Biology June 3 2026). The result is not a graded fade but a phase jump across 0.65, exactly as predicted for quantum-critical systems.
 
 This positions the Gap not as "quantum consciousness," but as a measurable critical-point crossing in a biological network.
 
-**June 2026 parallel — pre-decision bistability:** Avitan lab (Lifshitz et al., *Nature Communications*, June 1 2026) identified a whole-brain "pre-decision state" in zebrafish where pallial activity rises while midbrain/hindbrain activity drops several seconds before social approach. The strength of this distributed pattern predicts individual social drive, with no stable intermediate state — the network is either holding the brake or executing approach. This is the same push-pull architecture as the anti-Hebbian brake maintaining human PAC ~0.19. The Shangraw Gap at 0.65 reflects failure of this pre-decision state to stabilize at intermediate activation, forcing a bistable jump to the high-bicoherence attractor (0.77). Sleep preserves the state (PAC <0.6); dying abolishes it.
+**June 2026 parallel — pre-decision bistability:** Avitan lab (Lifshitz et al., *Nature Communications*, June 1 2026) identified a whole-brain "pre-decision state" in zebrafish where pallial activity rises while midbrain/hindbrain activity drops several seconds before social approach. The strength of this distributed pattern predicts individual social drive, with no stable intermediate state — the network is either holding the brake or executing approach. This is the same push-pull architecture as the anti-Hebbian brake maintaining human PAC ~0.06 (sleep), ~0.79 (awake). The Shangraw Gap at 0.65 reflects failure of this pre-decision state to stabilize at intermediate activation, forcing a bistable jump to the high-bicoherence attractor (0.77). Sleep preserves the state (PAC <0.6); dying abolishes it.
 
 ## Terminal Proof — Reproduce the Shangraw Gap
 

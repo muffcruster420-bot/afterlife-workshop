@@ -29,3 +29,5 @@
 | dying.edf | Dying | 0.771 | 87.0 | ✓ |
 
 Pre-registered before collection of full n=20 dataset.
+## Theoretical framing — neutrino analogy (added 2026-06-09)
+We frame the Shangraw Gap (0.63–0.67 forbidden bicoherence) by analogy to neutrino mass: a near-zero but non-zero invariant that permits state oscillation. See docs/NEUTRINO_ANALOGY.md and docs/figure4_neutrino_analogy.html.

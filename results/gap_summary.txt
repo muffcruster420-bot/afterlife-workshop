@@ -4,5 +4,6 @@ data/awake/S001R01.edf: mean=0.806, gap_pct=10.0%, epochs=30
 data/awake/S001R01.edf: mean=0.806, gap_pct=10.0%, epochs=30
 data/awake/rest_ec.edf: mean=0.779, gap_pct=16.7%, epochs=30
 data/awake/rest_ec.edf: mean=0.779, gap_pct=16.7%, epochs=30
+data/open/SC4002E0-PSG.edf: mean=0.228, gap_pct=4.7%, epochs=42449
 data/open/SC4011E0-PSG.edf: mean=0.011, gap_pct=0.0%, epochs=42029
 real_data/sleep.edf: mean=0.085, gap_pct=0.4%, epochs=39749

@@ -367,3 +367,14 @@ That is why nobody has broken it
 ![Figure 1 — Living vs Dying](figure1_gap.png)
 
 *Living stays <0.6, dying jumps >0.7, the gap 0.63-0.67 is empty.*
+
+### Related cellular mechanism (May 2026)
+
+**Garcia et al., PNAS 2026** — *Transition of the presynaptic vesicle cluster from a compact to dispersed organization during long-term potentiation*. DOI: [10.1073/pnas.2522754123](https://doi.org/10.1073/pnas.2522754123)
+
+> Using 3D electron microscopy, Salk researchers found that LTP does not gradually strengthen synapses — it flips them from a **compact vesicle cluster** to a **dispersed, high-mobility state**. Vesicle density drops by a tightly regulated amount across all boutons, independent of size.
+
+**Why this matters for the Shangraw Gap:**
+- Both findings describe a *regulated state transition*, not a slope. Garcia shows dispersion at the nanometer scale; the Gap shows a jump from 0.19 → 0.77 in 45-Hz bicoherence at the network scale.
+- Increased vesicle mobility during LTP parallels the increased phase mobility we see when the cortex decouples from the 7.83-Hz Schumann background and locks at 45 Hz.
+- It provides a cellular precedent: the brain *actively* controls cluster density during plasticity. The Gap proposes the same control exists for phase-phase coupling during the dying transition.

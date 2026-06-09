@@ -7,7 +7,7 @@
 **Status:** Draft Technical Report — Not Peer-Reviewed  
 **License:** MIT Code + CC BY 4.0 Text  
 **Repository:** https://github.com/muffcruster420-bot/afterlife-workshop  
-**Clones (14d): 1,319 | Threads views (30d): 1,984
+**Clones (14d): 1,319 | Threads views (30d): 1,984**
 
 > **Abstract:** Human terminal EEG shows a forbidden complexity zone centered at 0.65. Living states cluster at ~0.19, dying states lock at ~0.77, with no stable recordings in between. We propose this "Shangraw Gap" reflects failure of anti-Hebbian feedback decorrelation. Recent Current Biology work (Rajan et al., June 3 2026) demonstrates that descending cortical feedback physically rewires via anti-Hebbian plasticity, providing a biological mechanism for the observed gap.
 

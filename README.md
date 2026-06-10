@@ -5,7 +5,7 @@
 >
 > 👁️ Your eyes. 🧠 Your thoughts. 🌎 Your world.
 >
-> For 3,000 years: is consciousness the foundation, or just brain activity? I measured the threshold — living PAC 0.19, dying PAC 0.77, nothing stable at 0.65. Princeton PPPL found the same in plasma last week.
+> For 3,000 years humans have asked: is consciousness the foundation, or just brain activity? Last month I measured the threshold — living PAC 0.19, dying PAC 0.77, nothing stable at 0.65. Princeton PPPL found the same in plasma last week.
 >
 > **Where to verify:**
 > - **Living (0.19) & Dying (0.77) PAC values:** [`results.csv`](results.csv) — lines 2-47, [`PAPER.md`](PAPER.md)

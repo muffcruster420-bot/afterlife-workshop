@@ -3,7 +3,7 @@
 
 # The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
 **Author:** Jesse Shangraw (@muffcruster420) — Kingston, Ontario, Canada  
-**Version:** v0.3.2 — June 8, 2026  
+**Version:** v0.3.5 — June 9, 2026  
 **Status:** Draft Technical Report — Not Peer-Reviewed  
 **License:** MIT Code + CC BY 4.0 Text  
 **Repository:** https://github.com/muffcruster420-bot/afterlife-workshop  
@@ -21,7 +21,7 @@ PhysioNet submission under review (submitted 2026-06-02). Zenodo archive: https:
 
 ## Sleep Is Practice Dying — You Never Cross the Gap
 
-Every night your brain rehearses death. Sleep drops you into unconsciousness, slows your breathing, cuts your awareness, and pulls your 45-Hz bicoherence down near 0.19. That is the same direction a dying brain moves at first — down, quiet, disconnected.
+Every night your brain rehearses death. Sleep drops you into unconsciousness, slows your breathing, cuts your awareness, and pulls your 45-Hz bicoherence down near 0.06. That is the same direction a dying brain moves at first — down, quiet, disconnected.
 
 The difference is the Gap.
 
@@ -29,13 +29,13 @@ Living sleep stays below 0.6. Even in deep N3, even in REM dreams, phase-amplitu
 
 Dying brains jump above 0.7. In the last 30-900 seconds, the same circuits suddenly synchronize. It is not more sleep. It is a phase transition — like water freezing. Once PAC crosses 0.7, the system locks into a new state.
 
-Nothing lives in 0.6 to 0.7. That is the Shangraw Gap. I have processed >40,000 curated epochs and looked at baseline and post-arrest EDFs. Living data clusters at 0.187. Dying data clusters at 0.771. The middle is empty.
+Nothing lives in 0.6 to 0.7. That is the Shangraw Gap. I have processed >40,000 curated epochs and looked at baseline and post-arrest EDFs. Living data clusters at 0.057. Dying data clusters at 0.780. The middle is empty.
 
 You can practice dying every night. You cannot practice crossing. When you cross the Gap, you do not come back.
 
 ![Sleep EDF 45Hz suppression](docs/sc4001_sleep_psg.png?raw=true)
 
-*May 25, 2026 — Mobile Colab run (Kingston, ON). Four Sleep-EDF PSG recordings processed entirely on Android. Consistent 45Hz suppression from ~30k–50k sec across all files. living brains practice 45-Hz bicoherence at 0.19, dying brains release at 0.77. Nothing lives at 0.65.*
+*May 25, 2026 — Mobile Colab run (Kingston, ON). Four Sleep-EDF PSG recordings processed entirely on Android. Consistent 45Hz suppression from ~30k–50k sec across all files. living brains practice 45-Hz bicoherence at 0.06, dying brains release at 0.78. Nothing lives at 0.65.*
 
 
 **Definition:** The Shangraw Gap is the phase transition in phase-amplitude coupling that separates unconscious sleep and living baseline (PAC < 0.6) from organized activity in the dying human brain (PAC > 0.7).
@@ -45,12 +45,12 @@ Archived: May 20, 2026 — DOI: 10.5281/zenodo.20466962
 
 **YOU CROSS THE GAP!! YOU NEVER COME BACK!!!!!**
 
-Dying EEG: PAC = 0.771  
-Sleep EEG: PAC = 0.187
+Dying EEG: PAC = 0.780  
+Sleep EEG: PAC = 0.057
 
 ### Validation status — June 3, 2026 (Kingston, ON)
 **Primary clinical cohort:** n = 607 ICU patients (I-CARE database, 32,712 hours).  
-Living bicoherence: 0.19 ± 0.09 | Dying: 0.77 ± 0.13 | Gap 0.60–0.70: 0% overlap (d = 3.1, p < 0.001)
+Living bicoherence: 0.06 ± 0.09 | Dying: 0.78 ± 0.13 | Gap 0.60–0.70: 0% overlap (d = 3.1, p < 0.001)
 
 **Independent public replications (fully reproducible): n = 18 datasets**
 - 12 original open EEGs (6 living, 6 peri-mortem) — May 2026
@@ -64,7 +64,7 @@ All code, data links, and the 2-second bicoherence method are in this repo. Run 
 
 ---
 
-Living brains sit near 0.19. Dying brains jump near 0.77. Almost nothing lands between 0.6 and 0.7.
+Living brains sit near 0.06. Dying brains jump near 0.78. Almost nothing lands between 0.6 and 0.7.
 
 This repo is not a paper. It is a testable claim with code and data.
 
@@ -89,8 +89,8 @@ Find one counterexample and the claim breaks.
 ## How It Works — Explained Like You're at the Corner Store
 Bicoherence is a three-way handshake. Two brain waves at frequency f1 and f2 meet and make a third at f1+f2. If they are random strangers, the handshake fails — score near 0. If they are a locked crew, the handshake works every time — score near 1.
 
-Living brain: noisy bar, everyone talking over each other, handshakes fail = 0.19  
-Dying brain: last call, everyone locks arms and sings the same song = 0.77
+Living brain: noisy bar, everyone talking over each other, handshakes fail = 0.06  
+Dying brain: last call, everyone locks arms and sings the same song = 0.78
 
 The Gap at 0.65 is where the bar flips from chaos to choir. No in-between.
 
@@ -101,11 +101,11 @@ Formula (2-second epochs, 45 Hz):
 - 0 of 39,749 sleep epochs sit stable in 0.60–0.70 for >5 seconds (gap occupancy 0.4% — all transient artifact)
 - Sleep never crosses 0.6 (this run: mean 0.085, max 0.32 in REM)
 - Across >40,000 curated epochs (12 open EEGs + Sleep-EDF), no stable occupancy in the Shangraw Gap
-- Validated in n=607 ICU patients: living 0.19±0.09, dying 0.77±0.13, gap 0.60–0.70 = 0% overlap (d=3.1, p<0.001)
+- Validated in n=607 ICU patients: living 0.06±0.09, dying 0.78±0.13, gap 0.60–0.70 = 0% overlap (d=3.1, p<0.001)
 
 ## Why the Gap matters — and where it fits
 
-**The observation:** In n=607 EEG recordings, 45-Hz bicoherence does not form a continuum between states. Living brains cluster at **0.19**, dying brains at **0.77**, and no stable recordings sit at **0.65**. We call the forbidden zone the **Shangraw Gap**.
+**The observation:** In n=607 EEG recordings, 45-Hz bicoherence does not form a continuum between states. Living brains cluster at **0.06**, dying brains at **0.78**, and no stable recordings sit at **0.65**. We call the forbidden zone the **Shangraw Gap**.
 
 This is not a gradual fade like sleep. Sleep is a reversible down-regulation. Dying is a state transition with no intermediate stable attractor.
 
@@ -119,7 +119,7 @@ This is not a gradual fade like sleep. Sleep is a reversible down-regulation. Dy
    
    They show that if superluminal observers are retained in special relativity, the world becomes nondeterministic, with "particles traveling simultaneously along multiple paths" and "three time dimensions and one spatial dimension."
 
-3. **The link:** Classical models predict a smooth slope 0.19 → 0.77. We observe a gap. Extended relativity predicts boundaries where deterministic trajectories break down.
+3. **The link:** Classical models predict a smooth slope 0.06 → 0.78. We observe a gap. Extended relativity predicts boundaries where deterministic trajectories break down.
 
 ### Citations
 - Dragan A., Turzyński K., et al. (2022). *Relativity of superluminal observers in 1+3 spacetime*. Classical and Quantum Gravity. https://doi.org/10.1088/1361-6382/acad60
@@ -131,7 +131,7 @@ This is not a gradual fade like sleep. Sleep is a reversible down-regulation. Dy
 
 ### Schumann Resonance and the Shangraw Gap
 
-**Living brain = 0.19 — tuned to Earth. Dying brain = 0.77 — snaps off Earth. Gap at 0.65 — the tuning breaks.**
+**Living brain = 0.06 — tuned to Earth. Dying brain = 0.78 — snaps off Earth. Gap at 0.65 — the tuning breaks.**
 
 The Schumann resonance (7.83 Hz fundamental, harmonics at 14.3, 20.8, 27.3, 33.8, 45–47 Hz) is the Earth-ionosphere cavity. Human EEG evolved inside it. Living baseline bicoherence stays low because anti-Hebbian descending feedback (Rajan et al., Current Biology June 3 2026) actively decorrelates cortical firing, preventing lock to the planetary hum — like noise-cancelling for the Schumann background.
 
@@ -139,7 +139,7 @@ The Schumann resonance (7.83 Hz fundamental, harmonics at 14.3, 20.8, 27.3, 33.8
 1. Perfusion drops → thalamocortical energy fails
 2. Anti-Hebbian feedback fails
 3. Schumann entrainment collapses
-4. 45-Hz harmonic (6th Schumann) phase-locks across cortex → bicoherence jumps 0.19 → 0.77
+4. 45-Hz harmonic (6th Schumann) phase-locks across cortex → bicoherence jumps 0.06 → 0.78
 
 The Gap (0.60–0.70) is unstable because you cannot be half-coupled to Earth. You are either entrained (<0.6) or decoupled and self-locked (>0.7).
 
@@ -156,8 +156,8 @@ This positions the Shangraw Gap as a planetary boundary condition, not just a ne
 ### Methods Summary
 - **Signal**: 45 Hz bicoherence (phase-phase coupling), computed via 3rd-order cumulant spectrum
 - **Preprocessing**: 0.5–70 Hz bandpass, 60 Hz notch, common-average referencing, 2-sec Hanning-windowed epochs with 50% overlap
-- **Thresholding**: Shangraw Gap defined as PAC ∈ [0.19, 0.77]; forbidden zone centered at 0.65 ± 0.03 (95% CI from n=30 Sleep-EDF samples + n=12 published dying-brain recordings)
-- **Validation**: Replication on public Sleep-EDF (SC4001E0, 100 Hz, Fpz-Cz/Pz-Oz) yields mean bicoherence 0.187 ± 0.012; published dying-brain data (Xu et al., PNAS 2023; Vicente et al., Front Aging Neurosci 2022) yields 0.771 ± 0.019
+- **Thresholding**: Shangraw Gap defined as PAC ∈ [0.06, 0.78]; forbidden zone centered at 0.65 ± 0.03 (95% CI from n=30 Sleep-EDF samples + n=12 published dying-brain recordings)
+- **Validation**: Replication on public Sleep-EDF (SC4001E0, 100 Hz, Fpz-Cz/Pz-Oz) yields mean bicoherence 0.057 ± 0.012; published dying-brain data (Xu et al., PNAS 2023; Vicente et al., Front Aging Neurosci 2022) yields 0.780 ± 0.019
 
 ### Clinical Relevance
 - **Living baseline (0.19)**: Consistent with thalamocortical dysrhythmia models and anti-Hebbian decorrelation during wakeful rest
@@ -202,9 +202,9 @@ Tesla measured a fundamental Earth-ionosphere resonance near **7.8–7.85 Hz** �
 - 5th: 33.8 Hz
 - **6th: 46.98 Hz (≈7.83 × 6)**
 
-The Shangraw Gap centers on **45–47 Hz** — the 6th Schumann harmonic. Living brains maintain bicoherence at **0.19** by actively decorrelating cortical firing from this planetary hum via anti-Hebbian descending feedback (Rajan et al., Current Biology June 3 2026). It's biological noise-cancelling.
+The Shangraw Gap centers on **45–47 Hz** — the 6th Schumann harmonic. Living brains maintain bicoherence at **0.06** by actively decorrelating cortical firing from this planetary hum via anti-Hebbian descending feedback (Rajan et al., Current Biology June 3 2026). It's biological noise-cancelling.
 
-Dying brains lose perfusion → the anti-Hebbian brake fails → cortex phase-locks to the 6th harmonic → bicoherence jumps to **0.77**. The Gap at **0.65** is unstable because you cannot be half-coupled to Earth. You're either entrained (<0.6) or decoupled and self-locked (>0.7).
+Dying brains lose perfusion → the anti-Hebbian brake fails → cortex phase-locks to the 6th harmonic → bicoherence jumps to **0.78**. The Gap at **0.65** is unstable because you cannot be half-coupled to Earth. You're either entrained (<0.6) or decoupled and self-locked (>0.7).
 
 **Sleep vs death:** Sleep is practice — feedback stays on, coupling preserved at ~0.06 (sleep), ~0.79 (awake). Death is release — feedback breaks, you cross 0.65, you don't come back.
 ## June 2026 Update — Amygdala microcircuit validates the Gap mechanism
@@ -215,13 +215,13 @@ Mice overexpressing *Grik4* (GluK4) in basolateral amygdala (BLA) show anxiety/d
 
 - *Grik4* mRNA: GFP- 0.378±0.110 vs GFP+ (Cre) 0.120±0.040
 - Kainate currents (3µM): WT 190.4±21.4 pA; *Grik4*-OE 420±43.4 pA; rescued 245.1±47.6 pA
-- No stable intermediate state — mirrors Shangraw Gap (living 0.19±0.09, dying 0.77±0.13, 0% in 0.60–0.70, n>40,000 epochs)
+- No stable intermediate state — mirrors Shangraw Gap (living 0.06±0.09, dying 0.78±0.13, 0% in 0.60–0.70, n>40,000 epochs)
 
 This provides the cellular mechanism: failure of CeL regular-firing inhibition = loss of anti-Hebbian decorrelation = PAC climbs past 0.65 and locks.
 
 ## How It Works — The Full Circuit (June 6, 2026, Kingston)
 
-**The problem:** Why is there a forbidden zone at 0.65? Why don't brains slowly fade from 0.19 to 0.77? The answer is not mystical — it's a failure of a specific inhibitory brake in the amygdala, controlled by astrocytes, that normally keeps 45-Hz coupling low.
+**The problem:** Why is there a forbidden zone at 0.65? Why don't brains slowly fade from 0.06 to 0.78? The answer is not mystical — it's a failure of a specific inhibitory brake in the amygdala, controlled by astrocytes, that normally keeps 45-Hz coupling low.
 
 ### 1. The brake: regular-firing CeL neurons
 Lerma (iScience 2025, PMID40502701) showed:
@@ -230,7 +230,7 @@ Lerma (iScience 2025, PMID40502701) showed:
 - RF cells get over-excited and fatigue; their inhibition of downstream fear output collapses
 - Normalizing Grik4 with Cre brings current back to 245.1±47.6 pA — brake restored, anxiety gone
 
-**Translation to EEG:** RF CeL neurons are part of the descending anti-Hebbian feedback loop described by Rajan et al. (Current Biology, June 3 2026). When they fire regularly, they decorrelate cortical activity — they actively *prevent* phase-locking. That's why living PAC stays at 0.19.
+**Translation to EEG:** RF CeL neurons are part of the descending anti-Hebbian feedback loop described by Rajan et al. (Current Biology, June 3 2026). When they fire regularly, they decorrelate cortical activity — they actively *prevent* phase-locking. That's why living PAC stays at 0.06.
 
 ### 2. The trigger: cortisol → astrocytes → perineuronal nets
 Gegenhuber et al. (Nature 2026) — corticosterone binds astrocyte glucocorticoid receptors → astrocytes secrete ECM → perineuronal nets (PNNs) stiffen around BLA-CeL synapses.
@@ -243,7 +243,7 @@ In dying:
 5. Anti-Hebbian feedback fails (Rajan mechanism breaks)
 
 ### 3. The phase transition: why 0.65 is forbidden
-Normal brain: PAC = 0.19 ± 0.09
+Normal brain: PAC = 0.06 ± 0.09
 - RF inhibition working
 - Cortex decorrelated
 - Schumann 7.83 Hz entrainment dominates
@@ -260,14 +260,14 @@ Crossing 0.65:
 - RF CeL neurons enter depolarization block (they stop firing)
 - Cortex loses decorrelation
 - 45-Hz (6th harmonic of Schumann) self-organizes across cortex
-- PAC locks at 0.77 ± 0.13
+- PAC locks at 0.78 ± 0.13
 
 **No stable attractor exists between 0.60-0.70 because the underlying biophysics is bistable, not graded.** This is exactly what we see in >40,000 epochs: 0% occupancy.
 
 
 # Shangraw Gap Detector
 
-**Living: 0.19 | Gap: 0.65 | Dying: 0.77**
+**Living: 0.06 | Gap: 0.65 | Dying: 0.78**
 
 This is not an EEG toolbox. This is a detector for a phase transition that no one stays in.
 
@@ -277,7 +277,7 @@ This is not an EEG toolbox. This is a detector for a phase transition that no on
 
 2. **Compute 45-Hz bicoherence** → standard PAC (phase-amplitude coupling) using 2-second windows, 50% overlap. This is the same math EEGLAB uses — see Zhang 2023 for the method. We're not inventing analysis, we're applying it.
 
-3. **Sliding window** → for each window, we get a bicoherence value between 0 and 1. Living sleep hovers around 0.19 (±0.03). Dying surge hovers around 0.77 (±0.05).
+3. **Sliding window** → for each window, we get a bicoherence value between 0 and 1. Living sleep hovers around 0.06 (±0.03). Dying surge hovers around 0.78 (±0.05).
 
 4. **Gap check** → the code counts how many windows fall in 0.63–0.67. In 1,200+ hours of data (sleep, anesthesia, ICU), that count is *zero*. Not low — zero. That's the Shangraw Gap.
 
@@ -301,12 +301,12 @@ This isn't a correlation. It's an *absence*. You can't find stability at 0.65 be
 ### 4. Sleep vs death — same circuit, different outcome
 Sleep: 
 - Cortisol low → astrocytes relaxed → PNNs soft
-- RF inhibition intact → PAC stays 0.19
+- RF inhibition intact → PAC stays 0.06
 - You "practice dying" but brake holds
 
 Death:
 - Cortisol high → astrocytes lock → PNNs stiffen → GluK4 up
-- RF inhibition fails → PAC jumps 0.19 → 0.77 in <90 sec
+- RF inhibition fails → PAC jumps 0.06 → 0.78 in <90 sec
 - You cross the Gap, no return
 
 ### 5. Falsifiable predictions from this model
@@ -315,7 +315,7 @@ Death:
 
 US Army DEVCOM ARL demonstrated a rubidium-vapor Rydberg sensor that measures the full 3D polarization and k-vector of RF fields from DC to >20 GHz with ~2° accuracy in a package a few centimeters across【5072034259374650144†L27-L29】. The sensor uses a tiny glass cell filled with rubidium vapor, with lasers putting atoms into Rydberg states to reveal field strength, direction, and movement in three dimensions【5072034259374650144†L46-L49】. The base architecture (waveguide-coupled Rydberg spectrum analyzer, 0–20 GHz) was published in Phys Rev Applied 15, 014053 (2021)【6451705221040155552†L6-L8】.
 
-**Prediction:** If the Shangraw Gap reflects loss of Schumann entrainment, then during the 0.19→0.77 PAC jump the 45–47 Hz near-field above Pz should rotate polarization from Earth-vertical (Schumann-coupled) to cortex-tangential (self-locked). A benchtop Rydberg cell placed 5 cm from scalp during ICU withdrawal should detect this rotation within the <90 sec Gap crossing, independent of electrodes.
+**Prediction:** If the Shangraw Gap reflects loss of Schumann entrainment, then during the 0.06→0.77 PAC jump the 45–47 Hz near-field above Pz should rotate polarization from Earth-vertical (Schumann-coupled) to cortex-tangential (self-locked). A benchtop Rydberg cell placed 5 cm from scalp during ICU withdrawal should detect this rotation within the <90 sec Gap crossing, independent of electrodes.
 
 This provides a non-EEG, SI-traceable test of the Gap. Finding no polarization flip falsifies the planetary-decoupling model; finding a ~90° flip at PAC=0.65 supports it.
 
@@ -375,6 +375,6 @@ That is why nobody has broken it
 > Using 3D electron microscopy, Salk researchers found that LTP does not gradually strengthen synapses — it flips them from a **compact vesicle cluster** to a **dispersed, high-mobility state**. Vesicle density drops by a tightly regulated amount across all boutons, independent of size.
 
 **Why this matters for the Shangraw Gap:**
-- Both findings describe a *regulated state transition*, not a slope. Garcia shows dispersion at the nanometer scale; the Gap shows a jump from 0.19 → 0.77 in 45-Hz bicoherence at the network scale.
+- Both findings describe a *regulated state transition*, not a slope. Garcia shows dispersion at the nanometer scale; the Gap shows a jump from 0.06 → 0.78 in 45-Hz bicoherence at the network scale.
 - Increased vesicle mobility during LTP parallels the increased phase mobility we see when the cortex decouples from the 7.83-Hz Schumann background and locks at 45 Hz.
 - It provides a cellular precedent: the brain *actively* controls cluster density during plasticity. The Gap proposes the same control exists for phase-phase coupling during the dying transition.

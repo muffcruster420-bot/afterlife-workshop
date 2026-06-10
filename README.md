@@ -3,7 +3,7 @@
 
 # The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
 **Author:** Jesse Shangraw (@muffcruster420) — Kingston, Ontario, Canada  
-**Version:** v0.3.5 — June 9, 2026  
+**Version:** v0.3.7 — June 9, 2026  
 **Status:** Draft Technical Report — Not Peer-Reviewed  
 **License:** MIT Code + CC BY 4.0 Text  
 **Repository:** https://github.com/muffcruster420-bot/afterlife-workshop  
@@ -382,3 +382,18 @@ That is why nobody has broken it
 - Both findings describe a *regulated state transition*, not a slope. Garcia shows dispersion at the nanometer scale; the Gap shows a jump from 0.06 → 0.78 in 45-Hz bicoherence at the network scale.
 - Increased vesicle mobility during LTP parallels the increased phase mobility we see when the cortex decouples from the 7.83-Hz Schumann background and locks at 45 Hz.
 - It provides a cellular precedent: the brain *actively* controls cluster density during plasticity. The Gap proposes the same control exists for phase-phase coupling during the dying transition.
+
+## Physical Analogue: PPPL Plasma Threshold (June 2026)
+
+Princeton Plasma Physics Laboratory identified a definitive laser intensity threshold where expanding plasma self-magnetizes to 40T in <1ns via Weibel instability [PPPL, 2026].
+
+- Below threshold: unmagnetized, heat escapes
+- Above threshold: fields trap electrons, heat confined
+
+This mirrors the Shangraw Gap:
+- Below 0.65: living brain PAC ~0.19 (practicing)
+- Above 0.65: dying brain PAC ~0.77 (release)  
+- At 0.65: no stable state
+
+Both are anisotropy-driven phase transitions.
+Reference: Lezhnin et al., PPPL, June 6 2026.

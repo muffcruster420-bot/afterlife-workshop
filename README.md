@@ -1,6 +1,13 @@
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20466962-blue)](https://doi.org/10.5281/zenodo.20466962) [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](https://github.com/muffcruster420-bot/afterlife-workshop/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+> **What if everything you see is only the surface?**
+>
+> 👁️ Your eyes. 🧠 Your thoughts. 🌎 Your world.
+>
+> For 3,000 years: is consciousness the foundation, or just brain activity? I measured the threshold — living PAC 0.19, dying PAC 0.77, nothing stable at 0.65. Princeton PPPL found the same in plasma last week.
+>
+> ---
 # The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
 **Author:** Jesse Shangraw (@muffcruster420) — Kingston, Ontario, Canada  
 **Version:** v0.3.7 — June 9, 2026  

@@ -15,10 +15,10 @@
 >
 > 👁️ Your eyes. 🧠 Your thoughts. 🌎 Your world.
 >
-> For 3,000 years humans have asked: is consciousness the foundation, or just brain activity? Last month I measured the threshold — living PAC 0.19, dying PAC 0.77, nothing stable at 0.65. Princeton PPPL found the same in plasma last week.
+> For 3,000 years humans have asked: is consciousness the foundation, or just brain activity? Last month I measured the threshold — living PAC 0.06 (sleep), 0.19 (awake), dying PAC 0.77, nothing stable at 0.65. Princeton PPPL found the same in plasma last week.
 >
 > **Where to verify:**
-> - **Living (0.19) & Dying (0.77):** [`results.csv`](results.csv), [`PAPER.md`](PAPER.md)
+> - **Living (0.06 sleep, 0.19 awake) Living (0.19) & Dying (0.77) Dying (0.77):** [`results.csv`](results.csv), [`PAPER.md`](PAPER.md)
 > - **Gap at 0.65:** [`ABSTRACT.md`](ABSTRACT.md), [`figure1_gap.png`](figure1_gap.png)
 > - **PPPL:** see Princeton Validation section below
 > - **Run it:** [`run_shangraw_gap.py`](run_shangraw_gap.py)

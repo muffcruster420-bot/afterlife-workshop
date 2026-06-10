@@ -3,7 +3,7 @@
 
 # The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
 **Author:** Jesse Shangraw (@muffcruster420) — Kingston, Ontario, Canada  
-**Version:** v0.3.8.3 — June 10, 2026  
+**Version:** v0.3.8.4 — June 10, 2026  
 **Status:** Draft Technical Report — Not Peer-Reviewed  
 **License:** MIT Code + CC BY 4.0 Text  
 **Repository:** https://github.com/muffcruster420-bot/afterlife-workshop  

@@ -7,9 +7,13 @@
 >
 > For 3,000 years: is consciousness the foundation, or just brain activity? I measured the threshold — living PAC 0.19, dying PAC 0.77, nothing stable at 0.65. Princeton PPPL found the same in plasma last week.
 >
+> **Where to verify:**
+> - **Living (0.19) & Dying (0.77) PAC values:** [`results.csv`](results.csv) — lines 2-47, [`PAPER.md`](PAPER.md)
+> - **Shangraw Gap at 0.65:** [`ABSTRACT.md`](ABSTRACT.md), [`figure1_gap.png`](figure1_gap.png)
+> - **PPPL plasma (40T):** see section below "[Princeton Validation](#princeton-plasma-physics-lab-validation-june-2026)"
+> - **Run it yourself:** [`run_shangraw_gap.py`](run_shangraw_gap.py), [`colab-notebook.ipynb`](colab-notebook.ipynb)
+>
 > ---
-# The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
-**Author:** Jesse Shangraw (@muffcruster420) — Kingston, Ontario, Canada  
 **Version:** v0.3.7 — June 9, 2026  
 **Status:** Draft Technical Report — Not Peer-Reviewed  
 **License:** MIT Code + CC BY 4.0 Text  

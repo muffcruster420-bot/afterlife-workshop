@@ -215,7 +215,11 @@ Mice overexpressing *Grik4* (GluK4) in basolateral amygdala (BLA) show anxiety/d
 
 - *Grik4* mRNA: GFP- 0.378±0.110 vs GFP+ (Cre) 0.120±0.040
 - Kainate currents (3µM): WT 190.4±21.4 pA; *Grik4*-OE 420±43.4 pA; rescued 245.1±47.6 pA
-- No stable intermediate state — mirrors Shangraw Gap (living 0.06±0.09, dying 0.78±0.13, 0% in 0.60–0.70, n>40,000 epochs)
+- No stable intermediate state — mirrors Shangraw Gap
+
+**June 4, 2026 — Master developmental clock (C. elegans)**
+Wu, P. et al. PNAS 2026;123(19). DOI:10.1073/pnas.2606846123
+MYRF-1/LIN-42 forms a non-repeating molecular timer that couples organism-wide temporal identity to developmental checkpoints. MYRF-1 acts as both trigger and checkpoint; LIN-42 sets pulse duration. Block MYRF-1 → program halts. This is the first described ratchet clock that fires once and never repeats — directly analogous to the Shangraw Gap's bistable jump from 0.06 → 0.78 with no stable 0.65 intermediate. Provides evolutionary precedent for a single-use anti-Hebbian brake. (living 0.06±0.09, dying 0.78±0.13, 0% in 0.60–0.70, n>40,000 epochs)
 
 This provides the cellular mechanism: failure of CeL regular-firing inhibition = loss of anti-Hebbian decorrelation = PAC climbs past 0.65 and locks.
 

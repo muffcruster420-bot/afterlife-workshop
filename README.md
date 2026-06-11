@@ -411,3 +411,6 @@ This mirrors the Shangraw Gap:
 
 Both are anisotropy-driven phase transitions.
 Reference: Lezhnin et al., PPPL, June 6 2026.
+
+---
+**Built 100% on a phone in Kingston, ON** — same approach as [CosmoAI](https://github.com/muffcruster420-bot/CosmoAi), my live space data visualizer with SDSS galaxies, CERN Higgs data, Voyager telemetry, and ISS tracker.

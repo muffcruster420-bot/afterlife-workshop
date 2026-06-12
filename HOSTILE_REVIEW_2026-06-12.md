@@ -25,3 +25,10 @@ The original hypothesis that "consciousness fills the gap" is refined: wakefulne
 - Test REM sleep (in progress, host instability)
 - Full-night stability analysis
 - Independent replication dataset
+
+## Test 9: Statistical validation (2026-06-12 15:36)
+- 200 phase-randomized surrogates vs 5-min SC4001
+- Original gap: 1.00%
+- Surrogate mean: 0.01% ± 0.06% (96% had 0% gap)
+- p = 1.000 (original > 99.5% of surrogates)
+- Conclusion: Gap is not noise floor; real brain shows significantly more 0.6-0.7 coupling than random, but still <1% (desert confirmed)

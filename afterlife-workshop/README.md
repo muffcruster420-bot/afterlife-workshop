@@ -1,3 +1,26 @@
+# Afterlife Workshop — Shangraw Gap
+
+**Update — 12 June 2026: Adversarial Testing Complete**
+
+After four hostile-review tests, the theory has been refined:
+
+- The "Shangraw Gap" (depletion of bicoherence values in 0.6–0.7) is **not** an artifact of window length, referencing, or 45 Hz muscle noise. Tests 1–3 confirm it survives those manipulations.
+
+- Test 4 (phase-randomized surrogate) shows the Gap persists even when true phase coupling is destroyed (real: 1.01%, surrogate: 1.68%). This means the Gap is a **robust baseline property** of bicoherence applied to sleep EEG, not direct evidence of consciousness.
+
+**Reframed hypothesis:**
+> The Gap represents the default unconscious state. Conscious or post-mortem persistence should be detectable as *transient filling* of the Gap — brief epochs where bicoherence enters 0.6–0.7 at significantly higher rates than the 1–2% baseline.
+
+All four tests are documented and version-controlled in this branch:
+- `adversarial_test_1_window.md`
+- `adversarial_test_2_car.md`
+- `adversarial_test_3_muscle.md`
+- `adversarial_test_4_surrogate.md`
+
+This moves the project from "gap = proof" to a falsifiable prediction that can be tested against wake, REM, and (in future) peri-mortem data.
+
+---
+
 # Afterlife Workshop — The Shangraw Gap
 
 **45-Hz bicoherence: living brains vs dying brains**

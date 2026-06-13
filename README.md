@@ -1,3 +1,17 @@
+# Shangraw Gap v0.3.8.5
+
+**DOI:** https://doi.org/10.5281/zenodo.20683811  
+**Published:** June 13, 2026 | Kingston, Ontario  
+**ORCID:** 0009-0000-9538-6345
+
+**Living brains:** 0.187 ± 0.012 (n=2,037)  
+**Dying brains:** 0.771 ± 0.008 (n=1,142)  
+**Gap:** 0.584 — no stable recordings at 0.65 threshold
+
+*June 13 2026 update: Added histamine/amygdala keywords linking to Nomura 2026 and Rajan 2026 (45Hz gamma coherence). Phenotype safety filter for ICD-10/ketamine. Validated on 3 fresh Sleep-EDF subjects.*
+
+---
+
 
 
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20466962-blue)](https://doi.org/10.5281/zenodo.20466962) [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](https://github.com/muffcruster420-bot/afterlife-workshop/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

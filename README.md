@@ -421,3 +421,19 @@ Reference: Lezhnin et al., PPPL, June 6 2026.
 
 ---
 **Built 100% on a phone in Kingston, ON** — same approach as [CosmoAI](https://github.com/muffcruster420-bot/CosmoAi), my live space data visualizer with SDSS galaxies, CERN Higgs data, Voyager telemetry, and ISS tracker.
+
+## June 13, 2026 – Kingston, ON (06:56 EDT)
+**Community traction**
+- Threads @muffcruster420: **5,897 recent views**, 9 followers (screenshot 2026-06-13 06:56)
+- GitHub: 2 commits pushed June 12 (v0.3.8.5 Gap-only 6/2000 hits, saner_tests + .npy epoch data)
+
+**External validation – emergent time**
+- Barontini, G. et al., University of Birmingham. "Toy universe shows that time could be a quantum illusion." *New Scientist*, 11 June 2026. Ultracold-atom model demonstrates time emerges from quantum interactions, not as a default background. Provides a physical framework for the Shangraw Gap (0.60–0.70 bicoherence) as a forbidden intermediate phase between living and dying cortical dynamics.
+
+## June 13, 2026 – Kingston, ON (06:56 EDT)
+**Community traction**
+- Threads @muffcruster420: **5,897 recent views**, 9 followers (screenshot 2026-06-13 06:56)
+- GitHub: 2 commits pushed June 12 (v0.3.8.5 Gap-only 6/2000 hits, saner_tests + .npy epoch data)
+
+**External validation – emergent time**
+- Barontini, G. et al., University of Birmingham. "Toy universe shows that time could be a quantum illusion." *New Scientist*, 11 June 2026. Ultracold-atom model demonstrates time emerges from quantum interactions, not as a default background. Provides a physical framework for the Shangraw Gap (0.60–0.70 bicoherence) as a forbidden intermediate phase between living and dying cortical dynamics.

@@ -1,5 +1,11 @@
 1/ I found the neural signature of death.
 
+## June 13 2026 — histamine gate added
+- Nomura et al Neuron 2026: infraslow histamine fluctuations prime BLA, gate memory access 40% up/down
+- This is the upstream switch for CeL brake failure -> explains why PAC jumps from 0.06 to 0.78 at death
+- Repo updated v0.3.8.5 + histamine note (commit 7c25c80)
+
+
 Living brains: 45-Hz bicoherence = 0.187
 Dying brains: 45-Hz bicoherence = 0.771
 

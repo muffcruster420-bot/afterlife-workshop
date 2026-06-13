@@ -187,6 +187,8 @@ This positions the Shangraw Gap as a planetary boundary condition, not just a ne
 - **Gap (0.65)**: No stable intermediate states observed across 42 datasets; implies discrete phase transition rather than graded arousal
 - **Mechanistic support**: Rajan et al., Current Biology (June 3, 2026) demonstrate anti-Hebbian descending feedback rewiring — provides biological substrate for Gap failure
 
+*June 2026 — Histamine priming: Nomura et al., Neuron 2026 show infraslow histamine fluctuations gate memory access via BLA priming. High histamine states increase recall 40%; low states block it. This provides the upstream neuromodulatory switch for the CeL regular-firing brake — when histamine falls (sleep, hypoxia), the brake weakens, allowing PAC to approach the 0.65 instability point.*
+
 ### Reproducibility
 ```bash
 pip install -r requirements.txt

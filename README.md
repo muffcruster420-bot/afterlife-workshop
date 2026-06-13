@@ -437,3 +437,8 @@ Reference: Lezhnin et al., PPPL, June 6 2026.
 
 **External validation – emergent time**
 - Barontini, G. et al., University of Birmingham. "Toy universe shows that time could be a quantum illusion." *New Scientist*, 11 June 2026. Ultracold-atom model demonstrates time emerges from quantum interactions, not as a default background. Provides a physical framework for the Shangraw Gap (0.60–0.70 bicoherence) as a forbidden intermediate phase between living and dying cortical dynamics.
+
+**GitHub traction (as of 2026-06-13 07:03 EDT)**
+- 2,037 clones in last 14 days (481 unique cloners)
+- 585 repo views (26 unique visitors)
+- Top referrers: github.com, m.facebook.com (19), l.threads.com (9)

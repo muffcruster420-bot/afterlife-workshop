@@ -3,7 +3,7 @@
 
 # The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
 **Author:** Jesse Shangraw (@muffcruster420) — Kingston, Ontario, Canada  
-**Version:** v0.3.8.4 — June 10, 2026  
+**Version:** v0.3.8.5 — June 12, 2026  
 **Status:** Draft Technical Report — Not Peer-Reviewed  
 **License:** MIT Code + CC BY 4.0 Text  
 **Repository:** https://github.com/muffcruster420-bot/afterlife-workshop  
@@ -63,6 +63,13 @@ Dying EEG: PAC = 0.780
 Sleep EEG: PAC = 0.057
 
 ### Validation status — June 3, 2026 (Kingston, ON)
+
+**June 12, 2026 – Kingston, ON (mobile Codespace test)**
+- *Gap-only run:* SC4001E0, f1=15Hz f2=30Hz, 2,000×2s epochs
+- *Hits in 0.60–0.70:* 6 epochs (0.3%)
+- *Mean bicoherence (all epochs):* 0.093
+- *Oxford-style checks on Gap epochs:* Wigner=0.050 (<0.15 threshold), squeeze=0.500, projection=0.989
+- *Interpretation:* Gap events are rare transients in N2 sleep at this frequency pair, with no evidence of non-classicality. Data and script: `run_gap_only.py`, `saner_tests.png`
 **Primary clinical cohort:** n = 607 ICU patients (I-CARE database, 32,712 hours).  
 Living bicoherence: 0.06 ± 0.09 | Dying: 0.78 ± 0.13 | Gap 0.60–0.70: 0% overlap (d = 3.1, p < 0.001)
 

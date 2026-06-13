@@ -9,7 +9,6 @@
 **Repository:** https://github.com/muffcruster420-bot/afterlife-workshop  
 **Clones (14d): 2,037 (481 unique) | Threads: 9 followers · 5,897 recent views | Repo views (14d): 585 (updated June 13, 2026, 9:56am ET, Kingston, ON)**
 > **June 13 validation:** SC4002E0=0.022, SC4011E0=0.032, SC4001E0=0.037 (40Hz & 45Hz), Vicente 0284_001_004=1.000 — all confirm Gap <0.6 or >0.7, zero in 0.63–0.67
-> **June 13 validation:** SC4002E0=0.022, SC4011E0=0.032, SC4001E0=0.037 (40Hz & 45Hz), Vicente 0284_001_004=1.000 — all confirm Gap <0.6 or >0.7, zero in 0.63–0.67
 
 > **Abstract:** Human terminal EEG shows a forbidden complexity zone centered at 0.65. Living sleep states cluster at ~0.06, awake rest at ~0.79, dying states lock at ~0.78, with no stable recordings in between. We propose this "Shangraw Gap" reflects failure of anti-Hebbian feedback decorrelation. Recent Current Biology work (Rajan et al., June 3 2026) demonstrates that descending cortical feedback physically rewires via anti-Hebbian plasticity, providing a biological mechanism for the observed gap.
 

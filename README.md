@@ -1,8 +1,14 @@
 
+
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20466962-blue)](https://doi.org/10.5281/zenodo.20466962) [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](https://github.com/muffcruster420-bot/afterlife-workshop/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20466962-blue)](https://doi.org/10.5281/zenodo.20466962) [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](https://github.com/muffcruster420-bot/afterlife-workshop/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+
+# The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
 # The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
 **Author:** Jesse Shangraw (@muffcruster420) — Kingston, Ontario, Canada  
+
+**ORCID:** [0009-0000-9538-6345](https://orcid.org/0009-0000-9538-6345)
 **Version:** v0.3.8.5 — June 12, 2026  
 **Status:** Draft Technical Report — Not Peer-Reviewed  
 **License:** MIT Code + CC BY 4.0 Text  

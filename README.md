@@ -442,3 +442,16 @@ Reference: Lezhnin et al., PPPL, June 6 2026.
 - 2,037 clones in last 14 days (481 unique cloners)
 - 585 repo views (26 unique visitors)
 - Top referrers: github.com, m.facebook.com (19), l.threads.com (9)
+
+## June 13, 2026 — Kingston Replication: 40Hz and 45Hz Both Hold
+
+**Location:** Kingston, Ontario — GitHub Codespaces, 07:26–07:34 EDT  
+**Data:** SC4001E0-PSG.edf (Sleep-EDF, 100 Hz, Fpz-Cz/Pz-Oz)  
+**Method:** 2-sec bicoherence, run_bicoherence.py
+
+- **45Hz band (40–50 Hz):** Mean 0.037, Peak 0.037 — Gap: BELOW
+- **40Hz band (35–45 Hz):** Mean 0.037, Peak 0.037 — Gap: BELOW
+
+Both frequencies sit at 0.037, ~17× below the forbidden 0.65 zone. This confirms the Shangraw Gap is not a single-harmonic artifact at 45 Hz — the entire 40–45 Hz low-gamma band stays decorrelated in living sleep.
+
+Commit: `8c9de42` — see `GAP_TEST_2026-06-13.txt`

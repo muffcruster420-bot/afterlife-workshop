@@ -1,6 +1,5 @@
 # The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
 # Shangraw Gap v0.3.8.5
-# Shangraw Gap v0.3.8.5
 
 **DOI:** https://doi.org/10.5281/zenodo.20683811  
 **Published:** June 13, 2026 | Kingston, Ontario  

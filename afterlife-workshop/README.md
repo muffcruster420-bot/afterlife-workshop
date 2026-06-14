@@ -1,3 +1,7 @@
+# The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20466962.svg)](https://doi.org/10.5281/zenodo.20466962) [![CI](https://github.com/muffcruster420-bot/afterlife-workshop/actions/workflows/ci.yml/badge.svg)](https://github.com/muffcruster420-bot/afterlife-workshop/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Afterlife Workshop — Shangraw Gap
 
 **Update — 12 June 2026: Adversarial Testing Complete**

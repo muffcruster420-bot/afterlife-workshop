@@ -478,3 +478,12 @@ Reference: Lezhnin et al., PPPL, June 6 2026.
 Both frequencies sit at 0.037, ~17× below the forbidden 0.65 zone. This confirms the Shangraw Gap is not a single-harmonic artifact at 45 Hz — the entire 40–45 Hz low-gamma band stays decorrelated in living sleep.
 
 Commit: `8c9de42` — see `GAP_TEST_2026-06-13.txt`
+
+## Cite
+
+**Shangraw, J.** (2026). *Shangraw Gap v0.3.8.5 — PAC Validation with histamine/amygdala integration (n=3,179)*. Zenodo. https://doi.org/10.5281/zenodo.20683811
+
+Google Scholar: https://scholar.google.com/citations?user=jotTvRsAAAAJ
+
+Independent Researcher, Kingston, Ontario.  
+Phase-amplitude coupling gap: **0.584** (living mean 0.731 vs. postmortem 0.147)

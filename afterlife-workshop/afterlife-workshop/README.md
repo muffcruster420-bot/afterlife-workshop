@@ -1,3 +1,5 @@
+# The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20683811.svg)](https://doi.org/10.5281/zenodo.20683811) [![CI](https://github.com/muffcruster420-bot/afterlife-workshop/actions/workflows/ci.yml/badge.svg)](https://github.com/muffcruster420-bot/afterlife-workshop/actions) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # afterlife-workshop: The Shangraw Gap
 
 A signal-processing framework exploring cross-frequency phase-coupling thresholds at the 6th harmonic of the Schumann Resonance (46.98 Hz, rounded to ~45 Hz) in human EEG data.

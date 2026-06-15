@@ -3,7 +3,17 @@ title: "The 0.65 Threshold: A Phase Transition at Death"
 message: "If you use this software, please cite it as below."
 authors:
     - given-names: Jesse
-       orcid: "https://orcid.org/0009-0000-9538-6345"
-family-names: Shangraw
+    family-names: Shangraw
+    orcid: https://orcid.org/0009-0000-9538-6345
 date-released: 2026-06-13
-url: "https://github.com/muffcruster420-bot/afterlife-workshop"
+version: 0.3.8.5
+url: https://github.com/muffcruster420-bot/afterlife-workshop
+repository-code: https://github.com/muffcruster420-bot/afterlife-workshop
+license: MIT
+keywords:
+    - neuroscience
+    - eeg
+    - bicoherence
+    - consciousness
+    - 45Hz
+    - shangraw-gap

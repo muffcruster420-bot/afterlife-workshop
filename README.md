@@ -1,3 +1,20 @@
+# Afterlife Workshop — Neuroscience, Not Mediumship
+
+**Not a TV show. Not a techno event. Not a grief circle. Not a Discord bot.**
+
+This is an open EEG study from Kingston, Ontario, measuring 45-Hz bicoherence in living vs. dying brains.
+
+- **Living brains:** ~0.19
+- **Dying brains:** ~0.77  
+- **The Shangraw Gap:** *nothing lives at 0.65*
+
+All data, code, and analysis run on a phone. Open EDFs included.
+
+→ Start here: `GETTING_STARTED.md`
+→ Data: `/data` and `/real_data`
+→ Latest release: v0.3.8
+
+---
 # The Shangraw Gap: An Open-Source Technical Report on Terminal EEG Complexity and Anti-Hebbian Feedback Failure
 # Shangraw Gap v0.3.8.5
 

@@ -3,6 +3,7 @@ title: "The 0.65 Threshold: A Phase Transition at Death"
 message: "If you use this software, please cite it as below."
 authors:
     - given-names: Jesse
-    family-names: Shangraw
+       orcid: "https://orcid.org/0009-0000-9538-6345"
+family-names: Shangraw
 date-released: 2026-06-13
 url: "https://github.com/muffcruster420-bot/afterlife-workshop"

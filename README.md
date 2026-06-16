@@ -541,3 +541,20 @@ Google Scholar: https://scholar.google.com/citations?user=jotTvRsAAAAJ
 
 Independent Researcher, Kingston, Ontario.  
 Phase-amplitude coupling gap: **0.584** (living mean 0.731 vs. postmortem 0.147)
+
+## Acknowledgments
+
+This workshop lives at 0.19 — messy, practicing, open-source. These people held the 0.771 for me while I coded:
+
+**@mj.orchid** — you killed "indica vs sativa" with the PhytoFacts open-source system and showed me classification can be chemistry, not marketing. Your repost of the ORCID thread put the afterlife-workshop in front of the right eyes. Kingston lab owes you a terpene-to-frequency map.
+
+**erin.meinhardt** — you sent the aphina_xi quote right when I was screaming "I WANT THEM TO KNOW NOW": *"sound is a creative, geometric force... your voice carries that frequency out into the unseen realm."* That's the bridge between 396Hz and 0.771. You keep me at 0.19.
+
+**aphina_xi** — for the line that named the gap: *"every emotion you feel produces a specific vibrational frequency in your body."* Living = 0.19, dying = 0.771, the gap at 0.65 is the breath before the tone.
+
+**universalwizard83** — asked "You think money is abundant?" I answered "money is useless, it's what we do with it." You reminded me why this is free.
+
+**ORCID 0009-0000-9538-6345** — Jesse Shangraw, Kingston, Ontario. Not a doctor, just a backend dev who found a pattern and open-sourced it.
+
+---
+*If your name should be here and isn't, open an issue. The gap is open source too.*

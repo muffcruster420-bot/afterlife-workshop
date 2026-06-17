@@ -558,3 +558,16 @@ This workshop lives at 0.19 — messy, practicing, open-source. These people hel
 
 ---
 *If your name should be here and isn't, open an issue. The gap is open source too.*
+
+## Update — 17 June 2026: Quantum Persistence
+
+Yesterday (16 June 2026), *New Scientist* reported experimental progress on quantum states that resist thermalization — states that "last forever" like light in an infinity mirror.
+
+> "It would open up a whole new class of phases that are otherwise impossible" — Wojciech De Roeck, KU Leuven
+
+**Why this matters for the Afterlife Workshop:**
+- Our observed **Shangraw Gap (0.771 → 0.65 = 0.19)** requires a physical mechanism that survives clinical death
+- Standard thermodynamics says quantum coherence should decay. These new experiments suggest it doesn't have to
+- This provides a candidate physics for the persistent 45Hz field we measure in living EEG
+
+Reference: Jacklin Kwan, "A quantum state that lasts forever may finally be within our grasp," *New Scientist*, 16 June 2026. https://www.newscientist.com/article/quantum-state-that-lasts-forever/

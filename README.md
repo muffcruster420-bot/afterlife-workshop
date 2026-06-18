@@ -584,3 +584,34 @@ Yesterday (16 June 2026), *New Scientist* reported experimental progress on quan
 - This provides a candidate physics for the persistent 45Hz field we measure in living EEG
 
 Reference: Jacklin Kwan, "A quantum state that lasts forever may finally be within our grasp," *New Scientist*, 16 June 2026. https://www.newscientist.com/article/quantum-state-that-lasts-forever/
+
+## Afterlife Workshop — Reading Note (15 June 2026)
+
+**Source:** Natalie Lawrence, "New studies suggest consciousness exists in organisms without brains", Institute of Art and Ideas (IAI TV), 15 June 2026. ~1,709 words.
+
+### Core argument
+- Brain-centrism is the hidden assumption: we think consciousness requires a brain because ours does
+- Chalmers' Hard Problem may be hard because we started with the wrong premise
+- To be open-minded, we have to remove ourselves from the picture entirely
+
+### Evidence cited
+- Slime molds solving mazes, plants responding to anesthetics
+- Single cells showing brain-like computation without neurons
+- Spain's MINT Lab: building experiments that do NOT use human cognition as template
+    - Goal: distinguish a system that merely reacts to its past from one that genuinely experiences its present
+- Baluška and Reber: to be alive might be to possess some level of sentience
+    - Sentience across tree of life: bacteria to blue whales
+    - Different substrates = different kinds of minds
+
+### Link to Shangraw Gap
+- If consciousness predates brains and exists in non-neural life, then brain death is not consciousness death
+- The Gap at 0.65 bicoherence is the measurable threshold where integrated experience drops below the living-system baseline
+- Microtubules and vaults exist in every cell, not just neurons, supporting non-brain substrate theories
+- Workshop question: If consciousness does not require a brain to start, why would it require a brain to continue
+
+### Use in workshop
+1. Open with Lawrence's critique of brain-centrism
+2. Present MINT Lab's reactive vs experiential test
+3. Show EEG data crossing 0.65 as empirical example of that transition
+4. Discussion prompt on substrate-independent consciousness
+

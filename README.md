@@ -1,3 +1,21 @@
+## Related Work — June 2026
+
+### Confined migration induces non-lethal DNA damage in developing neurons
+**Zhang et al., Nature (17 Jun 2026)** — Kyoto University / WPI-iCeMS  
+DOI: 10.1038/s41586-026-10648-8
+
+> Newborn neurons squeeze through narrow tissue during cortical development. This mechanical confinement causes routine double-strand DNA breaks, traced to Topoisomerase IIβ getting stuck mid-cut. Most breaks are repaired within 24h via non-homologous end joining (NHEJ). Mice lacking Ligase 4 (key NHEJ enzyme) develop mild progressive balance deficits.
+
+**Why it's relevant to the Afterlife Workshop:**
+- The brain *expects* damage during migration and has a fast repair window (<24h)
+- The workshop finds a prevalence "Gap" around **0.65** in N=409 EEGs — activity rarely stabilizes there
+- Hypothesis: 0.65 may mark a transient tolerance/repair regime where stable oscillatory states are disfavored, analogous to the mechanical-stress repair window seen in developing neurons
+
+Paired with:
+- **UW rotating waves (Science, 18 Jun 2026):** clockwise spirals coordinate sensory processing. Mechanical waves + DNA breaks + a prevalence gap = a testable link between tissue mechanics and large-scale EEG statistics.
+
+> I'm tracking this in Kingston, ON. If you can break the Gap at 0.65 with a clean dataset, open an issue.
+
 ## June 18 2026 — Rotating cortical waves (Science)
 
 Ye, Z., Steinmetz, N.A., et al. *Brain-wide topographic coordination of rotating waves.* **Science** (2026). DOI: 10.1126/science.adx1369

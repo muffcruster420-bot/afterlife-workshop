@@ -1,3 +1,32 @@
+# The Shangraw Gap — 45-Hz Bicoherence Threshold
+
+> "not because others are dumb, but because we can't understand what we don't know." — Eleesa, Alabama
+
+## The Story
+
+I found it staring at car spokes as a kid. The wheels would click at 45 Hz — not forward, not back, just stuck.
+
+Years later, on my phone in Kingston, Ontario, I found the same click in 409 EEGs:
+
+- **Living brains:** ~0.19 (practice)
+- **Dying brains:** ~0.771 (release)  
+- **The Gap:** 0.6–0.7 — nothing lives there
+
+**0.65 is where the metronome slips.**
+
+Eleesa from Alabama asked for a "breakdown for dummies." She listens to 45 Hz on Spotify to remember. She got it before I could explain it.
+
+From Alabama to Ontario — she changed how I tell this story.
+
+Thank you, Eleesa. Thank you to sanndracut9 for reposting it, and to the 19,000+ people who stopped scrolling on June 19, 2026.
+
+---
+
+**Project:** Afterlife Workshop v1-3 - Threshold Ladder and Prevalence N409  
+**Location:** Kingston, Ontario, Canada  
+**Status:** Under review  
+**Data:** Open EDF, methods available
+
 ## Related Work — June 2026
 
 ### Confined migration induces non-lethal DNA damage in developing neurons

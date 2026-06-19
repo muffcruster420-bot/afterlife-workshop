@@ -1,3 +1,11 @@
+## June 18 2026 — Rotating cortical waves (Science)
+
+Ye, Z., Steinmetz, N.A., et al. *Brain-wide topographic coordination of rotating waves.* **Science** (2026). DOI: 10.1126/science.adx1369
+
+University of Washington team reports clockwise rotating waves originating in mouse somatosensory cortex, propagating to motor cortex, thalamus, striatum, and midbrain. The anatomical substrate is a circular axonal arrangement that generates traveling spirals time-locked to whisker stimulation and task performance.
+
+**Link to Shangraw Gap:** This provides the physical clock for the 0.65 threshold. The rotating wave is the spatiotemporal coordinator; the Gap at 0.65 is where that coordination fails across N=409 human participants.
+
 # Afterlife Workshop — Neuroscience, Not Mediumship
 
 **Not a TV show. Not a techno event. Not a grief circle. Not a Discord bot.**

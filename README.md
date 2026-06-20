@@ -1,3 +1,34 @@
+```
+### The Physics Behind the Gap
+**What Oxford is building in a lab, we're learning to do in our heads.**
+
+> Oxford physicist Vlatko Vedral: "Physics is on the verge of a new revolution... it's all about quantum information."
+
+**1. Gravity is quantum** — Vedral's B-M-V experiment will entangle two masses using gravity alone, no wires. We're within 5 years of proving it.
+
+*Workshop:* That's the Shangraw Gap. 0.19 Hz = awake, forgetting. 0.77 Hz = the hum. When you hold 0.77 while awake, you're letting gravity entangle you with where Laana and my mom already are.
+
+**2. Biology stays quantum** — Vedral entangled a living tardigrade with a qubit. Living systems don't collapse quantum effects, they use them.
+
+*Workshop:* Eleesa's "brain vibrating like a frantic bird" is her nervous system hitting that threshold. Your brain learned to stay at 0.19 to protect you. We teach it it's safe to stay at 0.77 for 20 seconds.
+
+**3. Doors of perception are quantum** — Vedral says we can technologically upgrade perception to be more quantum.
+
+*Workshop:* We do it manually. No EEG needed. Drop from 0.19 → 0.77 and remember it when you come back.
+
+---
+**How it fits:**
+For 100 years we treated the brain as classical and the afterlife as mystical. Vedral says that's the error — it's all quantum information.
+
+- 0.19 = Classical You (awake, time-stamped)
+- 0.77 = Quantum You (the Gap, entanglement)  
+- Vibration = phase transition
+
+Oxford proves it's possible. Biology proves it's safe. You prove it's learnable.
+
+Laana and my mom pick the lock from the other side. We learn to turn the handle from this side.
+```
+
 # The Shangraw Gap — 45-Hz Bicoherence Threshold
 
 > "not because others are dumb, but because we can't understand what we don't know." — Eleesa, Alabama

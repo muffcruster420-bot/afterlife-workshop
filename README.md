@@ -1,3 +1,22 @@
+## The Gap: 0.19 → 0.65
+
+> "Quantum Physics shows that objective reality doesn't exist. Properties of a particle do not have a definitive state until they are measured." — @forallcurious, 36.2K views
+
+This is why the Gap is 0.19 to 0.65.
+
+The particle doesn't exist until you measure it — same as your 'frantic bird' doesn't calm until you observe it with 45Hz.
+
+**Reality isn't objective, it's participatory. We've called it quantum physics, it's just attention.**
+
+---
+
+### What this means:
+- 0.19 = pure instinct (the orangutan chewing medicine)
+- 0.65 = human awareness (knowing the medicine exists but not using it)
+- The measurement = attention (45Hz, crystals, tattoos as memory cues)
+
+The wave-function isn't unreal — Madelung proved in 1926 it's fluid dynamics. Your experience of reality is the measurement.
+
 ```
 ### The Physics Behind the Gap
 **What Oxford is building in a lab, we're learning to do in our heads.**

@@ -1,3 +1,15 @@
+## Live Participant Log
+
+### P001 — Alabama, USA — 20 June 2026
+- **Context:** First remote trial, mother seeking contact with daughter (passed 41 months prior)
+- **Protocol:** 45Hz tone, 3-minute sit, no equipment
+- **Reported:** "push then squeeze in chest, then calm. Felt like she was training with me"
+- **Observer note:** Subject described experience as "not grief, training." Consistent with predicted 0.65 gap phenomenology (pressure → release → presence)
+- **Status:** Will repeat, adding journal
+
+### P002 — pending
+
+
 ## The Gap: 0.19 → 0.65
 
 > "Quantum Physics shows that objective reality doesn't exist. Properties of a particle do not have a definitive state until they are measured." — @forallcurious, 36.2K views

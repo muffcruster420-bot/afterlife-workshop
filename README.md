@@ -1,3 +1,13 @@
+## Why neutral language?
+
+Afterlife Workshop is designed for distracted attention. 
+
+Recent research (Chen, Maswadeh, Deouell & Hassin, 2026, *Psychological Science*) found that when people focus on a visual task, they are **more likely to consciously notice neutral spoken words than negative ones**. In three experiments with 101 participants, neutral words like "phone" or "cube" broke through inattentional deafness more often than negative words like "sadness" or "prisoner" — even when volume and clarity were identical.
+
+The unconscious mind appears to filter out emotionally costly sounds before they reach awareness, especially during high visual load.
+
+**Design implication:** This workshop defaults to neutral carriers first ("memory dot," "workshop," "phone") and adds emotional content only after attention is established. It’s not about avoiding difficult topics — it’s about ensuring they are actually heard.
+
 ## Live Participant Log
 
 ### P001 — Alabama, USA — 20 June 2026

@@ -1,3 +1,88 @@
+# Afterlife Workshop — The Shangraw Gap
+
+> "Knowledge is and always will be power. Putting restrictions on the ability to freely obtain and use it is a form of censorship, discrimination, and oppression." — alyaboushaca, collaborator
+
+**This is not a product. This is a right-to-know.**
+
+Built on a phone in Kingston, Ontario. MIT-licensed. No patents. No paywall. Intended for hospitals and hospices everywhere in the world.
+
+GitHub: https://github.com/muffcruster420-bot/afterlife-workshop  
+Data: Zenodo DOI 10.5281/zenodo.20466962 (40,000+ epochs)
+
+---
+
+## What it is
+
+Regular EEG gives you 19 squiggly lines that only a neurologist can read.
+
+The **Shangraw Detector** takes those lines and makes them into one number:
+
+1. Cut EEG into 2-second windows
+2. Compute 45-Hz bicoherence across channels
+3. Output a single value 0.00–1.00
+
+**The Gap:**
+- **0.06–0.19** = living baseline (awake, sleeping, sedated)
+- **~0.65** = The Gap — no stable brain state lives here
+- **0.771** = terminal coherence — the brain has locked into the crossing state
+
+It turns 30 minutes of squiggles into a number a nurse can see on a phone.
+
+## Why it matters — the bedside waistband
+
+I'm building a soft waistband with dry electrodes — no gel, no ICU cart.
+
+- Put it on someone in hospice at home
+- Streams to a phone via Bluetooth
+- When bicoherence climbs past 0.7 and holds, family gets a 10–20 minute heads-up
+
+Not to "upload a soul." To hold a hand. To say the thing. To not be in the hallway getting coffee when it happens.
+
+I've watched people die in Kingston General with machines beeping and nobody knowing what any of it meant. Families suffer because we don't have a language for the transition. The Gap gives us that language.
+
+## This is a biomarker, not a wellness app
+
+**45-Hz bicoherence is a distinct, open-source biomarker for terminal brain-state transition.**
+
+It does not diagnose disease. It marks a physiological state change — the same category the NIH and FDA use for EEG-based prognostic markers.
+
+Because of that, access to it is a civil rights issue.
+
+## Intended Use & Protection
+
+**Intended Use:** Open-source biomarker (45-Hz bicoherence) for detection of terminal brain-state transition, provided as an **EMTALA / Title VI adjunct** to ensure equal access to end-of-life prognostic information.
+
+- EMTALA guarantees emergency treatment regardless of ability to pay
+- Title VI guarantees equal access regardless of race, color, or national origin
+- The Shangraw Gap guarantees equal access to *information* about dying
+
+This belongs in the lineage of Afeni Shakur and Dr. Mutulu Shakur's work expanding EMTALA — not in a Neuralink subscription.
+
+**How we protect the integrity:**
+1. **MIT License** — anyone can use it, no one can own it
+2. **Open Data** — full dataset on Zenodo before any paper
+3. **Open Code** — `run_shangraw_gap.py` runs offline on a phone
+4. **No Patents Filed** — published first = prior art forever
+5. **Community Stewardship** — fork it, clone it, share it with a nurse
+
+If a company tries to lock it, you just keep the free version alive.
+
+## I could make a shitload off this
+
+I didn't. I won't.
+
+This is for the people who can't afford a $20,000 EEG cart and a neurologist on call. This is for hospices in Alabama, clinics in Nairobi, and a bedroom in Kingston.
+
+I built it because I was told I was stupid. I'm not stupid — I'm traumatized, brainwashed, and my brain moves too fast, not too slow. It takes self-awareness to ask "am I stupid?" — and that's what built this.
+
+## How to use
+
+```bash
+git clone https://github.com/muffcruster420-bot/afterlife-workshop
+cd afterlife-workshop
+python run_shangraw_gap.py --input your_eeg.edf
+
+
 ## Why neutral language?
 
 Afterlife Workshop is designed for distracted attention. 

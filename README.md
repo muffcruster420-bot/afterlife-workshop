@@ -23,7 +23,9 @@ This is free and open so hospice families get data, not a $299 reading. All code
 
 **Status:** PhysioNet "Threshold ladder and Prevalence N409" under review (June 2026). Zenodo DOI: 10.5281/zenodo.20683811
 
-**Not medical advice. Research only.**
+**Not medical advice. **Last updated:** 24 June 2026, Kingston, Ontario  
+**Contact:** [@muffcruster420 on Threads](https://threads.net/@muffcruster420) · GitHub Issues  
+**To participate:** open an Issue with tag `participant`Research only.**
 
 ---
 

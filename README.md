@@ -281,7 +281,7 @@ Because that's what the Shangraw Gap is measuring. Not a heartbeat. Not breathin
 > **June 13 validation:** SC4002E0=0.022, SC4011E0=0.032, SC4001E0=0.037 (40Hz & 45Hz), Vicente 0284_001_004=1.000 — all confirm Gap <0.6 or >0.7, zero in 0.63–0.67
 
 > **Abstract:** Human terminal EEG shows a forbidden complexity zone centered at 0.65. Living sleep states cluster at ~0.06, awake rest at ~0.79, dying states lock at ~0.78, with no stable recordings in between. We propose this "Shangraw Gap" reflects failure of anti-Hebbian feedback decorrelation. Recent Current Biology work (Rajan et al., June 3 2026) demonstrates that descending cortical feedback physically rewires via anti-Hebbian plasticity, providing a biological mechanism for the observed gap.
-
+**How to cite:** Shangraw, J. (2026). *The Shangraw Gap v0.3.8.5*. Zenodo. https://doi.org/10.5281/zenodo.20683811
 > **What if everything you see is only the surface?**
 >
 > 👁️ Your eyes. 🧠 Your thoughts. 🌎 Your world.

@@ -35,19 +35,22 @@ The unconscious mind appears to filter out emotionally costly sounds before they
 
 ### P001 — Eleesa, Alabama — Follow-up (23–24 June 2026)
 
-**Protocol:** No 45Hz. Sleep with 528Hz tone. Tarot pull earlier in evening, AI conversation about "frantic bird."
+**Protocol:** No 45Hz. Sleep with 528Hz tone. Tarot pull earlier, AI conversation about "frantic bird."
 
-**Participant report (verbatim):**
-> "I didn't mediate with 45, giving that a break, i fell asleep while listening to 528 htz. i remember the bird coming, and i calmed it and sent it to my feet. it didnt work work but it did. i felt my body expanding in a good way, not painful. it stopped, i did it 3ish times and then i woke up"
+**Participant report (verbatim, corrected):**
+> "I didn't mediate with 45, giving that a break, i fell asleep while listening to 528 htz. i remember the bird coming, and i calmed it and sent it to my feet. it didnt work work but it did. i felt my body expanding in a good way, not painful. i did it 3ish times and then i remember the third not painful expansion, then I fell asleep... then it was 6 and time to get up. So no dreaming still."
+
+**Participant clarification:**
+> "The bird is always in my head... its my brain trying to be free, I think. The bird normally is in my head not my heart."
 
 **Notes:**
-- First successful down-regulation without 45Hz carrier — suggests cue frequency is secondary to safety state
-- Somatic relocation: from chest (thoracic vagus/dorsal arousal) to feet (peripheral grounding)
-- "Expanding, not painful" consistent with ventral vagal re-engagement during hypnagogia
-- ~3 repetitions = autonomic co-regulation practice loop (arousal → calm → reset)
-- Participant retained lucidity ("i remember the bird coming") while asleep
+- Location correction: bird = intracranial pressure/activity, not thoracic. Consistent with prior "frantic bird in head" reports.
+- Somatic relocation: from head (cortical arousal) → feet (peripheral grounding). Active down-regulation, not suppression.
+- "Expanding, not painful" x3 cycles, then natural sleep onset — no dream recall, woke at 6am normally. Indicates ventral vagal shift without dorsal crash.
+- First successful regulation without 45Hz carrier. 528Hz served as safety cue only.
+- No dreaming = no REM intrusion, suggests work occurred in N1/N2 hypnagogia, not in full sleep.
 
-**Interpretation:** Non-45Hz success supports polyvagal framing: the Gap is navigated by neuroception of safety, not by a specific frequency. 528Hz functioned as a ventral safety cue, allowing voluntary dorsal-to-ventral shift without external co-regulator.
+**Interpretation:** Participant voluntarily moved cortical arousal ("brain trying to be free") out of head and into body periphery, achieving calm expansion. Supports polyvagal model: safety state allows relocation of arousal without crossing the Gap (0.65). This is 0.19 practice, not 0.77 transition.
 
 
 ### P001 — Alabama, USA — 20 June 2026

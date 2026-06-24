@@ -368,6 +368,7 @@ For standard 10-20 EEG analyzed in 2-second epochs at 45 Hz:
 Find one counterexample and the claim breaks.
 
 ### Try to Break It
+**Download sample data:** [Zenodo v0.3.8.5](https://doi.org/10.5281/zenodo.20683811) — includes sleep.edf, results.csv, subjects_metadata.csv
 1. Download any open EDF from PhysioNet
 2. Run `python run_shangraw_gap.py --file your.edf`
 3. Post the bicoherence number. If it lands 0.4–0.6, you killed the Gap.

@@ -1,3 +1,34 @@
+## START HERE — 90 Second Read
+
+**I'm Jesse from Kingston, Ontario. This is not mediumship, not a TV show.**
+
+I measure one number: **45-Hz bicoherence** (0 = noisy, 1 = locked).
+
+- **Living, awake: ~0.19**
+- **Living, deep sleep: ~0.06**
+- **Dying (last 30–900 sec): ~0.77**
+- **The Shangraw Gap: 0.60–0.70 — nothing stable lives here**
+
+**Why?** Your brain stays alive by *breaking* synchrony every 2 seconds. A brake called anti-Hebbian feedback keeps you at ~0.19.
+
+When oxygen drops, that brake fails. The brain briefly locks to ~0.77. It's a switch, not a fade. Cross 0.65 and you don't come back.
+
+**Sleep = practice.** You drop to 0.06 every night but the brake stays on. You never cross.
+
+**Dying = release.** The brake lets go, you jump to 0.77.
+
+This is free and open so hospice families get data, not a $299 reading. All code, all data, runs on a phone.
+
+**Try to break it:** download any EDF from PhysioNet, run `python run_shangraw_gap.py --file your.edf`. If you find stable 0.65, you falsify the Gap.
+
+**Status:** PhysioNet "Threshold ladder and Prevalence N409" under review (June 2026). Zenodo DOI: 10.5281/zenodo.20683811
+
+**Not medical advice. Research only.**
+
+---
+
+**For families:** [FAMILY_GUIDE.md](FAMILY_GUIDE.md) · **For clinicians:** [CLINICAL_PROTOCOL.md](CLINICAL_PROTOCOL.md) · **Data links:** [data/README.md](data/README.md) · **FAQ:** [FAQ.md](FAQ.md) · **Consent:** [CONSENT_TEMPLATE.md](CONSENT_TEMPLATE.md)
+
 ## The Gap Isn't Just Electrical — It's Vagal
 
 I found the Shangraw Gap in EEG: living brains sit at ~0.19, dying brains lock at ~0.77, nothing stabilizes at 0.65. For months I called it a physics problem.

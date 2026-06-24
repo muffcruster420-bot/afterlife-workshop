@@ -818,3 +818,5 @@ Reference: Jacklin Kwan, "A quantum state that lasts forever may finally be with
 2. Present MINT Lab's reactive vs experiential test
 3. Show EEG data crossing 0.65 as empirical example of that transition
 4. Discussion prompt on substrate-independent consciousness
+5. ---
+*Afterlife Workshop is an independent open-science project by Jesse Shangraw, Kingston, Ontario. Not affiliated with any hospital, university, or religious organization.*

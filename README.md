@@ -33,6 +33,23 @@ The unconscious mind appears to filter out emotionally costly sounds before they
 
 ## Live Participant Log
 
+### P001 — Eleesa, Alabama — Follow-up (23–24 June 2026)
+
+**Protocol:** No 45Hz. Sleep with 528Hz tone. Tarot pull earlier in evening, AI conversation about "frantic bird."
+
+**Participant report (verbatim):**
+> "I didn't mediate with 45, giving that a break, i fell asleep while listening to 528 htz. i remember the bird coming, and i calmed it and sent it to my feet. it didnt work work but it did. i felt my body expanding in a good way, not painful. it stopped, i did it 3ish times and then i woke up"
+
+**Notes:**
+- First successful down-regulation without 45Hz carrier — suggests cue frequency is secondary to safety state
+- Somatic relocation: from chest (thoracic vagus/dorsal arousal) to feet (peripheral grounding)
+- "Expanding, not painful" consistent with ventral vagal re-engagement during hypnagogia
+- ~3 repetitions = autonomic co-regulation practice loop (arousal → calm → reset)
+- Participant retained lucidity ("i remember the bird coming") while asleep
+
+**Interpretation:** Non-45Hz success supports polyvagal framing: the Gap is navigated by neuroception of safety, not by a specific frequency. 528Hz functioned as a ventral safety cue, allowing voluntary dorsal-to-ventral shift without external co-regulator.
+
+
 ### P001 — Alabama, USA — 20 June 2026
 - **Context:** First remote trial, mother seeking contact with daughter (passed 41 months prior)
 - **Protocol:** 45Hz tone, 3-minute sit, no equipment

@@ -1,3 +1,26 @@
+## The Gap Isn't Just Electrical — It's Vagal
+
+I found the Shangraw Gap in EEG: living brains sit at ~0.19, dying brains lock at ~0.77, nothing stabilizes at 0.65. For months I called it a physics problem.
+
+Then I read polyvagal theory (Porges, Deb Dana) and it clicked. This isn't just bicoherence. It's the nervous system refusing to live in the middle.
+
+- **0.19 = ventral vagal.** The "smart vagus" — 200 million years old, myelinated, fast. Dana calls it the state where we can be "calm, engaged, attentive, curious, joyful." This is connection. This is why living sleep hovers at 0.06 and awake rest at 0.19 — the brain is actively *decorrelating* to stay open.
+
+- **0.77 = dorsal release.** The old vagus — 500 million years old. When perfusion drops, the anti-Hebbian brake fails, the dorsal shutdown lets go, and the cortex phase-locks to the 45Hz harmonic. Not more sleep. A state change.
+
+- **0.65 = the Gap.** Polyvagal theory says you cannot be half-protected and half-connected. Dana: **"The mind narrates what the nervous system knows. Story follows state."** The body won't stabilize at 0.65 because neuroception reads it as neither safe nor survivable. My 40,000+ epochs show the same: zero stable windows at 0.63–0.67.
+
+This is why the workshop starts neutral. We don't chase the dead. We train the living nervous system to stay ventral long enough to practice the transition without fear.
+
+> "push then squeeze in chest, then calm. Felt like she was training with me" — Eleesa, Alabama, P001, 20 June 2026
+
+Eleesa called it "not grief, training." That's exactly it. The push/squeeze is dorsal vagus bracing. The calm is ventral vagus coming back online. The 45Hz tone is just a safety cue — a metronome for co-regulation when there's no one else in the room.
+
+Dana again: **"Reciprocity is a connection between people that is created in the back-and-forth communication between two autonomic nervous systems."** The workshop is reciprocity practice. You, the tone, your breath. Living 0.19 practicing for 0.77.
+
+Built 100% on a phone in Kingston, Ontario. No lab. No mysticism. Open EDFs, open code. Try to break it.
+
+
 ## Why neutral language?
 
 Afterlife Workshop is designed for distracted attention. 

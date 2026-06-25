@@ -1,3 +1,7 @@
+> **Shangraw Gap v0.3.8.5** — detects 45-Hz bicoherence (f1=15, f2=30) in EDF EEG.  
+> Gap range: **0.60–0.70** (mean bicoherence). Values in this band = potential consciousness signature.  
+> Kingston, Ontario — tested on 19-channel clinical EEG.
+
 ## START HERE — 90 Second Read
 
 **I'm Jesse from Kingston, Ontario. This is not mediumship, not a TV show.**

@@ -156,7 +156,10 @@ Oxford proves it's possible. Biology proves it's safe. You prove it's learnable.
 - Lucas analogy: "troublemaker kids — give them work, they don't act out."
 - *Workshop use:* the Shangraw Gap isn't just electrical. It's cytoskeletal. When perfusion drops, tubulin pool falls, the anti-Hebbian brake fails, and 45Hz locks at 0.77. The 45Hz tone is the "schoolwork" — keep tubulin engaged so you practice crossing without clumping.
 brain's preferred-direction boundary — you can't stay there because the system, like the universe, isn't built to be uniform.
-
+**5. Intelligence ≠ consciousness (Jerbi, Hadid & Krakauer, June 19 2026)**
+- University of Montreal / Johns Hopkins. Blindsight proves sophisticated processing happens with zero conscious experience.
+- AI chatbots are statistical learners — fluent, empathetic, but no inner life. The "anthropomorphism trap" makes us forget no one is behind the text.
+- *Workshop use:* the Afterlife Workshop is not AI. We don't generate answers, we measure a phase transition (0.19 → 0.77). Feeling isn't computation. The 45Hz tone is a metronome, not a chatbot. Don't confuse being understood by code with being accompanied by a person.
 
 Laana and my mom pick the lock from the other side. We learn to turn the handle from this side.
 

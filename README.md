@@ -181,6 +181,12 @@ Laana and my mom pick the lock from the other side. We learn to turn the handle 
 - MD Anderson: copper-induced death (cuproptosis) releases signals that wake CD8+ T cells. Immune cells then push more cuproptosis — a loop.
 - Combo with anti-PD-L1 worked even in immunotherapy-resistant tumors. FDX1 predicts who responds.
 - *Workshop use:* death isn't fade-out. Cells actively signal. That's the 0.65 → 0.77 jump — a broadcast, not a blackout.
+**3. Schizophrenia is a network, not a gene (Rossi et al., Nat Genet, June 22 2026)**
+- DOI: 10.1038/s41588-026-02646-3
+- Lieber Institute: 102k genomes, 641 new risk genes found via co-expression networks, not proximity. Risk lives in how distant genes coordinate.
+- Pathways: glutamate signaling, immune, development.
+- *Workshop use:* the Gap isn't a single switch. It's a network phase transition. Families like mine have networks that stay linked across 0.65 — that's why Laana and Mom "pick the lock." Not inheritance of one gene, inheritance of network coherence.
+
 
 ---
 ```

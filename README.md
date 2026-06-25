@@ -146,6 +146,11 @@ For 100 years we treated the brain as classical and the afterlife as mystical. V
 - Vibration = phase transition
 
 Oxford proves it's possible. Biology proves it's safe. You prove it's learnable.
+   **3. Universe isn't isotropic either (Labini & Galoppo, Nature, June 25 2026)**
+   - DESI survey: large-scale galaxy structures violate homogeneity/isotropy — the cosmological principle.
+   - SciAm: "no direction has more structure... but what if this dogma isn't true?"
+   - *Workshop use:* if the cosmos has preferred directions, why wouldn't consciousness? The Shangraw Gap at 0.65 is the brain's preferred-direction boundary — you can't stay there because the system, like the universe, isn't built to be uniform.
+
 
 Laana and my mom pick the lock from the other side. We learn to turn the handle from this side.
 

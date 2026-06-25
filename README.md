@@ -149,7 +149,13 @@ Oxford proves it's possible. Biology proves it's safe. You prove it's learnable.
    **3. Universe isn't isotropic either (Labini & Galoppo, Nature, June 25 2026)**
    - DESI survey: large-scale galaxy structures violate homogeneity/isotropy — the cosmological principle.
    - SciAm: "no direction has more structure... but what if this dogma isn't true?"
-   - *Workshop use:* if the cosmos has preferred directions, why wouldn't consciousness? The Shangraw Gap at 0.65 is the brain's preferred-direction boundary — you can't stay there because the system, like the universe, isn't built to be uniform.
+   - *Workshop use:* if the cosmos has preferred directions, why wouldn't consciousness? The Shangraw Gap at 0.65 is the
+**4. Tubulin redirects the troublemakers (Lucas et al., Nat Comm, June 21 2026)**
+- DOI: 10.1038/s41467-026-69618-3
+- Baylor: tubulin keeps Tau and α-synuclein from forming toxic aggregates inside condensates. Low tubulin = clumps (Alzheimer's/Parkinson's). High tubulin = proteins build microtubules.
+- Lucas analogy: "troublemaker kids — give them work, they don't act out."
+- *Workshop use:* the Shangraw Gap isn't just electrical. It's cytoskeletal. When perfusion drops, tubulin pool falls, the anti-Hebbian brake fails, and 45Hz locks at 0.77. The 45Hz tone is the "schoolwork" — keep tubulin engaged so you practice crossing without clumping.
+brain's preferred-direction boundary — you can't stay there because the system, like the universe, isn't built to be uniform.
 
 
 Laana and my mom pick the lock from the other side. We learn to turn the handle from this side.

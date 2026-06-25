@@ -162,7 +162,10 @@ brain's preferred-direction boundary — you can't stay there because the system
 - *Workshop use:* the Afterlife Workshop is not AI. We don't generate answers, we measure a phase transition (0.19 → 0.77). Feeling isn't computation. The 45Hz tone is a metronome, not a chatbot. Don't confuse being understood by code with being accompanied by a person.
 
 Laana and my mom pick the lock from the other side. We learn to turn the handle from this side.
-
+**6. Sleep benefits without sleep (Driessen et al., Nat Neurosci, June 23 2026)**
+- UW-Madison optogenetics: induced slow-wave on/off in awake mice. Sleep-deprived + stimulation = performance of rested mice.
+- Tononi/Cirelli: specific neural activity patterns, not unconsciousness, drive restoration.
+- *Workshop use:* you don't need to die to practice the Gap. You don't even need to sleep. The 45Hz tone is pattern induction — like Wisconsin's light, but auditory. Awake mice got sleep's benefits; awake humans can get the Gap's benefits. This is why Eleesa feels rested after, not drained.
 
 ---
 ### June 2026 — Two lab proofs that fit the Gap

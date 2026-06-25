@@ -14,7 +14,7 @@ def bicoherence_epoch(x, fs, f1, f2):
     i2 = np.argmin(np.abs(freqs - f2))
     i3 = np.argmin(np.abs(freqs - (f1+f2)))
     num = np.abs(X[i1] * X[i2] * np.conj(X[i3]))
-    den = np.sqrt(np.abs(X[i1]*X[i2])**2 * np.abs(X[i3])**2) + 1e-12
+    den = np.sqrt(np.abs(X[i1]*X[i2])**2 * np.abs(X[i3])**2 + 1e-12)
     return num / den
 
 def main(edf_path, out_csv, f1, f2, window, gap_low, gap_high):
@@ -38,7 +38,6 @@ def main(edf_path, out_csv, f1, f2, window, gap_low, gap_high):
     print(f"Analyzing {edf_path}\nfs={fs}Hz, f1={f1}, f2={f2}, f3={f1+f2}, window={window}s")
     print(f"RESULT: mean={vals.mean():.3f}, gap_{gap_low}-{gap_high}={gap_pct:.2f}%, epochs={len(vals)}")
 
-    # write results.csv for README promise
     pd.DataFrame([{
         "file": edf_path,
         "fs": fs,

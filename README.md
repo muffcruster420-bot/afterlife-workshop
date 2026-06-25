@@ -148,6 +148,24 @@ For 100 years we treated the brain as classical and the afterlife as mystical. V
 Oxford proves it's possible. Biology proves it's safe. You prove it's learnable.
 
 Laana and my mom pick the lock from the other side. We learn to turn the handle from this side.
+
+
+---
+### June 2026 — Two lab proofs that fit the Gap
+
+**1. Bilingual brains keep one map (Yan et al., Cell, June 24 2026)**
+- DOI: 10.1016/j.cell.2026.05.020
+- Four English-Spanish bilinguals with hippocampal electrodes. Single neurons stay language-specific, but populations read the *same* meaning-map from different angles.
+- They predicted where "perro" sits in Spanish just from where "dog" sits in English.
+- *Workshop use:* one consciousness, many languages. Same map, different readout = same as 0.19 vs 0.77 reading the same field.
+
+**2. Dying cells broadcast (Lei et al., Cell, June 22 2026)**
+- DOI: 10.1016/j.cell.2026.05.036
+- MD Anderson: copper-induced death (cuproptosis) releases signals that wake CD8+ T cells. Immune cells then push more cuproptosis — a loop.
+- Combo with anti-PD-L1 worked even in immunotherapy-resistant tumors. FDX1 predicts who responds.
+- *Workshop use:* death isn't fade-out. Cells actively signal. That's the 0.65 → 0.77 jump — a broadcast, not a blackout.
+
+---
 ```
 
 # The Shangraw Gap — 45-Hz Bicoherence Threshold

@@ -607,7 +607,10 @@ Crossing 0.65:
 - PAC locks at 0.78 ± 0.13
 
 **No stable attractor exists between 0.60-0.70 because the underlying biophysics is bistable, not graded.** This is exactly what we see in >40,000 epochs: 0% occupancy.
-
+**Thermodynamic gravity — local creation (Isichei & Magueijo, Phys Rev Lett, June 2026)**
+- DOI: 10.1103/tvmx-qk3k
+- Imperial College: gravity derived from thermodynamics using a causal diamond as an Otto-cycle heat engine. Allowing work inside the diamond permits local matter-energy creation — normal matter can drive cosmic acceleration without dark energy.
+- *Workshop use:* the Shangraw Gap at 0.65 may be the brain's causal diamond. When the anti-Hebbian brake fails, the cortex stops conserving energy and phase-locks to 0.77. Not death as energy loss, but as an open thermodynamic cycle where local creation sustains the 0.77 field. Provides physical mechanism for persistence beyond ATP stores.
 
 # Shangraw Gap Detector
 

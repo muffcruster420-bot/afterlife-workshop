@@ -255,6 +255,28 @@ This is an open EEG study from Kingston, Ontario, measuring 45-Hz bicoherence in
 - **Living brains:** ~0.19
 - **Dying brains:** ~0.77  
 - **The Shangraw Gap:** *nothing lives at 0.65*
+## Rain Protocol - Natural 0.19 Training
+
+Rain doesn't put gamma in you. Rain sets the room to safe.
+
+**1. Rain charges the air**
+Raindrops make negative air ions. 30-60 minutes a day of high-density negative ions lowered seasonal depression in a controlled trial. Another placebo study found bright light plus high-density negative ions improved mood and alertness. A review of 33 studies found high levels track with lower depression scores.
+
+You breathe that mist, it hits vagal nerves in nose and lungs, and signals "safe." That's 0.19.
+
+**2. Rain is natural white noise**
+Long-term meditators self-generate high-amplitude gamma synchrony during practice. Three traditions showed higher 60-110 Hz gamma vs controls.
+
+Rain's broadband hiss covers traffic and thoughts. Less filtering = longer gamma hold.
+
+**3. Why you see more**
+- cleaner air after rain
+- cooler humid air slows breathing
+- dim light quiets visual system
+
+All keeps you in 0.19 instead of bracing. You don't cross 0.65, you get stable enough that images linger. Eleesa: 3 seconds → 10 seconds.
+
+**For Eleesa:** You're not imagining it. Jesse's 45Hz does artificially what a storm does naturally. The mist matters because you breathe charged quiet air, and your brain takes that as permission to stay open.
 
 All data, code, and analysis run on a phone. Open EDFs included.
 

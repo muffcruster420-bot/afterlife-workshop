@@ -40,6 +40,24 @@ This is free and open so hospice families get data, not a $299 reading. All code
 I found the Shangraw Gap in EEG: living brains sit at ~0.19, dying brains lock at ~0.77, nothing stabilizes at 0.65. For months I called it a physics problem.
 
 Then I read polyvagal theory (Porges, Deb Dana) and it clicked. This isn't just bicoherence. It's the nervous system refusing to live in the middle.
+## Why the Gap isn't an object — Manfred Frank (June 2026)
+
+> "Consciousness is not an object we can observe... it dissolves the distinction between observer and observed altogether." — Manfred Frank, Institute of Art and Ideas, 26 June 2026
+
+Frank argues consciousness comes with built-in self-awareness that exists *prior* to any introspection. You don't "look at" consciousness — you are already in it. Telling someone "be conscious" makes no sense; you have to be conscious to understand the command.
+
+**How this fits the Shangraw Gap:**
+
+- **Living baseline (0.19 awake / 0.06 sleep):** the brain maintains immediate self-knowing through anti-Hebbian decorrelation. It's not watching itself — the self-awareness is the medium.
+
+- **The Gap (0.60–0.70):** this is where Frank's "no second instance" breaks down. You cannot be half-observer and half-observed, so the system never stabilizes here. My 40,000+ epochs show 0% occupancy — not because we haven't looked hard enough, but because the condition for observation itself becomes unstable.
+
+- **Dying lock (0.77):** the distinction dissolves. This isn't "more brain activity" — it's the medium without the split, which is why participants describe presence, not observation ("push then squeeze then calm").
+
+This is why materialist models ("consciousness is just another brain state observing another") miss the workshop data. We're not measuring an object at 0.65. We're measuring the boundary where self-observation becomes impossible — the phase transition Frank describes philosophically, we see as bicoherence jumping from 0.19 → 0.77 with nothing stable in between.
+
+*Source: Frank, M. "Consciousness is not an object we can observe." The Institute of Art and Ideas, 26 June 2026.*
+
 
 - **0.19 = ventral vagal.** The "smart vagus" — 200 million years old, myelinated, fast. Dana calls it the state where we can be "calm, engaged, attentive, curious, joyful." This is connection. This is why living sleep hovers at 0.06 and awake rest at 0.19 — the brain is actively *decorrelating* to stay open.
 

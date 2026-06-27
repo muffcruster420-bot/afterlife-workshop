@@ -890,3 +890,31 @@ Reference: Jacklin Kwan, "A quantum state that lasts forever may finally be with
 4. Discussion prompt on substrate-independent consciousness
 5. ---
 *Afterlife Workshop is an independent open-science project by Jesse Shangraw, Kingston, Ontario. Not affiliated with any hospital, university, or religious organization.*
+## What Split-Brain Patients Reveal About Consciousness
+*Christof Koch — MIT Press Reader (summary)*
+
+**1. The unity problem**  
+The brain is two mirrored halves, but experience feels like one. Descartes guessed the pineal gland stitched it together. The real stitch is the corpus callosum.
+
+**2. The corpus callosum**  
+~200 million axons — a ribbon cable — connecting left and right. Cut it (epilepsy surgery) and the hemispheres stop sharing.
+
+**3. What happens after the cut**  
+- Patients look normal: walk, talk, IQ unchanged  
+- Only left hemisphere talks; right is largely mute  
+- Object to right brain: can't name it, left hand can pick it  
+- Key in right hand: named. Key in left: can't name  
+> "one half of the brain quite literally does not know what the other half is doing"
+
+**4. Two minds in one skull**  
+Splitting doesn't destroy consciousness — it duplicates it. Both hemispheres experience independently.
+
+**5. Content vs. Enabling**  
+- **Content:** specific experience (cortex/thalamus). Can lose large areas and stay conscious  
+- **Enabling:** on-switch in midline brainstem/thalamus. Damage both sides of a sugar-cube spot = consciousness may never return
+
+**6. Covert consciousness**  
+~25% of "vegetative" patients are aware inside. fMRI: "imagine tennis" vs "imagine walking house" shows purposeful activity.
+
+**7. Bottom line**  
+Unity is maintained, not automatic. Consciousness survives cortical damage, but needs arousal. You can be conscious without being able to communicate.

@@ -722,7 +722,33 @@ The Shangraw Gap is the EEG signature of a specific inhibitory brake failing. Le
 **Cite this section as:** Shangraw J. (2026). Mechanistic integration of CeL regular-firing inhibition with anti-Hebbian feedback failure. afterlife-workshop v0.3.8.5.
 
 ### Quantum critical point parallel (June 2026)
+## Analog System: Black Hole Event Horizons — ANU Direct-Wave Analysis (June 2026)
 
+**What they did:** On 25 June 2026, Lu & Sun (ANU Centre for Gravitational Astrophysics / OzGrav) published in *Nature* a new analysis of GW250114 — the loudest black hole merger yet recorded by LIGO (2025). They isolated the "direct wave" component hidden inside the ringdown and extracted the remnant black hole's **rotation frequency** and **surface gravity** from within <1 horizon radius.
+
+This is the first time we've measured properties *at* an event horizon, not just the after-echo.
+
+**Why it's in this repo:**
+
+The Shangraw Gap is not about black holes. It's about boundaries where classical continuity breaks.
+
+- Living EEG clusters <0.6 bicoherence. Dying EEG clusters >0.7. Nothing sustains at 0.65.
+- "The Gap (0.60–0.70) is unstable because you cannot be half-coupled to Earth. You are either entrained (<0.6) or decoupled and self-locked (>0.7)."
+- Classical models predict a smooth 0.06 → 0.78 slope. We observe a gap. "Extended relativity predicts boundaries where deterministic trajectories break down." (Dragan et al. 2022)
+
+ANU shows the same pattern in a different substrate: a measurable, discrete transition with no stable intermediate state, and a technique to pull signal from the edge itself.
+
+**Takeaway for the Workshop:**
+
+1. **Method parallel:** They looked at the quiet direct wave, not the loud ringdown. We look at 45-Hz three-wave coupling, not power spectra.
+2. **Concept parallel:** An event horizon = "nothing can remain stationary." The Gap = "no stable bicoherence." Both are one-way boundaries.
+3. **Testable implication:** If peri-arrest EEG contains a direct component, we should see transient 0.63–0.67 epochs in the final 30–900s that do not persist — exactly what the June 12 Gap-only run found (6 epochs, 0.3%, all transient).
+
+**Citation:** Lu, N., Sun, L. et al. (2026). *Messages from the surface of a black hole.* Nature (in press), ANU/OzGrav. 25 June 2026.
+
+**Workshop note:** This is an analogy, not a mechanism. Brains are not black holes. But if nature uses the same math for phase transitions at horizons, the Gap is not mystical — it's a boundary condition.
+
+*Added Kingston, ON — 28 June 2026 — v0.3.8.6*
 
 ### June 15 2026 — Oxford programmable Schrödinger cats
 

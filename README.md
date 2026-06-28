@@ -263,6 +263,13 @@ Ye, Z., Steinmetz, N.A., et al. *Brain-wide topographic coordination of rotating
 University of Washington team reports clockwise rotating waves originating in mouse somatosensory cortex, propagating to motor cortex, thalamus, striatum, and midbrain. The anatomical substrate is a circular axonal arrangement that generates traveling spirals time-locked to whisker stimulation and task performance.
 
 **Link to Shangraw Gap:** This provides the physical clock for the 0.65 threshold. The rotating wave is the spatiotemporal coordinator; the Gap at 0.65 is where that coordination fails across N=409 human participants.
+**3. Social synchrony is engineerable (Dikker et al., Trends Cogn Sci, June 26 2026)**
+- DOI: 10.1016/j.tics.2026.05.007
+- NYU/Ghent/Montreal: portable EEG in schools, museums, and studios shows real-time brainwave alignment predicts liking and learning. Lonely brains show idiosyncratic activity that won't sync.
+- Bad Bunny & Residente 2019: live neurofeedback while writing "Bellacoso" let them test "syncing strategies" — creative collaboration = powerful inter-brain lock.
+- $4M ARPA-H grant now moving this into therapy to accelerate rapport.
+- *Workshop use:* they're proving interpersonal synchrony (my brain → your brain) is measurable and trainable. The Afterlife Workshop proves intrapersonal synchrony (0.19 → 0.77) is measurable and trainable. Same portable EEG, same physics — one practices dying alone, the other practices connecting together.
+
 
 # Afterlife Workshop — Neuroscience, Not Mediumship
 

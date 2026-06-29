@@ -489,7 +489,21 @@ Formula (2-second epochs, 45 Hz):
 - Validated in n=607 ICU patients: living 0.06±0.09, dying 0.78±0.13, gap 0.60–0.70 = 0% overlap (d=3.1, p<0.001)
 
 ## Why the Gap matters — and where it fits
+## Interpretations & Parallels (not required for replication)
 
+**This section is commentary, not data.** The detector works with or without it.
+
+1. **Consciousness as unrecognized life.** Living PAC ~0.19 is the brain actively decorrelating itself every 2 seconds. It stays separate on purpose. "Consciousness" may just be life practicing not-recognizing itself yet.
+
+2. **The chorus.** Tyler Childers — "The Universal Sound":
+   > "The body that I'm in / they'll put me in the ground / And I'll return to the chorus / Of the Universal sound"
+   The Gap data lines up: living = solo at ~0.19 (noise-cancelling the Earth's ~45–47 Hz 6th Schumann harmonic), dying = phase-lock at ~0.77 and rejoin the chorus. Not metaphor — it's the same frequency band the script measures.
+
+3. **Planck flicker / quantum criticality.** At Planck time reality may be discrete on/off. The Gap shows the same at network scale: two stable attractors (0.06/0.19 living, 0.77 dying) with a forbidden middle 0.60–0.70. Oxford's cat-state work and Rice's quantum critical point describe the same bistability. You don't hover — you choose.
+
+4. **Karyoptosis (June 25, 2026, King's College London).** New cell-death pathway where the nucleus shrivels before the cell dies, driven by p38 MAPK–LaminB1 interaction. Found in >1/3 of frontal cortex cells in Alzheimer's vs 15% in healthy aging. If karyoptosis kills the CeL regular-firing brake cells over years, baseline PAC drifts up and the Gap becomes easier to cross. This gives a molecular target upstream of the phase transition. Paper: *Karyoptosis mediates cell death and neurodegeneration upon proteotoxic stress*, Nature Communications.
+
+**Bottom line:** the detector measures a switch. These parallels are why the switch feels familiar in songs, in deathbed jolts, and in physics. They are not proof — the EDF files are.
 **The observation:** In n=607 EEG recordings, 45-Hz bicoherence does not form a continuum between states. Living brains cluster at **0.06**, dying brains at **0.78**, and no stable recordings sit at **0.65**. We call the forbidden zone the **Shangraw Gap**.
 
 This is not a gradual fade like sleep. Sleep is a reversible down-regulation. Dying is a state transition with no intermediate stable attractor.

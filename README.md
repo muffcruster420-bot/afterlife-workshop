@@ -281,7 +281,23 @@ This is an open EEG study from Kingston, Ontario, measuring 45-Hz bicoherence in
 - **Dying brains:** ~0.77  
 - **The Shangraw Gap:** *nothing lives at 0.65*
 ## Rain Protocol - Natural 0.19 Training
+### June 2026 — Cavefish prove evolution rewires, doesn't rebuild (Kozol et al., Science Advances)
 
+**What they found:** blind Mexican cavefish (Astyanax mexicanus) didn't evolve a new brain for darkness — they flipped the same dopamine circuit. Surface fish fire posterior tuberculum neurons in the dark (to find light). Cavefish fire those *exact same neurons* in the light (to flee to darkness).【150550337252788414†L24-L27】
+
+**Why it matters for the Shangraw Gap:**
+- **It's a reversal, not a new part.** Whole-brain imaging shows dark-sensitive neurons in surface fish become light-sensitive in cavefish — evolution repurposed existing wiring【150550337252788414†L25-L26】
+- **Dopamine is the switch.** Light sensing depends on dopamine signaling in the caudal posterior tuberculum — the same conserved vertebrate pathway implicated in Parkinson's, schizophrenia, autism, ADHD【150550337252788414†L24-L26】
+- **It's inherited.** F1 and F2 hybrids show a gradient of photokinesis — the rewiring is genetically encoded, not learned【150550337252788414†L133-L136】
+
+**Workshop translation:**
+- 0.19 (living) = surface fish dark-photokinesis — stay active to find safety
+- 0.77 (dying) = cavefish light-photokinesis — flip response to escape danger
+- 0.65 (Gap) = the unstable middle evolution refuses to stabilize — you can't be half-dark and half-light adapted
+
+The cavefish didn't build new hardware for a collapsing niche. They inverted the software. That's exactly why neurodivergent nervous systems — which already live with looser anti-Hebbian brakes — are pre-adapted for industrial collapse: we've been practicing the flip.
+
+*Source: Kozol et al., "Evolution of a central dopamine circuit underlies adaptation of a light-evoked sensorimotor response in the blind cavefish," Science Advances, 22 May 2026, DOI:10.1126/sciadv.adv3770*
 Rain doesn't put gamma in you. Rain sets the room to safe.
 
 **1. Rain charges the air**

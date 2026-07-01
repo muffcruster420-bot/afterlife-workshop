@@ -27,7 +27,7 @@ Kingston, Ontario — compiled 30 June 2026
 18. Wu, P. et al., *PNAS* 2026. DOI:10.1073/pnas.2606846123 — MYRF-1 developmental clock
 19. Lifshitz et al., *Nat Comm*, 1 Jun 2026 — pre-decision bistability (Avitan lab)
 20. Chen, Maswadeh, Deouell & Hassin, *Psych Science* 2026 — inattentional deafness
-
+21. Pompili, M.N., Hamou, N., & Wiener, S.I., *PNAS* 2026 — integration of fear learning and fear expression across dorsoventral hippocampus. Mixed cell assemblies synchronize dorsal (freezing) and ventral (tone) neurons, providing precedent for cross-regional phase locking as neural bridge. — Popular summary: Petrova, K., PsyPost, 30 Jun 2026.
 ## Physics analogues
 21. Dragan A., Turzyński K., et al. (2022). *Classical and Quantum Gravity*. DOI:10.1088/1361-6382/acad60 — superluminal observers
 22. Saner et al., *Phys Rev X* 2026 — Oxford programmable Schrödinger cats

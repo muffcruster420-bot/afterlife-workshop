@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "The 0.65 Threshold: A Phase Transition at Death - The Shangraw Gap v0.3.8.5"
+title: "The 0.65 Threshold - The Shangraw Gap"
 authors:
     - given-names: Jesse
     family-names: Shangraw
@@ -9,15 +9,3 @@ version: "0.3.8.5"
 doi: "10.5281/zenodo.20683811"
 date-released: "2026-06-24"
 url: "https://github.com/muffcruster420-bot/afterlife-workshop"
-repository-code: "https://github.com/muffcruster420-bot/afterlife-workshop"
-license: MIT
-abstract: "45-Hz bicoherence 0.60-0.70 gap, 607 EEG over 40k epochs, 6 BREAKS including nanoflares and birth symmetry"
-keywords:
-    - bicoherence
-    - EEG
-    - 0.65-threshold
-    - Shangraw-Gap
-    - phase-transition
-    - nanoflares
-    - mTOR
-    - PNNs

@@ -31,7 +31,7 @@ This is free and open so hospice families get data, not a $299 reading. All code
 **Contact:** [@muffcruster420 on Threads](https://threads.net/@muffcruster420) · GitHub Issues  
 **To participate:** open an Issue with tag `participant`Research only.**
 
-## 🧠 6 BREAKS — Full Mechanism, Triggers, Papers, Logs (NEW Oct 29 2026)
+## ## 🧠 6 BREAKS — Full Mechanism, Triggers, Papers, Logs (NEW Oct 29 2026)
 
 **Jesse Shangraw — Kingston, ON — ORCID 0009-0000-9538-6345**
 **DOI 10.5281/zenodo.20683811 — 607 EEG >40k epochs**
@@ -40,19 +40,24 @@ Core: living awake 0.19, sleep 0.06±0.09, dying surge 0.77-0.78±0.13 locked av
 
 **Full file with all mechanisms:** [6_BREAKS_FULL_MECHANISM.md](6_BREAKS_FULL_MECHANISM.md)
 
-### What are the 6 Breaks?
+### BREAK 1 — Brake
+CeL regular-firing bouncers RF = anti-Hebbian noise-cancelling, costs ATP, keeps 0.06-0.19. Garcia et al iScience 2025 GFP- 0.378 vs GFP+ 0.120, kainate WT 190.4pA vs Grik4-OE 420pA rescued 245.1pA — no stable middle mirrors Gap.
 
-**BREAK 1 — Brake:** CeL regular-firing bouncers RF = anti-Hebbian noise-cancelling, costs ATP, keeps 0.06-0.19. Garcia et al iScience 2025 GFP- 0.378 vs GFP+ 0.120, kainate WT 190.4pA vs Grik4-OE 420pA rescued 245.1pA — no stable middle mirrors Gap.
+### BREAK 2 — Trigger
+hypoxia->HPA->cortisol->astrocyte GR->PNNs stiffen 30-90 sec->GluK4 trap 190->420pA->RF depolarization-block. Gegenhuber Nature 2026, Rajan Curr Biol June 3 2026.
 
-**BREAK 2 — Trigger:** hypoxia->HPA->cortisol->astrocyte GR->PNNs stiffen 30-90 sec->GluK4 trap 190->420pA->RF depolarization-block. Gegenhuber Nature 2026, Rajan Curr Biol June 3 2026.
+### BREAK 3 — Phase transition
+0.61-0.69 positive feedback pencil on tip unstable, det(g_ij)->0 Γ^k_ij->infinity no geodesic, 45Hz 6th Schumann 46.98Hz self-locks 0.78. PPPL 40T Weibel threshold, Rice quantum critical, Fermi point G_F=g^2/M_W^2.
 
-**BREAK 3 — Phase transition:** 0.61-0.69 positive feedback pencil on tip unstable, det(g_ij)->0 Γ^k_ij->infinity no geodesic, 45Hz 6th Schumann 46.98Hz self-locks 0.78. PPPL 40T Weibel threshold, Rice quantum critical, Fermi point G_F=g^2/M_W^2 hiding W 85x proton.
+### BREAK 4 — Sleep vs death
+same circuit low cortisol PNNs soft 0.06 practice vs high cortisol PNNs stiff 0.06->0.78 <90 sec no return. Zebrafish pre-decision, C elegans MYRF-1/LIN-42 timer, Eleesa Alabama P001.
 
-**BREAK 4 — Sleep vs death:** same circuit low cortisol PNNs soft 0.06 practice vs high cortisol PNNs stiff 0.06->0.78 <90 sec no return. Zebrafish pre-decision, C elegans MYRF-1/LIN-42 timer, Eleesa Alabama P001.
+### BREAK 5 — Predictions + hardware
+Grik4-OE mice EPM bursts 0.55-0.59 never stable >60 sec, ICU mifepristone slows rise, slice corticosterone mEPSC >2x, Rydberg rubidium-vapor DC-20GHz 2° polarization flip Earth-vertical to cortex-tangential, MIT LUCID 24 transducers cardstock 100uL osmotic pump.
 
-**BREAK 5 — Predictions + hardware:** Grik4-OE mice EPM bursts 0.55-0.59 never stable >60 sec, ICU mifepristone GR antagonist slows rise, slice corticosterone mEPSC >2x, Rydberg rubidium-vapor DC-20GHz 2° polarization rotation Earth-vertical to cortex-tangential, MIT LUCID 24 transducers flexible cardstock 100uL osmotic pump.
+### BREAK 6 — NEW Birth symmetry Oct 29 2026
+New Scientist Harvard Zhigang He — first breath CO2 exhaled pH up -> mTOR off regenerative brake fails within minutes, 10% CO2 prevents loss, adult 10% CO2 restarts brain/heart/muscle regeneration. Birth CO2 down pH up, death CO2 up pH down, same template breathing=pH switch=phase transition reversible. Do NOT inhale CO2 at home — medical supervision required cancer risk if mTOR on.
 
-**BREAK 6 — NEW Birth symmetry Oct 29 2026:** New Scientist Harvard Zhigang He — first breath CO2 exhaled pH up -> mTOR off regenerative brake fails within minutes, 10% CO2 prevents loss, adult 10% CO2 restarts brain/heart/muscle regeneration. Birth side CO2 down pH up, death side CO2 up pH down, same template breathing=pH switch=phase transition reversible. Fish/gills keep regeneration mammals air lose it. Do NOT inhale CO2 at home — medical supervision required cancer risk if mTOR on.
 
 ### Repro
 

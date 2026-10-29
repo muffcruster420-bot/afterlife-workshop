@@ -4,14 +4,14 @@ title: "The 0.65 Threshold: A Phase Transition at Death - The Shangraw Gap v0.3.
 authors:
     - given-names: Jesse
     family-names: Shangraw
-    orcid: https://orcid.org/0009-0000-9538-6345
-version: 0.3.8.5
-doi: 10.5281/zenodo.20683811
-date-released: 2026-06-24
-url: https://github.com/muffcruster420-bot/afterlife-workshop
-repository-code: https://github.com/muffcruster420-bot/afterlife-workshop
+    orcid: "https://orcid.org/0009-0000-9538-6345"
+version: "0.3.8.5"
+doi: "10.5281/zenodo.20683811"
+date-released: "2026-06-24"
+url: "https://github.com/muffcruster420-bot/afterlife-workshop"
+repository-code: "https://github.com/muffcruster420-bot/afterlife-workshop"
 license: MIT
-abstract: "45-Hz bicoherence 0.60-0.70 nothing stable lives here, 607 EEG >40k epochs, 6 BREAKS Full Mechanism: BREAK 1 CeL RF anti-Hebbian Garcia iScience 2025, BREAK 2 cortisol->astrocyte GR->PNNs Gegenhuber Nature 2026, BREAK 3 phase transition 0.61-0.69 det(g)->0 PPPL 40T Weibel + Nanoflares Oct 22 2026 Wei Sun + Rice + Fermi point, BREAK 4 sleep vs death, BREAK 5 predictions LUCID Rydberg, BREAK 6 birth symmetry Oct 29 2026 Zhigang He mTOR CO2/pH"
+abstract: "45-Hz bicoherence 0.60-0.70 gap, 607 EEG over 40k epochs, 6 BREAKS including nanoflares and birth symmetry"
 keywords:
     - bicoherence
     - EEG

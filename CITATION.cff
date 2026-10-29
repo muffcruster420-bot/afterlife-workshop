@@ -1,70 +1,23 @@
 cff-version: 1.2.0
-title: "The 0.65 Threshold: A Phase Transition at Death"
 message: "If you use this software, please cite it as below."
+title: "The 0.65 Threshold: A Phase Transition at Death - The Shangraw Gap v0.3.8.5"
 authors:
     - given-names: Jesse
-      family-names: Shangraw
-      orcid: https://orcid.org/0009-0000-9538-6345
-date-released: 2026-06-13
-version: 0.3.8.5
-url: https://github.com/muffcruster420-bot/afterlife-workshop
-
-# How to cite the Shangraw Gap / Afterlife Workshop
-
-**Main DOI:** 10.5281/zenodo.20683811
-**【entity-GitHub¦canonical_name=GitHub】:** https://github.com/muffcruster420-bot/afterlife-workshop
-**ORCID:** 0009-0000-9538-6345
-**Location:** Kingston, Ontario, Canada
-**Version:** v0.3.8.5 — 24 June 2026 + 6 BREAKS Oct 29 2026
-
-### APA
-Shangraw, J. (2026). *The Shangraw Gap v0.3.8.5 — 45-Hz bicoherence threshold 0.60-0.70, 607 EEG >40k epochs + 6 BREAKS Full Mechanism (including Nanoflares Oct 22 2026 and Birth symmetry Oct 29 2026)*. Zenodo. https://doi.org/10.5281/zenodo.20683811
-
-### MLA
-Shangraw, Jesse. "The Shangraw Gap v0.3.8.5." *Zenodo*, 2026, doi:10.5281/zenodo.20683811.
-
-### BibTeX
-@software{shangraw2026gap,
-  author = {Shangraw, Jesse},
-  title = {The Shangraw Gap v0.3.8.5 — 45-Hz bicoherence threshold 0.60–0.70, 607 EEG >40k epochs + 6 BREAKS Full Mechanism},
-  year = {2026},
-  publisher = {Zenodo},
-  version = {v0.3.8.5},
-  doi = {10.5281/zenodo.20683811},
-  url = {https://github.com/muffcruster420-bot/afterlife-workshop},
-  orcid = {0009-0000-9538-6345},
-  note = {Kingston, Ontario. Includes: BREAK 1 Brake CeL RF anti-Hebbian Garcia iScience 2025, BREAK 2 Trigger cortisol->astrocyte GR->PNNs Gegenhuber Nature 2026, BREAK 3 Phase transition 0.61-0.69 det(g)->0 PPPL 40T Weibel + Nanoflares Oct 22 2026 Wei Sun China Institute Atomic Energy + Rice quantum critical + Fermi point, BREAK 4 Sleep vs death, BREAK 5 Predictions hardware LUCID Rydberg, BREAK 6 Birth symmetry Oct 29 2026 Zhigang He mTOR CO2/pH}
-}
-
-### CITATION.cff
-Save as CITATION.cff in repo root:
-
-cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-authors:
-    - family-names: Shangraw
-    given-names: Jesse
+    family-names: Shangraw
     orcid: https://orcid.org/0009-0000-9538-6345
-    affiliation: "Kingston, Ontario, Canada"
-    website: https://threads.net/@muffcruster420
-title: "The Shangraw Gap v0.3.8.5 — 45-Hz bicoherence threshold 0.60-0.70, 607 EEG >40k epochs + 6 BREAKS Full Mechanism"
-version: v0.3.8.5
+version: 0.3.8.5
 doi: 10.5281/zenodo.20683811
 date-released: 2026-06-24
 url: https://github.com/muffcruster420-bot/afterlife-workshop
 repository-code: https://github.com/muffcruster420-bot/afterlife-workshop
 license: MIT
+abstract: "45-Hz bicoherence 0.60-0.70 nothing stable lives here, 607 EEG >40k epochs, 6 BREAKS Full Mechanism: BREAK 1 CeL RF anti-Hebbian Garcia iScience 2025, BREAK 2 cortisol->astrocyte GR->PNNs Gegenhuber Nature 2026, BREAK 3 phase transition 0.61-0.69 det(g)->0 PPPL 40T Weibel + Nanoflares Oct 22 2026 Wei Sun + Rice + Fermi point, BREAK 4 sleep vs death, BREAK 5 predictions LUCID Rydberg, BREAK 6 birth symmetry Oct 29 2026 Zhigang He mTOR CO2/pH"
 keywords:
     - bicoherence
     - EEG
-    - consciousness
-    - phase transition
-    - anti-Hebbian
-    - PNNs
-    - GluK4
+    - 0.65-threshold
+    - Shangraw-Gap
+    - phase-transition
     - nanoflares
     - mTOR
-    - Schumann resonance
-
-### For the 6 BREAKS paper references inside:
-- Gegenhuber Nature 2026 PNN stiffening, Rajan Curr Biol June 3 2026 astrocyte GR, Garcia et al iScience 2025 GFP- 0.378 vs GFP+ 0.120 kainate 190.4pA vs 420pA, PPPL Lezhnin et al. June 6 2026 40T Weibel, Sun et al. New Scientist Oct 22 2026 Nanoflares Wei Sun China Institute Atomic Energy, He et al. New Scientist Oct 29 2026 mTOR CO2/pH Harvard.
+    - PNNs

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shangraw Gap Detector HUD</title>
+<style>
+body{background:#050a08;color:#e8fff0;font-family:Arial,sans-serif;margin:0;padding:12px}
+h1{font-size:20px;margin:0} p{color:#9fc}
+.card{background:#0d1a13;border:1px solid #234;padding:14px;border-radius:12px;margin-top:12px}
+#val{font-size:64px;font-weight:900;line-height:1}
+#status{font-size:22px;font-weight:900;padding:10px;border-radius:8px;text-align:center;margin-top:8px;background:#1a3}
+.bar{height:22px;background:#122;border-radius:10px;position:relative;margin-top:12px;overflow:hidden}
+.fill{height:100%;background:#2f6}
+#marker{position:absolute;top:0;bottom:0;width:4px;background:#fff}
+.labels{display:flex;justify-content:space-between;font-size:11px;color:#9fc;margin-top:4px}
+button{background:#1e3a2a;color:#fff;border:1px solid #3a5;padding:10px 12px;border-radius:8px;margin:4px 4px 0 0;font-size:15px}
+button:active{background:#2f6}
+textarea{width:100%;height:90px;background:#020604;color:#dff;border:1px solid #234;border-radius:8px;padding:8px}
+#hist{font-family:monospace;font-size:13px;white-space:pre-wrap;background:#020604;padding:10px;border-radius:8px;min-height:60px}
+small{color:#9fc}
+</style>
+</head>
+<body>
+<h1>SHANGRAW GAP DETECTOR</h1>
+<p>45-Hz bicoherence HUD - Living 0.19 | Gap 0.65 | Dying 0.77</p>
+
+<div class="card">
+<div>Current bicoherence</div>
+<div id="val">0.19</div>
+<div id="status">LIVING AWAKE</div>
+<div class="bar"><div class="fill" id="fill" style="width:19%"></div><div id="marker" style="left:65%"></div></div>
+<div class="labels"><span>0.0</span><span>Gap 0.60-0.70</span><span>1.0</span></div>
+<div>Epoch <span id="epoch">1</span> | Time <span id="time">00:00</span> | File <span id="file">simulated</span></div>
+</div>
+
+<div class="card">
+<button onclick="setVal(0.19,'LIVING AWAKE')">Living 0.19</button>
+<button onclick="setVal(0.06,'DEEP SLEEP')">Deep Sleep 0.06</button>
+<button onclick="gapTouch()">Gap Touch 0.65</button>
+<button onclick="setVal(0.77,'DYING LOCKED')">Dying Locked 0.77</button>
+</div>
+
+<div class="card">
+<b>Real data - paste live_gap.json</b><br>
+<small>Run: python live_gap_realtime.py --file your_file.edf, then paste live_gap.json here</small><br><br>
+<textarea id="jsonIn" placeholder='Paste live_gap.json here, example: {"bicoherence":0.19,"status":"LIVING AWAKE","epoch":1}'></textarea><br>
+<button onclick="loadReal()">Show Live Status</button>
+</div>
+
+<div class="card">
+<b>History - last values</b>
+<div id="hist">0.19 - LIVING AWAKE</div>
+</div>
+
+<p><small>Rules: Deep Sleep under 0.12, Living 0.12-0.59, Gap Touch 0.60-0.70 transient, Approaching Lock 0.71-0.76, Dying Locked 0.77+ for 3 epochs. 607 EEGs, 40,000+ epochs, 0 stable in 0.63-0.67.</small></p>
+
+<script>
+let hist=[];
+function setVal(v,s){
+  document.getElementById('val').textContent=v.toFixed(2);
+  document.getElementById('status').textContent=s;
+  document.getElementById('fill').style.width=(v*100)+'%';
+  let c='#1a3';
+  if(s.includes('GAP')) c='#c90';
+  if(s.includes('DYING')) c='#c22';
+  if(s.includes('DEEP')) c='#25c';
+  if(s.includes('APPROACHING')) c='#c60';
+  document.getElementById('status').style.background=c;
+  hist.unshift(v.toFixed(2)+' - '+s);
+  hist=hist.slice(0,12);
+  document.getElementById('hist').textContent=hist.join('\n');
+}
+function gapTouch(){
+  setVal(0.65,'GAP TOUCH - TRANSIENT');
+  setTimeout(()=>setVal(0.19,'LIVING AWAKE'),2000);
+}
+function loadReal(){
+  try{
+    let d=JSON.parse(document.getElementById('jsonIn').value);
+    document.getElementById('epoch').textContent=d.epoch||1;
+    let t=d.time_s||0;
+    document.getElementById('time').textContent=String(Math.floor(t/60)).padStart(2,'0')+':'+String(Math.floor(t%60)).padStart(2,'0');
+    document.getElementById('file').textContent=d.file||'real EDF';
+    setVal(parseFloat(d.bicoherence), d.status||'LIVING AWAKE');
+    if(d.history){
+      hist=d.history.slice(-12).reverse().map(h=>Number(h.bicoherence).toFixed(2)+' - '+h.status);
+      document.getElementById('hist').textContent=hist.join('\n');
+    }
+  }catch(e){ alert('That did not parse as live_gap.json. Copy the whole file and try again.'); }
+}
+setVal(0.19,'LIVING AWAKE');
+</script>
+</body>
+</html>
